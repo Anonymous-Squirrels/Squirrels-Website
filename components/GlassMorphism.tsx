@@ -18,7 +18,11 @@ function GlassMorphism({
       glassCss = "bg-white bg-opacity-10";
   }
   // TODO: Add Backdrop Blur
-  return <div className={`p-4 ${glassCss} ${className}`}>{children}</div>;
+  return (
+    <div className={`p-4 backdrop-blur-xl ${glassCss} ${className}`}>
+      {children}
+    </div>
+  );
 }
 
 export default GlassMorphism;
