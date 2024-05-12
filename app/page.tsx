@@ -1,5 +1,6 @@
 import { BentoBox } from "@/components/BentoBox";
-import Home from "@/components/Home";
+import Home from "@/components/HeroSection";
+import Testimonials from "@/components/Testimonials";
 import React from "react";
 
 function Page() {
@@ -7,6 +8,7 @@ function Page() {
     <div>
       <Home />
       <BentoBox />
+      <Testimonials />
     </div>
   );
 }
