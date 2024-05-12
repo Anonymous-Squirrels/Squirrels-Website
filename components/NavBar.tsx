@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import GlassMorphism from "./GlassMorphism";
+import GlassMorphism from "./ui/GlassMorphism";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { NavLinks } from "@/constants/Navbar";
