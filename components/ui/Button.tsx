@@ -8,7 +8,7 @@ function Button({
 }: {
   className?: string;
   children: React.ReactNode;
-  variant: "primary" | "secondary";
+  variant?: "primary" | "secondary" | "light";
   onClick?: () => void;
 }) {
   let btnStyle;
@@ -18,6 +18,9 @@ function Button({
       break;
     case "secondary":
       btnStyle = "bg-transparent border border-sq-violet text-sq-violet";
+      break;
+    case "light":
+      btnStyle = "bg-black text-white";
       break;
   }
   return (

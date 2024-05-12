@@ -1,21 +1,21 @@
 import { BentoItems } from "@/constants/BentoBox";
-import { cn } from "@/utils/cn";
 import React from "react";
-import { BentoGrid, BentoGridItem } from "./ui/BantoGrid";
+import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
 
 export function BentoBox() {
   return (
-    <BentoGrid className="max-w-4xl mx-auto">
-      {BentoItems.map((item, i) => (
-        <BentoGridItem
-          key={i}
-          title={item.title}
-          description={item.description}
-          header={item.header}
-          icon={item.icon}
-          className={i === 3 || i === 6 ? "md:col-span-2" : ""}
-        />
-      ))}
-    </BentoGrid>
+    <div className="h-screen bg-black text-white p-24">
+      <BentoGrid className="border">
+        {BentoItems.map((item, i) => (
+          <BentoGridItem
+            key={i}
+            title={item.title}
+            description={item.description}
+            content={item.content}
+            className={i === 3 || i === 4 ? "" : ""}
+          />
+        ))}
+      </BentoGrid>
+    </div>
   );
 }

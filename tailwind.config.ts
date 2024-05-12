@@ -13,7 +13,7 @@ const config: Config = {
   darkMode: "class",
   theme: {
     extend: {
-      colors: { "sq-violet": "#7B61FF" },
+      colors: { "sq-violet": "#7B61FF", "dim-gray": "#828282" },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
