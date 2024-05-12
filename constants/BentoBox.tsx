@@ -6,7 +6,7 @@ export const BentoItems = [
     title: "Custom Pricing",
     description: `Fixed pricing and high ppw custom pricing and lowest charges in segment.`,
     content: (
-      <Image src="/assets/graph.png" width={200} height={200} alt="graph" />
+      <Image src="/assets/graph.png" width={180} height={180} alt="graph" />
     ),
   },
   {
@@ -30,8 +30,8 @@ export const BentoItems = [
     content: (
       <Image
         src="/assets/collaboration.png"
-        width={200}
-        height={200}
+        width={180}
+        height={180}
         alt="collaboration"
       />
     ),
