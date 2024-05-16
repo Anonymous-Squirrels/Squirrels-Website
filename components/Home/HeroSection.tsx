@@ -10,11 +10,10 @@ import {
   Shade2,
   Squirrel,
 } from "@/constants/Icons";
-import HomeStyle from "@/style/Home.module.css";
 
 export default function Home() {
   return (
-    <div className="relative h-screen w-screen bg-black pt-24 overflow-hidden">
+    <div className="relative h-[90vh] w-screen bg-black overflow-hidden">
       <>
         <GridFill className="absolute top-1/2 left-0 -translate-y-1/2" />
         <Shade1 className="absolute left-0 top-1/2 -translate-y-1/2" />

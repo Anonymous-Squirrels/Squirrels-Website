@@ -1,6 +1,6 @@
 import { BentoItems } from "@/constants/BentoBox";
 import React from "react";
-import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
+import { BentoGrid, BentoGridItem } from "../ui/BentoGrid";
 
 export function BentoBox() {
   return (
