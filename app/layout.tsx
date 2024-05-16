@@ -17,8 +17,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <NavBar />
+      <body className={`${inter.className} scrollbar-hide`}>
+        {/* <NavBar /> */}
         <>{children}</>
       </body>
     </html>

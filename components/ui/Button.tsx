@@ -17,14 +17,18 @@ function Button({
       btnStyle = "bg-sq-violet text-white";
       break;
     case "secondary":
-      btnStyle = "bg-transparent border border-sq-violet text-sq-violet";
+      btnStyle =
+        "bg-transparent border-2 border-sq-violet text-sq-violet hover:bg-sq-violet hover:border-white";
       break;
     case "light":
       btnStyle = "bg-black text-white";
       break;
   }
   return (
-    <button onClick={onClick} className={`${btnStyle} ${className}`}>
+    <button
+      onClick={onClick}
+      className={`transition-all duration-300 p-4 rounded-full ${btnStyle} ${className}`}
+    >
       {children}
     </button>
   );

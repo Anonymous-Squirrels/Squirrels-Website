@@ -1,14 +1,18 @@
-import { BentoBox } from "@/components/BentoBox";
-import Home from "@/components/HeroSection";
-import Testimonials from "@/components/Testimonials";
+import AboutUs from "@/components/Home/AboutUs";
+import { BentoBox } from "@/components/Home/BentoBox";
+import Engage from "@/components/Home/Engage";
+import Home from "@/components/Home/HeroSection";
+import Testimonials from "@/components/Home/Testimonials";
 import React from "react";
 
 function Page() {
   return (
-    <div>
-      <Home />
-      <BentoBox />
-      <Testimonials />
+    <div className="scrollbar-hide">
+      {/* <Home /> */}
+      {/* <Engage /> */}
+      <AboutUs />
+      {/* <BentoBox /> */}
+      {/* <Testimonials /> */}
     </div>
   );
 }

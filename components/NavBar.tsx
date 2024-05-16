@@ -10,7 +10,7 @@ function NavBar() {
   const path = usePathname();
 
   return (
-    <div className="p-4 fixed top-0 w-full z-10">
+    <div className="p-4 bg-black z-10">
       <GlassMorphism
         variant="light"
         className="text-white flex items-center justify-between rounded-lg px-8 h-18"
