@@ -1,15 +1,18 @@
+"use client";
 import { MainLogo } from "@/constants/Icons";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Button from "./ui/Button";
+import Input from "./ui/Input";
 
 function Footer() {
+  const [email, setEmail] = React.useState("");
   return (
     <div className="bg-[#0F0F0F] text-white px-20 pt-20 pb-10">
       <div className="flex justify-around pb-5 border-b mb-5">
         <div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 mb-5">
             <MainLogo />
             <span>Anonymous Squirrels</span>
           </div>
@@ -49,7 +52,7 @@ function Footer() {
           </div>
         </div>
         <div>
-          <span className="font-medium">Company</span>
+          <span className="font-medium block mb-5">Company</span>
           <ul className="font-thin">
             <li>Service</li>
             <li>Contact Us</li>
@@ -57,7 +60,7 @@ function Footer() {
           </ul>
         </div>
         <div>
-          <span className="font-medium">Help</span>
+          <span className="font-medium block mb-5">Help</span>
           <ul className="font-thin">
             <li>Customer Suppport</li>
             <li>Terms & Conditions</li>
@@ -65,12 +68,15 @@ function Footer() {
           </ul>
         </div>
         <div>
-          <span className="font-medium">Contact Us</span>
+          <span className="font-medium block mb-5">Contact Us</span>
           <div className="flex items-center rounded-lg overflow-hidden">
-            <input
+            <Input
               type="text"
               placeholder="Enter email address"
-              className="bg-[#242424] outline-none border-none h-10 px-5"
+              value={email}
+              onChange={() => setEmail(email)}
+              classNameDiv="bg-[#242424]"
+              classNameInput="h-10 px-4 w-60 text-sm"
             />
             <Button variant="primary" className="rounded-none h-10 px-10 py-2">
               Join

@@ -407,6 +407,7 @@ export function MainLogo({ className }: { className?: string }) {
       viewBox="0 0 27 20"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <path
         d="M21.2415 7.89238C21.1541 7.80051 21.2345 7.6493 21.3595 7.67099C21.7462 7.73926 22.1054 7.72395 22.4512 7.50702C22.9973 7.16442 23.0987 6.64253 23.0235 6.06067C22.9533 5.51964 22.6356 5.17129 22.1137 5.02901C21.401 4.83506 20.7541 4.95309 20.2596 5.5375C19.7486 6.14169 19.6529 6.83776 19.931 7.56955C20.1945 8.26434 20.7011 8.78622 21.2434 9.26919C22.1232 10.0533 22.9086 10.8974 23.3476 12.026C24.4749 14.9206 23.0388 18.0124 20.095 18.9969C19.4347 19.2176 18.7616 19.3522 18.0655 19.3643C18.033 19.3643 18.0004 19.3643 17.9685 19.3624C17.8454 19.3554 17.8001 19.2023 17.8965 19.1251C17.8965 19.1251 17.8977 19.1238 17.8984 19.1238C19.4206 17.8835 19.5731 15.6486 18.2346 14.2048C17.7038 13.6319 17.0243 13.2325 16.4629 12.6997C14.6401 10.9695 14.0404 8.80153 14.3434 6.36946C14.628 4.08604 15.7145 2.28751 17.8939 1.37133C20.1033 0.443035 22.3012 0.491524 24.3103 1.94936C25.9289 3.12393 26.5459 5.41054 25.7816 7.13762C24.9732 8.96423 22.6037 9.32087 21.2421 7.89238H21.2415Z"
@@ -488,6 +489,63 @@ export function MainLogo({ className }: { className?: string }) {
           <stop stopColor="#F7ECC9" />
           <stop offset="1" stopColor="#918B76" />
         </linearGradient>
+      </defs>
+    </svg>
+  );
+}
+
+export function Message2({ className }: { className?: string }) {
+  return (
+    <svg
+      width="101"
+      height="95"
+      viewBox="0 0 101 95"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+    >
+      <g filter="url(#filter0_d_113_930)">
+        <path
+          d="M50.5716 27C37.7927 27 27.4287 35.3265 27.4287 45.6122C27.4287 55.898 37.7927 64.2245 50.5716 64.2245C52.584 64.2245 54.697 64.0286 56.7095 63.5388L68.2809 68.0449C68.3815 68.0449 68.4821 68.1429 68.6834 68.1429C68.8846 68.1429 69.0859 68.0449 69.2871 67.9469C69.589 67.751 69.6896 67.3592 69.6896 67.0653L68.5827 57.2694C71.9032 54.0367 73.7144 49.8245 73.7144 45.6122C73.7144 35.3265 63.3504 27 50.5716 27Z"
+          fill="#8B68D5"
+        />
+      </g>
+      <defs>
+        <filter
+          id="filter0_d_113_930"
+          x="0.628712"
+          y="0.200001"
+          width="99.8861"
+          height="94.7431"
+          filterUnits="userSpaceOnUse"
+          colorInterpolationFilters="sRGB"
+        >
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix
+            in="SourceAlpha"
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha"
+          />
+          <feOffset />
+          <feGaussianBlur stdDeviation="13.4" />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.55 0"
+          />
+          <feBlend
+            mode="normal"
+            in2="BackgroundImageFix"
+            result="effect1_dropShadow_113_930"
+          />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="effect1_dropShadow_113_930"
+            result="shape"
+          />
+        </filter>
       </defs>
     </svg>
   );
