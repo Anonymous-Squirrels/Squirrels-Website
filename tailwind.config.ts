@@ -21,7 +21,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [addVariablesForColors, require("tailwind-scrollbar-hide")],
+  plugins: [addVariablesForColors],
 };
 function addVariablesForColors({ addBase, theme }: any) {
   let allColors = flattenColorPalette(theme("colors"));

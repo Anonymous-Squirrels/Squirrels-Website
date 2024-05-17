@@ -8,11 +8,11 @@ import React from "react";
 function Page() {
   return (
     <div className="scrollbar-hide">
-      {/* <Home /> */}
-      {/* <Engage /> */}
+      <Home />
+      <Engage />
       <AboutUs />
-      {/* <BentoBox /> */}
-      {/* <Testimonials /> */}
+      <BentoBox />
+      <Testimonials />
     </div>
   );
 }
