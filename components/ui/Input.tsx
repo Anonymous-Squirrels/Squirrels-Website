@@ -16,7 +16,11 @@ function Input({
   classNameInput?: string;
   classNameText?: string;
   type: string;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onChange: (
+    e:
+      | React.ChangeEvent<HTMLInputElement>
+      | React.ChangeEvent<HTMLTextAreaElement>
+  ) => void;
   value: string;
   placeholder: string;
   text?: string;
@@ -25,13 +29,23 @@ function Input({
     <div className={className}>
       {text && <div className={`${classNameText}`}>{text}</div>}
       <div className={`overflow-hidden ${classNameDiv}`}>
-        <input
-          value={value}
-          onChange={onChange}
-          type={type}
-          placeholder={placeholder}
-          className={`p-4 bg-transparent outline-none border-none w-full ${classNameInput}`}
-        />
+        {type !== "textarea" ? (
+          <input
+            value={value}
+            onChange={onChange}
+            type={type}
+            placeholder={placeholder}
+            className={`p-4 bg-transparent outline-none border-none w-full ${classNameInput}`}
+          />
+        ) : (
+          <textarea
+            value={value}
+            onChange={onChange}
+            placeholder={placeholder}
+            rows={5}
+            className={`resize-none p-4 bg-transparent outline-none border-none w-full ${classNameInput}`}
+          ></textarea>
+        )}
       </div>
     </div>
   );
