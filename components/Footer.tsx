@@ -10,7 +10,7 @@ function Footer() {
   const [email, setEmail] = React.useState("");
   return (
     <div className="bg-[#0F0F0F] text-white px-20 pt-20 pb-10">
-      <div className="flex justify-around pb-5 border-b mb-5">
+      <div className="flex justify-around pb-5 border-b border-[#333333] mb-5">
         <div>
           <div className="flex items-center gap-2 mb-5">
             <MainLogo />
@@ -85,7 +85,8 @@ function Footer() {
         </div>
       </div>
       <div className="text-center text-sm font-thin">
-        &copy; Copyright 2024, All Rights Reserved by Anonymous Squirrels
+        &copy; Copyright {new Date().getFullYear()}, All Rights Reserved by
+        Anonymous Squirrels
       </div>
     </div>
   );

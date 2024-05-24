@@ -54,9 +54,11 @@ function ContactUs() {
               type={input.type}
               placeholder={input.placeholder}
               value={formData[input.text.toLowerCase()]}
-              onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-                handleInputChange(input.text.toLowerCase(), e.target.value)
-              }
+              onChange={(
+                e:
+                  | React.ChangeEvent<HTMLInputElement>
+                  | React.ChangeEvent<HTMLTextAreaElement>
+              ) => handleInputChange(input.text.toLowerCase(), e.target.value)}
               classNameDiv="bg-white text-black rounded-lg"
               classNameInput="font-thin"
               classNameText="font-semibold"

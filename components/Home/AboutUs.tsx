@@ -1,4 +1,4 @@
-import { ArrorRight, LogoLarge } from "@/constants/Icons";
+import { ArrowRight, LogoLarge } from "@/constants/Icons";
 import React from "react";
 import Button from "../ui/Button";
 import Image from "next/image";
@@ -42,7 +42,7 @@ function AboutUs() {
           className="group flex items-center text-white gap-4 px-8"
         >
           <span className="text-lg">Know More</span>{" "}
-          <ArrorRight className="group-hover:rotate-45 transition-all duration-300" />
+          <ArrowRight className="group-hover:rotate-45 transition-all duration-300" />
         </Button>
       </div>
 
