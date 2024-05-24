@@ -3,7 +3,7 @@ import Button from "../ui/Button";
 
 function Engage() {
   return (
-    <div className="bg-[#8F00FF] px-96 py-24 text-white">
+    <div className="bg-[#8F00FF] px-96 py-16 text-white">
       <div className="text-4xl font-bold text-center my-5">
         Engage Your Audience <br />
         Grow Your Ideas.
@@ -13,10 +13,7 @@ function Engage() {
         promote your brand with maximum potential.
       </div>
       <div className="text-center my-5">
-        <Button
-          variant="primary"
-          className="bg-white rounded-lg text-[#444BD3]"
-        >
+        <Button className="bg-white rounded-lg text-[#444BD3]">
           Connect with us
         </Button>
       </div>
