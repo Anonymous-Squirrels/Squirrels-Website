@@ -5,7 +5,7 @@ import Image from "next/image";
 
 function AboutUs() {
   return (
-    <div className="h-screen bg-black text-white">
+    <div className=" bg-black text-white">
       <div className="flex justify-between items-start">
         <span className="uppercase text-9xl font-bold">
           About <br /> Us
@@ -36,7 +36,7 @@ function AboutUs() {
         </div>
       </div>
 
-      <div className="grid place-items-center">
+      <div className="grid place-items-center my-5">
         <Button
           variant="secondary"
           className="group flex items-center text-white gap-4 px-8"
@@ -46,16 +46,22 @@ function AboutUs() {
         </Button>
       </div>
 
-      <div className="text-xl">
+      <div className="text-4xl font-bold my-5 text-center">
         Anonymous <br />
         Squirrels
       </div>
-      <div>
+      <div className="flex items-center justify-between">
+        <Image
+          src="/assets/gradient.png"
+          alt="gradient"
+          width={500}
+          height={500}
+        />
         <Image
           src="/assets/billboard.png"
           alt="billboard"
-          width={200}
-          height={200}
+          width={500}
+          height={500}
         />
       </div>
     </div>
