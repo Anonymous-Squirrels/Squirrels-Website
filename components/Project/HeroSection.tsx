@@ -10,7 +10,7 @@ function HeroSection({
 }) {
   return (
     <div className="h-[85vh] bg-black text-white grid place-items-center">
-      <span className="text-6xl border text-center font-semibold w-2/5">
+      <span className="text-6xl text-center font-semibold w-2/5">
         Here&apos;s is some work we are{" "}
         <span className="text-[#7B61FF]">proud of</span>.
       </span>
