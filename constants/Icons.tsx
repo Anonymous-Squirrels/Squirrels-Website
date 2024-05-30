@@ -1,5 +1,103 @@
 import React from "react";
 
+export function Blob({
+  className,
+  variant,
+}: {
+  className?: string;
+  variant: "violet" | "yellow";
+}) {
+  return (
+    <>
+      {variant === "violet" ? (
+        <svg
+          width="1129"
+          height="1234"
+          viewBox="0 0 1129 1234"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className={className}
+        >
+          <g filter="url(#filter0_f_598_1276)">
+            <path
+              fillRule="evenodd"
+              clipRule="evenodd"
+              d="M686.95 478.098C732.593 525.866 803.505 548.972 822.4 612.281C844.444 686.143 837.858 770.208 792.796 832.746C745.703 898.1 666.98 939.41 586.427 939.758C511.403 940.083 444.664 892.602 397.253 834.457C358.148 786.5 372.613 720.387 358.436 660.154C340.008 581.858 270.566 508.241 303.166 434.708C339.332 353.134 431.313 285.756 519.98 295.78C605.105 305.404 627.767 416.159 686.95 478.098Z"
+              fill="#7B61FF"
+              fillOpacity="0.2"
+            />
+          </g>
+          <defs>
+            <filter
+              id="filter0_f_598_1276"
+              x="0.581055"
+              y="0.788818"
+              width="1128.04"
+              height="1232.97"
+              filterUnits="userSpaceOnUse"
+              colorInterpolationFilters="sRGB"
+            >
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="147"
+                result="effect1_foregroundBlur_598_1276"
+              />
+            </filter>
+          </defs>
+        </svg>
+      ) : (
+        <svg
+          width="1119"
+          height="1135"
+          viewBox="0 0 1119 1135"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className={className}
+        >
+          <g filter="url(#filter0_f_598_1277)">
+            <path
+              fillRule="evenodd"
+              clipRule="evenodd"
+              d="M821.003 437.711C837.699 494.978 793.183 546.744 775.985 603.862C752.625 681.441 775.211 787.679 703.995 826.312C632.092 865.318 538.02 819.649 475.544 766.845C423.731 723.054 441.698 642.904 413.818 581.059C380.261 506.623 270.401 451.752 299.026 375.284C327.239 299.919 439.311 312.566 518.865 300.441C578.359 291.374 637.099 290.515 691.89 315.408C747.998 340.899 803.755 378.548 821.003 437.711Z"
+              fill="#FFDD9A"
+              fillOpacity="0.2"
+            />
+          </g>
+          <defs>
+            <filter
+              id="filter0_f_598_1277"
+              x="0.317383"
+              y="0.618652"
+              width="1118.37"
+              height="1134.31"
+              filterUnits="userSpaceOnUse"
+              colorInterpolationFilters="sRGB"
+            >
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="147"
+                result="effect1_foregroundBlur_598_1277"
+              />
+            </filter>
+          </defs>
+        </svg>
+      )}
+    </>
+  );
+}
+
 export function InvertedComma({
   className,
   variant,

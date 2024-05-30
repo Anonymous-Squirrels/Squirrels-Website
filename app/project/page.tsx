@@ -7,7 +7,7 @@ import React, { useState } from "react";
 function Page() {
   const [section, setSection] = useState("All");
   return (
-    <div>
+    <div className="w-screen overflow-hidden">
       <HeroSection section={section} setSection={setSection} />
       <Main section={section} />
       <Like />

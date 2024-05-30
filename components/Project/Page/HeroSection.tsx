@@ -1,3 +1,4 @@
+import { Blob } from "@/constants/Icons";
 import Image from "next/image";
 import React from "react";
 
@@ -11,7 +12,13 @@ function HeroSection({
   tag: string[] | undefined;
 }) {
   return (
-    <div className="h-[85vh] bg-black text-white flex items-center justify-between gap-10 overflow-hidden">
+    <div className="h-[85vh] bg-black text-white flex items-center justify-between gap-10 overflow-hidden relative">
+      <div className="absolute left-0 -translate-x-1/2">
+        <Blob variant="violet" />
+      </div>
+      <div className="absolute  right-0 translate-x-1/2 top-0 ">
+        <Blob variant="yellow" />
+      </div>
       <div className="w-2/5 pl-24 mb-20">
         <span className="text-7xl font-medium">{title}</span>
         <div className="my-5">Brand Strategy Success Story</div>

@@ -1,5 +1,6 @@
 import { Projects } from "@/constants/Projects";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 function Main({ section }: { section: string }) {
@@ -8,7 +9,7 @@ function Main({ section }: { section: string }) {
       {Projects.filter(
         (i) => section === "All" || i.tags?.includes(section)
       ).map((i, index) => (
-        <div key={index} className="my-2 mx-16">
+        <div key={index} className="mb-20 mx-16">
           <Image
             src={i.image}
             alt={i.name}
@@ -16,7 +17,9 @@ function Main({ section }: { section: string }) {
             height={300}
             className="w-full"
           />
-          <div className="text-3xl font-medium my-2">{i.name}</div>
+          <div className="text-3xl font-medium my-2">
+            <Link href={`/project/${i.url}`}>{i.name}</Link>
+          </div>
           <div>
             {i.tags?.map((j, index) => (
               <span
