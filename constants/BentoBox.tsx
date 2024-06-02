@@ -40,7 +40,22 @@ export const BentoItems = [
     title: "Some of our Work.",
     description:
       "Take the pain out of book keeping! Wave goodbye to mountains of paperwork and endless email reminders. We manage it all !!",
-    content: "Null",
+    content: (
+      <div className="w-full">
+        <Button variant="light" className="rounded-2xl px-10 py-2">
+          View More
+        </Button>
+        <div className="flex items-center justify-between w-full">
+          <Image
+            src="/assets/oyoOfficial.png"
+            width={180}
+            height={180}
+            alt="Oyo"
+          />
+          <Image src="/assets/leo9.png" width={180} height={180} alt="Leo 9" />
+        </div>
+      </div>
+    ),
   },
 
   {
@@ -49,7 +64,7 @@ export const BentoItems = [
       "Our Company provides a lot of services ranging from Brand strategies to SEO Optimization to Web Content Management",
     content: (
       <Button variant="light" className="rounded-full p-4">
-        Get Started
+        View our services
       </Button>
     ),
   },
