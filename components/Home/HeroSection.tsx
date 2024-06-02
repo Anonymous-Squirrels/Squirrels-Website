@@ -59,20 +59,6 @@ export default function Home() {
           </GlassMorphism>
         </div>
       </div>
-      <div className="text-white grid place-items-center">
-        <span className="text-2xl font-semibold">Trusted By</span>
-        <div className="flex gap-10 items-center mt-10">
-          {Trustee.map((item) => (
-            <GlassMorphism
-              variant="light"
-              className="rounded-xl"
-              key={item.name}
-            >
-              {item.name}
-            </GlassMorphism>
-          ))}
-        </div>
-      </div>
     </div>
   );
 }
