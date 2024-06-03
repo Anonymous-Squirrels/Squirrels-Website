@@ -13,10 +13,10 @@ import {
 
 export default function Home() {
   return (
-    <div className="relative h-[90vh] w-screen bg-black overflow-hidden">
+    <div className="relative h-[90vh] bg-black pb-20">
       <>
         <GridFill className="absolute top-1/2 left-0 -translate-y-1/2" />
-        <Shade1 className="absolute left-0 top-1/2 -translate-y-1/2" />
+        <Shade1 className="absolute left-0 -translate-y-60" />
         <Shade2 className="absolute right-0 top-0" />
       </>
       <div className="relative z-20 flex items-center justify-between mx-32 h-4/5 ">

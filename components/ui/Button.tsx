@@ -21,7 +21,7 @@ function Button({
         "bg-transparent border-2 border-sq-violet text-sq-violet hover:bg-sq-violet hover:border-white";
       break;
     case "light":
-      btnStyle = "bg-black text-white";
+      btnStyle = "bg-white text-black";
       break;
   }
   return (

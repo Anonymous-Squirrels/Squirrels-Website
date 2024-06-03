@@ -8,16 +8,7 @@ export const BentoGrid = ({
   className?: string;
   children?: React.ReactNode;
 }) => {
-  return (
-    <div
-      className={cn(
-        "grid md:auto-rows-[18rem] md:grid-cols-3 gap-4",
-        className
-      )}
-    >
-      {children}
-    </div>
-  );
+  return <div className={cn(className)}>{children}</div>;
 };
 
 export const BentoGridItem = ({
@@ -35,7 +26,7 @@ export const BentoGridItem = ({
     <GlassMorphism
       variant="light"
       className={cn(
-        "overflow-hidden rounded-xl group/bento transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:-white/[0.2] justify-between flex flex-col space-y-6 ",
+        "h-72 overflow-hidden rounded-xl group/bento transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:-white/[0.2] justify-between flex flex-col space-y-6 ",
         className
       )}
     >
