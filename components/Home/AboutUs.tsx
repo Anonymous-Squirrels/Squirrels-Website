@@ -15,9 +15,9 @@ function AboutUs() {
 
       <div className="flex flex-col items-center justify-between py-9">
         <div className="md:px-72 ">
-          <div className="text-center text-xl px-7 md:px-36">
+          <div className="text-center text-xl px-8 md:px-36 italic">
             We are a team of{" "}
-            <span className="text-[#864EFF]">
+            <span className="text-[#864EFF] italic">
             storytellers, creative wizards and tech geeks
           </span>{" "}
             who help you convey your story better.

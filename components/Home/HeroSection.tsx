@@ -1,6 +1,6 @@
 import Button from "@/components/ui/Button";
 import GlassMorphism from "@/components/ui/GlassMorphism";
-import { Trustee } from "@/constants/Home";
+import {Trustee} from "@/constants/Home";
 import {
   Brush,
   GridFill,
@@ -15,12 +15,13 @@ export default function Home() {
   return (
     <div className="relative h-fit md:h-[90vh] bg-black pb-20 w-full">
       <>
-        <GridFill className="absolute top-1/2 left-0 -translate-y-1/2" />
-        <Shade1 className="absolute left-0 -translate-y-60" />
-        <Shade2 className="absolute right-0 top-0" />
+        <GridFill className="absolute top-1/2 left-0 -translate-y-1/2"/>
+        <Shade1 className="absolute left-0 -translate-y-60"/>
+        <Shade2 className="absolute right-0 top-0"/>
       </>
 
-      <div className="relative z-20 flex flex-col md:flex-row items-center justify-between md:mx-32 py-4 am:py-0 gap-y-20 md:gap-y-0 mx-0 h-4/5 ">
+      <div
+        className="relative z-20 flex flex-col md:flex-row items-center justify-between md:mx-32 py-4 am:py-0 gap-y-20 md:gap-y-0 mx-0 h-4/5 ">
         <div className="w-10/12 md:w-1/2 ">
           <div className="text-white font-semibold text-4xl  md:text-6xl">
             <span>Unlock your</span>{" "}
@@ -45,31 +46,31 @@ export default function Home() {
             variant="light"
             className="rounded-xl inline-block absolute top-0 right-0 translate-x-1/2"
           >
-            <Laptop />
+            <Laptop/>
           </GlassMorphism>
           <GlassMorphism
             variant="light"
             className="rounded-xl inline-block absolute bottom-0 right-0 -translate-x-1/2"
           >
-            <Brush />
+            <Brush/>
           </GlassMorphism>
 
           <GlassMorphism
             variant="light"
             className="rounded-xl inline-block absolute left-0 top-1/2 -translate-y-1/2"
           >
-            <PenRuler />
+            <PenRuler/>
           </GlassMorphism>
         </div>
       </div>
 
-      <div className="text-white flex flex-col justify-center items-center">
+      <div className="text-white w-full flex flex-col justify-center items-center">
         <span className="text-2xl font-semibold">Trusted By</span>
-        <div className="flex gap-3.5 md:gap-10 items-center mt-10">
-          {Trustee.map((item) => (
+        <div className="w-full md:w-1/2 grid grid-cols-3 md:grid-cols-6 place-items-center gap-3.5 md:gap-10 mt-10">
+          {Trustee.map((item: { name: string }) => (
             <GlassMorphism
               variant="light"
-              className="rounded-xl"
+              className="w-fit rounded-xl "
               key={item.name}
             >
               {item.name}

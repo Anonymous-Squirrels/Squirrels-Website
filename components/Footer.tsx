@@ -11,19 +11,19 @@ function Footer() {
   return (
     <div className="bg-[#0F0F0F] text-white md:px-20 pt-20 pb-10">
       <div className="flex flex-col md:flex-row justify-around pb-5 border-b border-[#333333] mb-5 gap-y-5 px-10">
-        <div className="w-full flex flex-col items-center justify-center">
+        <div className="w-full md:w-fit flex flex-col items-center justify-center">
           <div className="flex items-center gap-2 mb-5 text-center">
             <MainLogo />
             <span className="text-2xl">Anonymous Squirrels</span>
           </div>
-          <div className="text-[#B9B3B3] text-center">
+          <div className="text-[#B9B3B3] text-center md:text-left">
             <span className="font-normal">We help build brands.</span>
             <br />
             <span className="font-medium">Connect. Promote. Engage. Grow.</span>
-            <br/>
-            <br/>
+            <br className="md:hidden"/>
+            <br className=""/>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 relative md:-left-16">
             <Link href="#">
               <Image src="/logo/x.png" alt="logo" width={30} height={30} />
             </Link>
@@ -65,7 +65,7 @@ function Footer() {
         <div>
           <span className="font-medium block mb-5">Help</span>
           <ul className="font-thin">
-            <li>Customer Suppport</li>
+            <li>Customer Support</li>
             <li>Terms & Conditions</li>
             <li>Privacy Policy</li>
           </ul>

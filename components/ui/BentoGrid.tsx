@@ -30,7 +30,7 @@ export const BentoGridItem = ({
         className
       )}
     >
-      <div className=" text-sm transition duration-200">
+      <div className="text-sm transition duration-200">
         <span
           className="text-center text-xl block mb-5"
           dangerouslySetInnerHTML={{ __html: title ?? "" }}
