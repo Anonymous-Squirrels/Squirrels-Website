@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import React from "react";
 import GlassMorphism from "../ui/GlassMorphism";
 import Input from "../ui/Input";
@@ -24,17 +23,18 @@ function ContactUs() {
     setFormData({ ...formData, [field]: value });
   };
   return (
-    <div className="bg-contact-us bg-center bg-cover h-screen grid place-items-center text-white">
-      <div className="flex items-center justify-around w-full">
-        <div>
+    <div className="bg-contact-us bg-center bg-cover h-[80vh] md:h-screen grid place-items-center text-white">
+      <div className="flex flex-col md:flex-row items-center justify-between md:justify-around gap-y-6 md:gap-y-0 w-full">
+        <div className="px-8 md:px-0">
           <GlassMorphism
             variant="light"
             className="rounded-full p-0 text-white w-fit"
           >
-            <Message2 className="w-20 h-20" />
+            <Message2 className="w-14 h-14 md:w-20 md:h-20" />
           </GlassMorphism>
-          <div className="w-[30rem] mt-16">
-            <span className="text-4xl font-bold block my-3 leading-normal">
+
+          <div className="md:w-[30rem] w-full mt-8 md:mt-16 md:px-4">
+            <span className="text-2xl md:text-4xl font-bold block my-3 leading-normal">
               Get a free consultancy from our expert right now!
             </span>
             <span className="text-sm font-light leading-8">
@@ -43,9 +43,10 @@ function ContactUs() {
             </span>
           </div>
         </div>
+
         <GlassMorphism
           variant="light"
-          className="border rounded-xl text-white w-96 p-6"
+          className="border rounded-xl text-white w-[350px] md:w-96 p-4"
         >
           {ContactUsInputs.map((input, index) => (
             <Input
