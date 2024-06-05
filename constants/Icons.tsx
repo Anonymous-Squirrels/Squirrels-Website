@@ -531,8 +531,8 @@ export function Message({ className }: { className?: string }) {
 export function LogoLarge({ className }: { className?: string }) {
   return (
     <svg
-      width="198"
-      height="144"
+      width="130"
+      height="90"
       viewBox="0 0 198 144"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
