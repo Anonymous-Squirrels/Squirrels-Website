@@ -10,7 +10,7 @@ function Page() {
   return (
     <div className="scrollbar-hide">
       <Home />
-      <Engage />
+      <Engage/>
       <AboutUs />
       <BentoBox />
       <Testimonials />

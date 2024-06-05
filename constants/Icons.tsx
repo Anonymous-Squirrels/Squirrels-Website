@@ -370,8 +370,8 @@ export function Shade2({ className }: { className?: string }) {
 export function Squirrel({ className }: { className?: string }) {
   return (
     <svg
-      width="400"
-      height="460"
+      width="280"
+      height="340"
       viewBox="0 0 424 483"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

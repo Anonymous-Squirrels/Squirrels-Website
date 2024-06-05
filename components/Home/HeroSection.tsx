@@ -13,21 +13,22 @@ import {
 
 export default function Home() {
   return (
-    <div className="relative h-[90vh] bg-black pb-20">
+    <div className="relative h-fit md:h-[90vh] bg-black pb-20 w-full">
       <>
         <GridFill className="absolute top-1/2 left-0 -translate-y-1/2" />
         <Shade1 className="absolute left-0 -translate-y-60" />
         <Shade2 className="absolute right-0 top-0" />
       </>
-      <div className="relative z-20 flex items-center justify-between mx-32 h-4/5 ">
-        <div className=" w-1/2">
-          <div className="text-white font-semibold text-6xl ">
+
+      <div className="relative z-20 flex flex-col md:flex-row items-center justify-between md:mx-32 py-4 am:py-0 gap-y-20 md:gap-y-0 mx-0 h-4/5 ">
+        <div className="w-10/12 md:w-1/2 ">
+          <div className="text-white font-semibold text-4xl  md:text-6xl">
             <span>Unlock your</span>{" "}
             <span className="text-sq-violet">Brand&apos;s Potential</span>.{" "}
-            <span>One at a time Promote and</span>{" "}
-            <span className="text-sq-violet">Grow</span>
+            <span className="hidden md:inline-flex">One at a time Promote and</span>{" "}
+            <span className="text-sq-violet hidden md:inline-flex">Grow</span>
           </div>
-          <div className="text-white text-2xl my-5">
+          <div className="text-white text-xl md:text-2xl my-5">
             Elevate your content marketing with a powerful brand strategy.
           </div>
           <Button
@@ -37,8 +38,9 @@ export default function Home() {
             Get a Free Consultation
           </Button>
         </div>
+
         <div className="relative">
-          <Squirrel />
+          <Squirrel/>
           <GlassMorphism
             variant="light"
             className="rounded-xl inline-block absolute top-0 right-0 translate-x-1/2"
@@ -51,6 +53,7 @@ export default function Home() {
           >
             <Brush />
           </GlassMorphism>
+
           <GlassMorphism
             variant="light"
             className="rounded-xl inline-block absolute left-0 top-1/2 -translate-y-1/2"
@@ -59,9 +62,10 @@ export default function Home() {
           </GlassMorphism>
         </div>
       </div>
-      <div className="text-white grid place-items-center">
+
+      <div className="text-white flex flex-col justify-center items-center">
         <span className="text-2xl font-semibold">Trusted By</span>
-        <div className="flex gap-10 items-center mt-10">
+        <div className="flex gap-3.5 md:gap-10 items-center mt-10">
           {Trustee.map((item) => (
             <GlassMorphism
               variant="light"

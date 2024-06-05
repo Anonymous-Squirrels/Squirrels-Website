@@ -10,7 +10,7 @@ function NavBar() {
   const path = usePathname();
 
   return (
-    <div className="p-4 bg-black z-10">
+    <div className="p-3 md:p-4 bg-black z-10">
       <GlassMorphism
         variant="light"
         className="text-white flex items-center justify-between rounded-lg px-8 h-18"
@@ -22,7 +22,7 @@ function NavBar() {
             <span>Squirrels</span>
           </div>
         </Link>
-        <ul className="flex items-center gap-10 group text-lg">
+        <ul className="sm:flex items-center gap-10 group text-lg hidden">
           {NavLinks.map((item) => (
             <Link
               href={item.path}
