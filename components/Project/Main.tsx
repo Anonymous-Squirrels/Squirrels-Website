@@ -2,10 +2,14 @@ import { Projects } from "@/constants/Projects";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import {Blob} from "@/constants/Icons";
 
 function Main({ section }: { section: string }) {
   return (
-    <div className="bg-black text-white grid grid-cols-1 md:grid-cols-2  py-16">
+    <div className="bg-black text-white grid grid-cols-1 md:grid-cols-2  py-16 overflow-x-hidden relative">
+      <div className="absolute right-0 translate-x-1/2 -top-[200px]">
+        <Blob variant="yellow" className=" md:hidden "/>
+      </div>
       {Projects.filter(
         (i) => section === "All" || i.tags?.includes(section)
       ).map((i, index) => (

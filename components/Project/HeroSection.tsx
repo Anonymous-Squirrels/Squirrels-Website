@@ -10,14 +10,14 @@ function HeroSection({
   setSection: React.Dispatch<React.SetStateAction<string>>;
 }) {
   return (
-    <div className="h-[40vh] md:h-[85vh] bg-black text-white grid place-items-center relative">
+    <div className="h-[40vh] md:h-[85vh] bg-black text-white grid place-items-center relative overflow-hidden">
       <div className="absolute left-0 -translate-x-1/2">
         <Blob variant="violet" />
       </div>
-      <div className="absolute  right-0 translate-x-1/2 top-0 ">
-        <Blob variant="yellow" className="w-[380px] md:w-screen"/>
+      <div className="absolute hidden md:block right-0 translate-x-1/2 top-0 ">
+        <Blob variant="yellow" className=" md:w-screen"/>
       </div>
-      <span className="text-3xl md:text-6xl text-center font-semibold w-3/4 md:w-2/5 r-2">
+      <span className="text-3xl md:text-7xl text-center font-semibold w-3/4 md:w-2/5 r-2">
         Here&apos;s is some work we are{" "}
         <span className="text-[#7B61FF]">proud of</span>.
       </span>
