@@ -22,7 +22,7 @@ export default function Home() {
 
       <div
         className="relative z-20 flex flex-col md:flex-row items-center justify-between md:mx-32 py-4 am:py-0 gap-y-20 md:gap-y-0 mx-0 h-4/5 ">
-        <div className="w-10/12 md:w-1/2 ">
+        <div className="w-10/12 md:w-1/2 order-last md:order-first">
           <div className="text-white font-semibold text-4xl  md:text-6xl">
             <span>Unlock your</span>{" "}
             <span className="text-sq-violet">Brand&apos;s Potential</span>.{" "}
@@ -40,7 +40,7 @@ export default function Home() {
           </Button>
         </div>
 
-        <div className="relative">
+        <div className="relative order-first md:order-last">
           <Squirrel/>
           <GlassMorphism
             variant="light"

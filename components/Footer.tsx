@@ -17,7 +17,7 @@ function Footer() {
             <span className="text-2xl">Anonymous Squirrels</span>
           </div>
           <div className="text-[#B9B3B3] text-center md:text-left">
-            <span className="font-normal">We help build brands.</span>
+            <span className="font-thin">We help build brands.</span>
             <br />
             <span className="font-medium">Connect. Promote. Engage. Grow.</span>
             <br className="md:hidden"/>

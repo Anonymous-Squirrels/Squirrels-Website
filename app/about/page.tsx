@@ -8,7 +8,7 @@ import React from "react";
 
 function Page() {
   return (
-    <div className="w-screen overflow-hidden">
+    <div className="w-screen ">
       <HeroSection />
       <AboutUs />
       <OurValues />

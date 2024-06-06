@@ -5,18 +5,22 @@ import { ArrowRight, DownArrow } from "@/constants/Icons";
 
 function HeroSection() {
   return (
-    <div className="h-[85vh] bg-black text-white grid place-items-center">
-      <div className="relative">
-        <div className={styles.blob}></div>
+    <div className="h-[70vh] md:h-[85vh] bg-black text-white grid place-items-center">
+      <div className="relative ">
+        <div className={`${styles.blob} md:w-[639px] w-[360px]`}></div>
         <div className="text-center absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 grid place-items-center gap-10">
-          <div className="text-7xl font-semibold w-[50vw]">
+          <div className="text-4xl md:text-7xl font-semibold md:w-[50vw] w-[85vw]">
             We Provide Services. A Lot...
           </div>
-          <div className="text-[#C1C1C1] text-sm">
+          <div className="text-[#C1C1C1] text-sm hidden md:grid">
             Enhance every aspect of your business sales, ensuring <br />
             satisfaction, loyalty, and unparalleled service.
           </div>
-          <div className="grid place-items-center">
+          <div className="text-[#C1C1C1] text-sm grid md:hidden">
+            satisfaction, loyalty, and unparalleled service.
+          </div>
+
+          <div className="grid place-items-center ">
             <Button
               variant="secondary"
               className="text-white flex items-center gap-3 group"
