@@ -5,7 +5,7 @@ import { ArrowRight, DownArrow } from "@/constants/Icons";
 
 function HeroSection() {
   return (
-    <div className="h-[70vh] md:h-[85vh] bg-black text-white grid place-items-center">
+    <div className="h-screen md:h-[85vh] bg-black text-white grid place-items-center">
       <div className="relative ">
         <div className={`${styles.blob} md:w-[639px] w-[360px]`}></div>
         <div className="text-center absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 grid place-items-center gap-10">

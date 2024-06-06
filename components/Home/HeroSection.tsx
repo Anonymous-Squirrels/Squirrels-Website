@@ -41,7 +41,7 @@ export default function Home() {
         </div>
 
         <div className="relative order-first md:order-last">
-          <Squirrel/>
+          <Squirrel className="md:h-[500px] md:w-[420px]"/>
           <GlassMorphism
             variant="light"
             className="rounded-xl inline-block absolute top-0 right-0 translate-x-1/2"

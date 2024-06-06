@@ -6,16 +6,16 @@ import Image from "next/image";
 function AboutUs() {
   return (
     <div className=" bg-black text-white ">
-      <div className="flex justify-between  items-start px-7">
+      <div className="flex justify-between  items-start px-7 md:pt-10">
         <span className="uppercase text-5xl md:text-9xl font-bold">
           About <br/> Us
         </span>
-        <LogoLarge/>
+        <LogoLarge className="w-[120px] h-[90px] md:w-[210px] md:h-[164px] "/>
       </div>
 
-      <div className="flex flex-col items-center justify-between py-9">
+      <div className="flex flex-col items-center justify-between py-9 gap-y-8">
         <div className="md:px-72 ">
-          <div className="text-center text-xl px-8 md:px-36 italic">
+          <div className="text-center text-xl md:text-2xl px-8 md:px-36 italic">
             We are a team of{" "}
             <span className="text-[#864EFF] italic">
             storytellers, creative wizards and tech geeks
@@ -23,7 +23,7 @@ function AboutUs() {
             who help you convey your story better.
             <br/>
             <br/>
-            <div className="text-base px-5">
+            <div className="text-base md:text-lg px-5">
               We are a Brand Strategy and Content Marketing company with over{" "}
               <span className="text-[#BE96FF]">45+ names in our clientele.</span>{" "}
               We specialize in brand communications and transforming your
@@ -52,7 +52,7 @@ function AboutUs() {
           Squirrels
         </div>
 
-        <div className="flex items-center justify-between w-full">
+        <div className="flex items-center justify-between w-full md:hidden">
           <Image
             src="/assets/gradient.png"
             alt="gradient"
@@ -66,6 +66,22 @@ function AboutUs() {
             height={180}
           />
         </div>
+
+        <div className="hidden items-center justify-between w-full md:flex">
+          <Image
+            src="/assets/gradient.png"
+            alt="gradient"
+            width={600}
+            height={600}
+          />
+          <Image
+            src="/assets/billboard.png"
+            alt="billboard"
+            width={750}
+            height={750}
+          />
+        </div>
+
       </div>
     </div>
   );

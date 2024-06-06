@@ -12,15 +12,14 @@ function Branding() {
         <br/>
       </div>
 
-      <div className="flex flex-col md:flex-row items-center justify-between px-8 md:px-32 border-2">
-
+      <div className="flex flex-col md:flex-row items-center justify-between px-8 md:px-32">
         <div className="w-full md:w-fit">
           <div className="mb-10">
             <span className="text-[#994AFF] font-bold uppercase">CHANGE</span>
             <br/>
             <span className="text-3xl font-bold">Showcase And Stand Out</span>
           </div>
-          <span className="text-[#B897FF] font-extrabold whitespace-nowrap">
+          <span className="text-[#B897FF] text-2xl font-extrabold whitespace-nowrap">
             Leverage the Power of Instagram & LinkedIn
           </span>
           <div className="w-96 mt-5">
@@ -38,8 +37,8 @@ function Branding() {
           />
         </div>
 
-        <div className="flex flex-row md:flex-col justify-between items-center gap-10">
-          <div className="relative ">
+        <div className="flex flex-row md:flex-col justify-center items-center gap-x-5">
+          <div className="relative">
             <Image
               src="/logo/instagramLogo.png"
               width={200}
@@ -48,7 +47,7 @@ function Branding() {
             />
             <GlassMorphism
               variant="light"
-              className="border border-white/25 overflow-hidden absolute h-16 w-16 md:h-32 md:w-32 rounded-lg bottom-0 backdrop-blur-sm -translate-x-8 translate-y-8"
+              className="border border-white/25 overflow-hidden absolute h-16 w-16 md:h-32 md:w-32 rounded-lg bottom-0 -translate-x-2 translate-y-2 md:-translate-x-8 md:translate-y-8"
             >
               {" "}
             </GlassMorphism>
