@@ -7,7 +7,7 @@ import React, { useState } from "react";
 function Page() {
   const [section, setSection] = useState("All");
   return (
-    <div className="w-screen">
+    <div className="w-screen h-fit">
       <HeroSection section={section} setSection={setSection} />
       <Main section={section} />
       <Like />

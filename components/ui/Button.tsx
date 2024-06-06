@@ -27,7 +27,7 @@ function Button({
   return (
     <button
       onClick={onClick}
-      className={`transition-all duration-300 p-4 rounded-full ${btnStyle} ${className}`}
+      className={`transition-all duration-300 p-2 md:p-4 rounded-full ${btnStyle} ${className}`}
     >
       {children}
     </button>
