@@ -9,17 +9,19 @@ import Input from "./ui/Input";
 function Footer() {
   const [email, setEmail] = React.useState("");
   return (
-    <div className="bg-[#0F0F0F] text-white px-20 pt-20 pb-10">
-      <div className="flex justify-around pb-5 border-b border-[#333333] mb-5">
-        <div>
-          <div className="flex items-center gap-2 mb-5">
+    <div className="bg-[#0F0F0F] text-white md:px-20 pt-20 pb-10">
+      <div className="flex flex-col md:flex-row justify-around pb-5 border-b border-[#333333] mb-5 gap-y-5 px-10">
+        <div className="w-full flex flex-col items-center justify-center">
+          <div className="flex items-center gap-2 mb-5 text-center">
             <MainLogo />
-            <span>Anonymous Squirrels</span>
+            <span className="text-2xl">Anonymous Squirrels</span>
           </div>
-          <div className="text-[#B9B3B3]">
-            <span className="font-thin">We help build brands.</span>
+          <div className="text-[#B9B3B3] text-center">
+            <span className="font-normal">We help build brands.</span>
             <br />
             <span className="font-medium">Connect. Promote. Engage. Grow.</span>
+            <br/>
+            <br/>
           </div>
           <div className="flex items-center gap-2">
             <Link href="#">
@@ -51,6 +53,7 @@ function Footer() {
             </Link>
           </div>
         </div>
+
         <div>
           <span className="font-medium block mb-5">Company</span>
           <ul className="font-thin">
@@ -84,7 +87,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="text-center text-sm font-thin">
+      <div className="w-full text-center text-sm font-thin px-4">
         &copy; Copyright {new Date().getFullYear()}, All Rights Reserved by
         Anonymous Squirrels
       </div>
