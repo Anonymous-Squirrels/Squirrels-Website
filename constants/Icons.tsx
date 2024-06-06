@@ -776,6 +776,7 @@ export function Logo2({ className }: { className?: string }) {
       viewBox="0 0 102 74"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="xMidYMid meet"
       className={className}
     >
       <path
@@ -1280,6 +1281,7 @@ export function MarketingConsult({ className }: { className?: string }) {
       viewBox="0 0 634 361"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <g filter="url(#filter0_d_365_4153)">
         <path

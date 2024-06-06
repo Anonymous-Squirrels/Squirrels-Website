@@ -1,10 +1,10 @@
 "use client";
 
-import { data } from "@/constants/AccordianData";
-import React, { useRef, useState, RefObject } from "react";
+import {data} from "@/constants/AccordianData";
+import React, {useRef, useState, RefObject} from "react";
 import styles from "@/style/Services.module.css";
-import { IoMdAdd } from "react-icons/io";
-import { FaMinus } from "react-icons/fa6";
+import {IoMdAdd} from "react-icons/io";
+import {FaMinus} from "react-icons/fa6";
 
 function ServiceAccordian() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -52,7 +52,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
         onClick={onClick}
       >
         <p className={`${styles.question_content} font-bold`}>{question}</p>
-        {!isOpen ? <IoMdAdd /> : <FaMinus />}
+        {!isOpen ? <IoMdAdd/> : <FaMinus/>}
       </button>
 
       <div
@@ -61,11 +61,11 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
         style={
           isOpen
             ? {
-                height: contentHeight.current
-                  ? `${contentHeight.current.scrollHeight}px`
-                  : "auto",
-              }
-            : { height: "0px" }
+              height: contentHeight.current
+                ? `${contentHeight.current.scrollHeight}px`
+                : "auto",
+            }
+            : {height: "0px"}
         }
       >
         <p className={styles.answer_content}>{answer}</p>

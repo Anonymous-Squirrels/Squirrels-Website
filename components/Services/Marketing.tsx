@@ -4,51 +4,52 @@ import { ContentMarketing, MarketingConsult, Tick } from "@/constants/Icons";
 
 function Marketing() {
   return (
-    <div className="py-10 bg-[#F0E9FB] grid place-items-center">
+    <div className="py-10 bg-[#F0E9FB] grid gap-y-8 place-items-center">
       <FAB variant="secondary">Marketing</FAB>
-      <div className="px-32">
-        <div className="mb-10">
+      <div className="md:px-32">
+        <div className="mb-10 pl-6 md:pl-[68px]">
           <span className="text-[#5C3095] font-bold">STRATEGIZE</span>
           <br />
           <span className="text-3xl text-black font-bold">Grow your Reach</span>
         </div>
-        <div className="w-full flex items-center justify-around gap-10">
-          <div className="w-2/5">
-            <span className="text-[#5C3095] font-extrabold whitespace-nowrap">
+        <div className="w-full flex flex-col md:flex-row items-center justify-around gap-10">
+          <div className="w-screen md:w-2/5">
+            <span className="text-[#5C3095] font-extrabold whitespace-nowrap px-6 md:px-0">
               Content Marketing & Brand Strategy
             </span>
-            <div className="text-[#1211275c] mt-5">
+            <div className="text-[#1211275c] mt-5 px-6 md:px-0">
               Develop a content strategy that aligns with your brand story and
               resonates with your target audience. We can help with social media
               management, content creation (blog posts, articles, etc.), and
               email marketing.
             </div>
-            <ContentMarketing />
-            <span className="flex items-center gap-2">
+            <ContentMarketing className="w-screen h-[300px] md:w-fit md:h-fit"/>
+            <span className="flex items-center gap-2 px-6 md:px-0">
               <Tick />
               Upgrade your customer experience instantly
             </span>
-            <span className="flex items-center gap-2">
+            <span className="flex items-center gap-2 px-6 md:px-0">
               <Tick />
               Start with done-for-you setup
             </span>
           </div>
-          <div className="w-2/5">
-            <span className="text-[#5C3095] font-extrabold whitespace-nowrap">
+
+          <div className="w-screen md:w-2/5">
+            <span className="text-[#5C3095] font-extrabold whitespace-nowrap px-6 md:px-0">
               Marketing Consultation
             </span>
-            <div className="text-[#1211275c] mt-5">
+            <div className="text-[#1211275c] mt-5 px-6 md:px-0">
               Need guidance on your overall marketing strategy? Our experienced
               consultants can help you identify opportunities and develop a
               roadmap for success.
             </div>
-            <MarketingConsult />
+            <MarketingConsult className="w-[100vw] h-[300px] md:w-fit md:h-fit"/>
             <div>
-              <span className="flex items-center gap-2">
+              <span className="flex items-center gap-2 px-6 md:px-0">
                 <Tick />
                 Upgrade your customer experience instantly
               </span>
-              <span className="flex items-center gap-2">
+              <span className="flex items-center gap-2 px-6 md:px-0">
                 <Tick />
                 Start with done-for-you setup
               </span>
