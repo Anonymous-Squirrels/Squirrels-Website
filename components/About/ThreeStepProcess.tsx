@@ -4,7 +4,7 @@ import React from "react";
 
 function ThreeStepProcess() {
   return (
-    <div className="h-[95vh] md:h-screen bg-black text-white px-7 py-14 md:p-24 overflow-x-hidden">
+    <div className="h-[95vh] md:h-screen bg-black text-white px-7 py-14 md:p-24 overflow-hidden">
       <div className="flex w-full text-2xl md:text-2xl gap-3.5 items-center justify-center md:justify-start">
         <Sparkle/>
         <span>OUR 3-STEP PROCESS</span>
