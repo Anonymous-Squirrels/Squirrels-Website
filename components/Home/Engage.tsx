@@ -8,26 +8,15 @@ function Engage() {
   const [cursorVariant, setCursorVariant] = useState("default");
 
   useEffect(() => {
-    const mouseMove = (e: MouseEvent) => {
+    const mouseMove = (e: MouseEvent) =>
       setMousePosition({ x: e.clientX, y: e.clientY });
-    };
-
     window.addEventListener("mousemove", mouseMove);
-    return () => {
-      window.removeEventListener("mousemove", mouseMove);
-    };
+    return () => window.removeEventListener("mousemove", mouseMove);
   }, []);
 
   const variants = {
-    default: {
-      x: mousePosition.x - 16,
-      y: mousePosition.y - 16,
-    },
-    text: {
-      x: mousePosition.x - 16,
-      y: mousePosition.y - 16,
-      scale: 1.5,
-    },
+    default: { x: mousePosition.x - 16, y: mousePosition.y - 16 },
+    text: { x: mousePosition.x - 16, y: mousePosition.y - 16, scale: 1.5 },
   };
 
   const textEnter = () => setCursorVariant("text");
