@@ -8,7 +8,7 @@ import React from "react";
 
 function Page() {
   return (
-    <div className="w-screen ">
+    <div className="w-full ">
       <HeroSection />
       <AboutUs />
       <OurValues />
