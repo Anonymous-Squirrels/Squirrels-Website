@@ -38,7 +38,7 @@ function NavBar() {
               </Link>
             ))}
           </ul>
-          <div onClick={() => setIsOpen(!isOpen)}>
+          <div onClick={() => setIsOpen(!isOpen)} className="md:hidden">
             {!isOpen ? (
               <FiMenu className="h-8 w-8" />
             ) : (
