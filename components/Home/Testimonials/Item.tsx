@@ -2,21 +2,24 @@ import GlassMorphism from "@/components/ui/GlassMorphism";
 import Image from "next/image";
 import React from "react";
 import { ImQuotesRight } from "react-icons/im";
+
 function Item({
   content,
   image,
   designation,
   rating,
   name,
+  id
 }: {
   content: string;
   image: string;
   designation: string;
   rating: number;
   name: string;
+  id: string
 }) {
   return (
-    <GlassMorphism variant="light" className="p-4 md:p-7 rounded-lg w-[80vw] md:w-1/2 flex flex-col justify-between">
+    <GlassMorphism id={id} variant="light" className="p-4 md:p-7 rounded-lg w-[80vw] md:w-1/2 flex flex-col justify-between">
       <div className="md:text-xl md:leading-9">{content}</div>
       <div className="flex items-center justify-between mt-8 text-sm font-light">
         <div className="flex items-center gap-2">
