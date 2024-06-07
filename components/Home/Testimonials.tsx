@@ -1,6 +1,8 @@
 import React from "react";
 import Button from "../ui/Button";
 import { Message } from "@/constants/Icons";
+import Item from "./Testimonials/Item";
+import { TestimonialData } from "@/constants/Testimonials";
 
 function Testimonials() {
   return (
@@ -12,14 +14,25 @@ function Testimonials() {
           </span>
         </div>
         <span className="text-6xl">What are people saying</span>
-        <div className=" text-[#9B9CA1] text-sm w-5/6">
+        <div className=" text-[#9B9CA1] text-sm w-5/6 mt-10">
           &quot;Thank you for your trust in Anonymous Squirrels! We are grateful
           for your feedback and are committed to providing the best
           [products/services offered]. Read what our clients have to say about
           their experience with us.
         </div>
       </div>
-      <div>Scrollers</div>
+      <div>
+        {TestimonialData.map((i, index) => (
+          <Item
+            key={index}
+            content={i.text}
+            name={i.name}
+            designation={i.designation}
+            rating={i.stars}
+            image={i.profile}
+          />
+        ))}
+      </div>
     </div>
   );
 }
