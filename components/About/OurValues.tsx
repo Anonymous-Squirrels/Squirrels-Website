@@ -30,7 +30,7 @@ function OurValues() {
               />
             </div>
           </div>
-          <div className="h-[200px] w-full md:hidden"></div>
+          <div className="h-[200px] w-full md:hidden"/>
         </div>
 
         <div className="w-full md:w-fit flex flex-col items-start justify-around gap-y-0 rounded-lg shadow-md relative p-6 md:mr-20 ">
@@ -59,7 +59,7 @@ function OurValues() {
             Promoting Open, Honest Communication to Ensure Clarity and Mutual
             Success.
           </span>
-            <div className=" -right-20 md:-right-[295px] absolute top-32 md:top-20 w-full md:w-[130%] self-end">
+            <div className=" -right-20 md:-right-[19rem] absolute top-32 md:top-20 w-full md:w-[130%] self-end">
 
               <Image
                 src="/assets/transparency.png"
@@ -70,7 +70,7 @@ function OurValues() {
               />
             </div>
           </div>
-          <div className="h-[300px] w-full md:hidden"></div>
+          <div className="h-[300px] w-full md:hidden"/>
         </div>
       </div>
     </div>

@@ -5,7 +5,7 @@ import GlassMorphism from "../ui/GlassMorphism";
 
 function Branding() {
   return (
-    <div className="bg-black pt-10 text-white">
+    <div className="bg-black pt-10 text-white relative overflow-hidden">
       <div className="grid place-items-center">
         <FAB variant="secondary" className="h-11 md:h-fit">Branding</FAB>
         <br/>
@@ -19,9 +19,9 @@ function Branding() {
             <br/>
             <span className="text-3xl font-bold">Showcase And Stand Out</span>
           </div>
-          <span className="text-[#B897FF] text-2xl font-extrabold whitespace-nowrap">
+          <p className="text-[#B897FF] text-base md:text-2xl font-extrabold w-full">
             Leverage the Power of Instagram & LinkedIn
-          </span>
+          </p>
           <div className="w-96 mt-5">
             We&apos;ll help you develop a captivating personal brand on the
             platforms that matter most, using targeted content strategies and
