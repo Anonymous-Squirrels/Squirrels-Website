@@ -1,12 +1,13 @@
 "use client";
 import React from "react";
 import GlassMorphism from "./ui/GlassMorphism";
-import { usePathname } from "next/navigation";
+import {usePathname} from "next/navigation";
 import Link from "next/link";
-import { NavLinks } from "@/constants/Navbar";
-import { Logo } from "@/constants/Icons";
-import { FiMenu } from "react-icons/fi";
-import { IoMdClose } from "react-icons/io";
+import {NavLinks} from "@/constants/Navbar";
+import {Logo} from "@/constants/Icons";
+import {FiMenu} from "react-icons/fi";
+import {IoMdClose} from "react-icons/io";
+
 function NavBar() {
   const path = usePathname();
   const [isOpen, setIsOpen] = React.useState(false);
@@ -18,7 +19,7 @@ function NavBar() {
       >
         <div className="flex items-center justify-between ">
           <Link href="/" className="flex items-center gap-3">
-            <Logo className="" />
+            <Logo className=""/>
             <div className="flex flex-col">
               <span>Anonymous</span>
               <span>Squirrels</span>
@@ -38,16 +39,17 @@ function NavBar() {
               </Link>
             ))}
           </ul>
-          <div onClick={() => setIsOpen(!isOpen)}>
+
+          <div onClick={() => setIsOpen(!isOpen)} className="md:hidden">
             {!isOpen ? (
-              <FiMenu className="h-8 w-8" />
+              <FiMenu className="h-8 w-8"/>
             ) : (
-              <IoMdClose className="h-8 w-8" />
+              <IoMdClose className="h-8 w-8"/>
             )}
           </div>
         </div>
         {isOpen && (
-          <div className=" rounded-lg mt-6 mb-2">
+          <div className="rounded-lg mt-6 mb-2">
             <ul>
               {NavLinks.map((item) => (
                 <Link

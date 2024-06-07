@@ -15,9 +15,10 @@ function Branding() {
       <div className="flex flex-col md:flex-row items-center justify-center gap-x-12 px-7 gap-y-10 md:gap-y-0 md:px-32">
         <div className="w-fit md:w-9/12">
           <div className="mb-10">
-            <span className="text-[#994AFF] font-bold uppercase">CHANGE</span>
+            <span className="text-[#994AFF] text-xs md:text-base font-bold uppercase">CHANGE</span>
             <br/>
-            <span className="text-3xl md:text-5xl font-bold">Showcase And Stand Out</span>
+            <br className="hidden md:block"/>
+            <span className="text-2xl md:text-5xl font-bold">Showcase And Stand Out</span>
           </div>
           <p className="text-[#B897FF] text-base md:text-3xl font-extrabold w-full">
             Leverage the Power of Instagram & LinkedIn
@@ -30,7 +31,7 @@ function Branding() {
 
           <Image
             src="/assets/woman.png"
-            width={1000}
+            width={900}
             height={800}
             alt="woman with megaphone"
             className="-translate-x-32 hidden md:inline"
