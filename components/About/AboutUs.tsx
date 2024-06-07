@@ -3,7 +3,7 @@ import React from "react";
 
 function AboutUs() {
   return (
-    <div className="h-fit md:h-screen bg-black text-white py-9 md:py-24">
+    <div id="about-us" className="h-fit md:h-screen bg-black text-white py-9 md:py-24">
       <div className="flex w-full items-center justify-center text-2xl py-9 relative">
         <div className="w-fit flex items-center justify-center md:absolute md:left-24">
           <Sparkle/> <span className="uppercase">About US</span>

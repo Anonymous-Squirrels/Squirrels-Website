@@ -4,10 +4,12 @@ function GlassMorphism({
   className,
   children,
   variant,
+  id
 }: {
   className?: string;
   children: React.ReactNode;
   variant: "light" | "dark";
+  id?: string
 }) {
   let glassCss = "";
   switch (variant) {
@@ -18,7 +20,7 @@ function GlassMorphism({
       glassCss = "bg-white bg-opacity-10";
   }
   return (
-    <div className={`p-4 backdrop-blur-sm ${glassCss} ${className}`}>
+    <div id={id} className={`p-4 backdrop-blur-sm ${glassCss} ${className} `}>
       {children}
     </div>
   );

@@ -5,6 +5,7 @@ export const TestimonialData = [
     name: "Rauf Chippa",
     stars: 5,
     designation: "Co-Founder, Prayoga Films",
+    id: "1"
   },
 
   {
@@ -13,6 +14,7 @@ export const TestimonialData = [
     name: "Himanshu Sawant",
     stars: 5,
     designation: "Brand Experience Manager , Leo9 Studio",
+    id: "2"
   },
   {
     text: "“ Their professional and creative team provided great support throughout the project. ”",
@@ -20,5 +22,6 @@ export const TestimonialData = [
     name: "Arpit Kumar",
     stars: 5,
     designation: "Founder, Mount Magic",
+    id: "3"
   },
 ];

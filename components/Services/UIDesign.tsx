@@ -6,7 +6,7 @@ import Image from "next/image";
 
 function UIDesign() {
   return (
-    <div className="bg-white grid place-items-center pt-5 md:py-5 min-h-screen gap-10">
+    <div id="ui-design" className="bg-white grid place-items-center pt-5 md:py-5 min-h-screen gap-10">
       <FAB variant="secondary">UI Design</FAB>
       <div className="text-[#5C3095] text-3xl md:text-4xl font-bold w-[85vw] md:w-96 text-center">
         Get The Best Design, No Compromise
