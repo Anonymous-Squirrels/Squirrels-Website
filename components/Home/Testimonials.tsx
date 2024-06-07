@@ -12,7 +12,7 @@ function Testimonials() {
   const [idPrev, setIdPrev] = useState<number>(1)
 
 
-  const scrollToTestimonial = (id: string) => {
+/*  const scrollToTestimonial = (id: string) => {
     const container = containerRef.current;
     const targetElement = document.getElementById(id);
 
@@ -24,7 +24,7 @@ function Testimonials() {
         behavior: 'smooth',
       });
     }
-  };
+  };*/
 
   return (
     <div className="h-fit bg-black text-white py-12">
@@ -60,29 +60,29 @@ function Testimonials() {
 
       <div className="flex w-full h-10 md:h-16 items-center justify-center">
         <Link
-          href="#"
+          href="#1"
           className="h-full w-fit"
-          onClick={(e) => {
+          /*onClick={(e) => {
             e.preventDefault();
             const curr = idNext;
             setIdPrev(() => curr - 1)
             scrollToTestimonial(`${idPrev}`);
             console.log(idPrev);
             console.log(idNext);
-          }}>
+          }}*/>
           <IoArrowBackCircle className="h-full w-fit"/>
         </Link>
         <Link
-          href="#"
+          href="#3"
           className="h-full w-fit"
-          onClick={(e) => {
+          /*onClick={(e) => {
             e.preventDefault();
             const curr = idPrev
             setIdNext((prev) => prev + 1);
             scrollToTestimonial(`${idNext}`);
             // console.log(idNext)
           }
-          }>
+          }*/>
           <IoArrowForwardCircle className="h-full w-full" color="#8B68D5"/>
         </Link>
       </div>

@@ -14,10 +14,10 @@ function NavBar() {
   return (
     <div className=" h-28 md:h-fit md:p-4 bg-black z-10 relative flex items-center justify-center">
       <div className="w-full p-4 fixed md:static">
-        <div className={`w-full h-fit ${isOpen && "mt-56"}`}>
+        <div className={`w-full h-fit ${isOpen && "mt-52"}`}>
           <GlassMorphism
             variant="light"
-            className="text-white rounded-lg px-8 h-18 w-full"
+            className={`text-white rounded-lg px-8 h-18 w-full backdrop-blur-3xl ${isOpen && "bg-opacity-20 backdrop-blur-xl"}`}
           >
             <div className="flex items-center justify-between ">
               <Link href="/" className="flex items-center gap-3">
@@ -32,10 +32,7 @@ function NavBar() {
                   <Link
                     href={item.path}
                     key={item.tag}
-                    className={`${
-                      path === item.path && "text-sq-violet group-hover:text-white"
-                    }
-               hover:text-sq-violet  transition-all duration-300`}
+                    className={`${path === item.path && "text-sq-violet group-hover:text-white"} hover:text-sq-violet  transition-all duration-300`}
                   >
                     {item.tag}
                   </Link>
