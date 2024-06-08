@@ -12,12 +12,12 @@ function NavBar() {
   const path = usePathname();
   const [isOpen, setIsOpen] = React.useState(false);
   return (
-    <div className=" h-28 md:h-fit md:p-4 bg-black z-10 relative flex items-center justify-center">
+    <div className=" h-28 md:h-fit md:p-4 bg-black z-50 relative flex items-center justify-center">
       <div className="w-full p-4 fixed md:static">
         <div className={`w-full h-fit ${isOpen && "mt-52"}`}>
           <GlassMorphism
             variant="light"
-            className={`text-white rounded-lg px-8 h-18 w-full backdrop-blur-3xl ${isOpen && "bg-opacity-20 backdrop-blur-xl"}`}
+            className={`text-white rounded-lg px-8 h-18 w-full backdrop-blur-3xl bg-opacity-20 md:bg-opacity-10 ${isOpen && "backdrop-blur-xl"}`}
           >
             <div className="flex items-center justify-between ">
               <Link href="/" className="flex items-center gap-3">

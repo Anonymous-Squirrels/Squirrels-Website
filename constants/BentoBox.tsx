@@ -6,13 +6,15 @@ export const BentoItems = [
     title: "Custom Pricing",
     description: `Fixed pricing and high ppw custom pricing and lowest charges in segment.`,
     content: (
-      <Image src="/assets/graph.png" width={180} height={180} alt="graph" />
+      <Image
+        src="/assets/graph.png" width={180} height={180} alt="graph"
+        className="md:w-[600px] md:h-[600px]"/>
     ),
   },
   {
     title: `Boosting Business. <br/> Today and Tomorrow.`,
     description:
-      "Bring harmony to team expenses with budget limits and real-time monitiring. Freedom for your staff. Peace of mind for you.",
+      "Bring harmony to team expenses with budget limits and real-time monitoring. Freedom for your staff. Peace of mind for you.",
     content: (
       <Image
         src="/assets/boost_business.png"
@@ -52,7 +54,7 @@ export const BentoItems = [
             height={180}
             alt="Oyo"
           />
-          <Image src="/assets/leo9.png" width={180} height={180} alt="Leo 9" />
+          <Image src="/assets/leo9.png" width={180} height={180} alt="Leo 9"/>
         </div>
       </div>
     ),

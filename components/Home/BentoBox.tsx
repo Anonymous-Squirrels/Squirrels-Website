@@ -5,7 +5,7 @@ import { BentoGrid, BentoGridItem } from "../ui/BentoGrid";
 
 export function BentoBox() {
   return (
-    <div className="bg-[url('/assets/baltic-rose.webp')] bg-cover text-white p-10 md:p-24">
+    <div className="bg-[url('/assets/baltic-rose.webp')] bg-cover text-white p-10 md:p-32">
       <BentoGrid className="grid grid-cols-1 md:grid-cols-6 gap-10">
         {BentoItems.map((item, i) => (
           <BentoGridItem

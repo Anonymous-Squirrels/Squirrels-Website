@@ -1,13 +1,14 @@
 "use client";
-
-import {data} from "@/constants/AccordianData";
-import React, {useRef, useState, RefObject} from "react";
+import React, {useRef,} from "react";
 import styles from "@/style/Services.module.css";
 import {IoMdAdd} from "react-icons/io";
 import {FaMinus} from "react-icons/fa6";
 
-function ServiceAccordian() {
-  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+function ServiceAccordian({activeIndex, setActiveIndex, data}: {
+  activeIndex: number | null;
+  setActiveIndex: React.Dispatch<React.SetStateAction<number | null>>;
+  data: Array<{question: string; answer: string}>
+}) {
 
   const handleItemClick = (index: number | null) => {
     setActiveIndex((prevIndex) => (prevIndex === index ? null : index));

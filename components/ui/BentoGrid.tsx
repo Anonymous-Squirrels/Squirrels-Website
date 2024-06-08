@@ -1,4 +1,4 @@
-import { cn } from "@/utils/cn";
+import {cn} from "@/utils/cn";
 import GlassMorphism from "./GlassMorphism";
 
 export const BentoGrid = ({
@@ -26,20 +26,24 @@ export const BentoGridItem = ({
     <GlassMorphism
       variant="light"
       className={cn(
-        "h-72 overflow-hidden rounded-xl group/bento transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:-white/[0.2] justify-between flex flex-col space-y-6 ",
+        "h-72 md:h-96 overflow-hidden rounded-xl group/bento transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:-white/[0.2] justify-between flex flex-col space-y-6",
         className
       )}
     >
       <div className="text-sm transition duration-200">
         <span
-          className="text-center text-xl block mb-5"
-          dangerouslySetInnerHTML={{ __html: title ?? "" }}
+          className="text-center text-xl font-bold block mb-5"
+          dangerouslySetInnerHTML={{__html: title ?? ""}}
         ></span>
-        <span className="text-center text-xs inline-block text-dim-gray">
+        <span className="text-center text-xs md:text-lg inline-block text-dim-gray">
           {description}
         </span>
       </div>
-      <div className="grid place-items-center">{content}</div>
+      <div className="flex items-center justify-center w-full h-full">
+        <span className="w-fit h-fit">
+        {content}
+        </span>
+      </div>
     </GlassMorphism>
   );
 };
