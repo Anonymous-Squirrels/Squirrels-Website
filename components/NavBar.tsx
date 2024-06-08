@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
 import GlassMorphism from "./ui/GlassMorphism";
-import { usePathname } from "next/navigation";
+import {usePathname} from "next/navigation";
 import Link from "next/link";
-import { NavLinks } from "@/constants/Navbar";
-import { Logo } from "@/constants/Icons";
-import { FiMenu } from "react-icons/fi";
-import { IoMdClose } from "react-icons/io";
+import {NavLinks} from "@/constants/Navbar";
+import {Logo} from "@/constants/Icons";
+import {FiMenu} from "react-icons/fi";
+import {IoMdClose} from "react-icons/io";
 
 function NavBar() {
   const path = usePathname();
@@ -14,19 +14,15 @@ function NavBar() {
   return (
     <div className=" h-28 md:h-fit md:p-4 bg-black z-50 relative flex items-center justify-center">
       <div className="w-full p-4 fixed md:static">
-        <div className={`w-full h-fit ${isOpen && "mt-52"}`}>
+        <div className={`w-full h-fit ${isOpen && "mt-60"} md:mt-0`}>
           <GlassMorphism
             variant="light"
-            
-            className={`text-white rounded-lg px-8 h-18 w-full backdrop-blur-3xl bg-opacity-20 md:bg-opacity-10 ${isOpen && "backdrop-blur-xl"}`}
-
-            className={`text-white rounded-lg px-8 h-18 w-full backdrop-blur-3xl ${
-              isOpen && "bg-opacity-20 backdrop-blur-xl"
-
+            className={`text-white rounded-lg px-8 h-18 w-full backdrop-blur-xl bg-opacity-20 md:bg-opacity-15
+             ${isOpen && "backdrop-blur-2xl"}`}
           >
             <div className="flex items-center justify-between ">
               <Link href="/" className="flex items-center gap-3">
-                <Logo className="" />
+                <Logo className=""/>
                 <div className="flex flex-col">
                   <span>Anonymous</span>
                   <span>Squirrels</span>
@@ -50,14 +46,14 @@ function NavBar() {
 
               <div onClick={() => setIsOpen(!isOpen)} className="md:hidden">
                 {!isOpen ? (
-                  <FiMenu className="h-8 w-8" />
+                  <FiMenu className="h-8 w-8"/>
                 ) : (
-                  <IoMdClose className="h-8 w-8" />
+                  <IoMdClose className="h-8 w-8"/>
                 )}
               </div>
             </div>
             {isOpen && (
-              <div className="rounded-lg mt-6 mb-2">
+              <div className="rounded-lg mt-6 mb-2 md:hidden">
                 {NavLinks.map((item) => (
                   <Link
                     href={item.path}
