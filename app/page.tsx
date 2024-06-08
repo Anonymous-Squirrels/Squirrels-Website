@@ -1,5 +1,5 @@
 import AboutUs from "@/components/Home/AboutUs";
-import { BentoBox } from "@/components/Home/BentoBox";
+import {BentoBox} from "@/components/Home/BentoBox";
 import ContactUs from "@/components/Home/ContactUs";
 import Engage from "@/components/Home/Engage";
 import Home from "@/components/Home/HeroSection";
@@ -9,12 +9,12 @@ import React from "react";
 function Page() {
   return (
     <div className="scrollbar-hide">
-      <Home />
+      <Home/>
       <Engage/>
-      <AboutUs />
-      <BentoBox />
-      <Testimonials />
-      <ContactUs />
+      <AboutUs/>
+      <BentoBox/>
+      <Testimonials/>
+      <ContactUs/>
     </div>
   );
 }

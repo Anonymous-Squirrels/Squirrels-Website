@@ -13,7 +13,7 @@ function Main({ section }: { section: string }) {
       {Projects.filter(
         (i) => section === "All" || i.tags?.includes(section)
       ).map((i, index) => (
-        <div key={index} className="mb-20 mx-9 md:mx-16">
+        <div key={index} className="mb-20 mx-9 md:mx-16 z-10">
           <Image
             src={i.image}
             alt={i.name}
