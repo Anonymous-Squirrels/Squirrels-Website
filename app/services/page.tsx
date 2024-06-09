@@ -4,7 +4,7 @@ import HeroSection from "@/components/Services/HeroSection";
 import Marketing from "@/components/Services/Marketing";
 import UIDesign from "@/components/Services/UIDesign";
 import React from "react";
-import ContactUs from "@/components/Home/ContactUs";
+import ContactUs from "@/components/ContactUs";
 
 function Page() {
   return (
