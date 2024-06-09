@@ -13,15 +13,16 @@ import {
 
 export default function Home() {
   return (
-    <div className="relative h-fit md:h-[90vh] bg-black pb-20 w-full overflow-hidden">
+    <div className="relative h-screen bg-black pb-20 w-full overflow-hidden">
       <>
-        <GridFill className="absolute top-[22%] md:top-1/2 left-0 -translate-x-1/2 md:-translate-x-0 -translate-y-1/2 w-[180px] h-[250px] md:h-fit md:w-fit"/>
+        <GridFill
+          className="absolute top-[18%] md:top-1/2 left-4 -translate-x-1/2 md:-translate-x-0 -translate-y-1/2 w-[180px] h-[250px] md:h-fit md:w-fit"/>
         <Shade1 className="absolute left-0 -translate-y-60"/>
         <Shade2 className="absolute right-0 top-0"/>
       </>
 
       <div
-        className="relative z-20 flex flex-col md:flex-row items-center justify-between md:mx-32 py-4 am:py-0 gap-y-20 md:gap-y-0 mx-0 h-4/5 ">
+        className="relative z-20 flex flex-col md:flex-row items-center justify-between md:mx-32 py-4 md:py-8 gap-y-14 md:gap-y-0 mx-0 ">
         <div className="w-10/12 md:w-1/2 order-last md:order-first">
           <div className="text-white font-semibold text-4xl  md:text-6xl">
             <span>Unlock your</span>{" "}
@@ -33,7 +34,7 @@ export default function Home() {
             Elevate your content marketing with a powerful brand strategy.
           </div>
           <Button
-            className="p-5 text-xl rounded-lg whitespace-nowrap overflow-hidden"
+            className=" md:p-5 md:text-xl rounded-lg whitespace-nowrap overflow-hidden"
             variant="primary"
           >
             Get a Free Consultation

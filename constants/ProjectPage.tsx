@@ -32,7 +32,6 @@ export const GreenCleanSquad = {
   outcomes: [
     "Brand Recognition Boost",
     "Improved Client Acquisition",
-    "Website conversions soared by %: Content convert visitors into bookings.",
     "Lead Generation Explosion: Our content marketing strategy led to a significant increase in leads. The client saw a surge of 300+ leads per week, indicating the effectiveness of our targeted approach.",
   ],
 };

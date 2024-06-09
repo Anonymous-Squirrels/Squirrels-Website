@@ -17,13 +17,13 @@ function NavBar() {
         <div className={`w-full h-fit ${isOpen && "mt-60"} md:mt-0`}>
           <GlassMorphism
             variant="light"
-            className={`text-white rounded-lg px-8 h-18 w-full backdrop-blur-xl bg-opacity-20 md:bg-opacity-15
+            className={`text-white rounded-lg py-2 md:py-4  md:px-8 min-h-16 md:h-20 w-full backdrop-blur-xl bg-opacity-20 md:bg-opacity-15
              ${isOpen && "backdrop-blur-2xl"}`}
           >
             <div className="flex items-center justify-between ">
               <Link href="/" className="flex items-center gap-3">
-                <Logo className=""/>
-                <div className="flex flex-col">
+                <Logo className="h-9 md:h-fit"/>
+                <div className="flex flex-col text-base h-11">
                   <span>Anonymous</span>
                   <span>Squirrels</span>
                 </div>

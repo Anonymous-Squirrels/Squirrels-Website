@@ -25,7 +25,7 @@ function ContactUs() {
   return (
     <div
       id="contact"
-      className="bg-contact-us bg-center bg-cover h-[90vh] md:h-screen grid place-items-center text-white"
+      className="bg-contact-us bg-center bg-cover h-[95vh] md:h-screen grid place-items-center text-white"
     >
       <div className="flex flex-col md:flex-row items-center justify-between md:justify-around gap-y-6 md:gap-y-0 w-full">
         <div className="px-8 md:px-0">

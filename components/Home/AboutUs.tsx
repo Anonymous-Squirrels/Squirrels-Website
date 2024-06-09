@@ -13,7 +13,7 @@ function AboutUs() {
         <LogoLarge className="w-[120px] h-[90px] md:w-[210px] md:h-[164px] "/>
       </div>
 
-      <div className="flex flex-col items-center justify-between py-9 gap-y-8">
+      <div className="flex flex-col items-center justify-between pt-9 gap-y-8">
         <div className="md:px-72 ">
           <div className="text-center text-xl md:text-2xl px-8 md:px-36 italic">
             We are a team of{" "}
@@ -47,38 +47,18 @@ function AboutUs() {
           </Button>
         </div>
 
-        <div className="text-4xl font-bold my-5 text-center">
+        <div className="text-4xl md:text-6xl font-bold my-5 text-center">
           Anonymous <br/>
           Squirrels
         </div>
 
-        <div className="flex items-center justify-between w-full md:hidden">
+        <div className="flex items-center justify-between w-full md:my-14">
           <Image
-            src="/assets/gradient.png"
+            src="/assets/about_us_image.png"
             alt="gradient"
-            width={180}
-            height={180}
-          />
-          <Image
-            src="/assets/billboard.png"
-            alt="billboard"
-            width={180}
-            height={180}
-          />
-        </div>
-
-        <div className="hidden items-center justify-between w-full md:flex">
-          <Image
-            src="/assets/gradient.png"
-            alt="gradient"
-            width={600}
-            height={600}
-          />
-          <Image
-            src="/assets/billboard.png"
-            alt="billboard"
-            width={750}
-            height={750}
+            width={1500}
+            height={350}
+            className="w-full h-28 md:h-[350px]"
           />
         </div>
 

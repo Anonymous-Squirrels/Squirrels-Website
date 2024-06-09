@@ -15,7 +15,7 @@ function Page({ params }: { params: { project_id: string } }) {
       break;
   }
   return (
-    <div className="w-screen overflow-hidden">
+    <div className="w-[100%] overflow-hidden">
       <HeroSection title={data?.name} image={data?.image} tag={data?.tags} />
       {data && <Main data={data} />}
       <Like />

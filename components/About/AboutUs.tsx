@@ -40,7 +40,7 @@ function AboutUs() {
             <span>Countries</span>
           </div>
         </div>
-        <div className="md:mx-72 md:px-60 px-5 text-center text-xs md:text-lg">
+        <div className="md:mx-72 md:px-52 px-5 text-center text-xs md:text-lg">
           We are a Brand Strategy and Content Marketing agency, helping
           companies to brand better with tailored strategies and convey their
           business stories better than ever.

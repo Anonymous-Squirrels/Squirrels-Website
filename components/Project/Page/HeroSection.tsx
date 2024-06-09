@@ -12,35 +12,36 @@ function HeroSection({
   tag: string[] | undefined;
 }) {
   return (
-    <div className="h-[85vh] bg-black text-white flex items-center justify-between gap-10 overflow-hidden relative">
+    <div className="h-[60vh] md:h-[85vh] bg-black text-white flex flex-col md:flex-row items-center justify-around md:justify-between gap-10 overflow-hidden relative ">
       <div className="absolute left-0 -translate-x-1/2">
-        <Blob variant="violet" />
+        <Blob variant="violet" className=""/>
       </div>
-      <div className="absolute  right-0 translate-x-1/2 top-0 ">
+      <div className="absolute  right-0 translate-x-1/2 top-0">
         <Blob variant="yellow" />
       </div>
-      <div className="w-2/5 pl-24 mb-20">
-        <span className="text-7xl font-medium">{title}</span>
+      <div className="w-full md:w-2/5 md:pl-32 mb-5 md:mb-20 order-2 md:order-first z-10 px-6 md:px-0">
+        <span className="text-4xl md:text-7xl font-medium">{title}</span>
         <div className="my-5">Brand Strategy Success Story</div>
         <div className="my-5">
           {tag?.map((i) => (
             <span
               key={i}
-              className="px-2 mr-2 py-1 border-[#7B61FF] border rounded-full"
+              className="px-2 mr-2 py-1 border-[#7B61FF] border rounded-full text-sm md:text-base text-center"
             >
               {i}
             </span>
           ))}
         </div>
       </div>
-      <div className="relative">
+
+      <div className="relative z-10 self-end md:self-auto top-12 md:top-0 ">
         {image && (
           <Image
             src={image}
             alt={title || "title"}
-            width={500}
-            height={500}
-            className="w-full z-10 relative"
+            width={520}
+            height={520}
+            className=" z-10 relative w-[360px] h-64 md:w-full md:h-fit "
           />
         )}
         <div className="absolute z-0 border-4 border-white h-20 w-full top-0 translate-x-10 -translate-y-5"></div>
