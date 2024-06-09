@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
-import GlassMorphism from "../ui/GlassMorphism";
-import Input from "../ui/Input";
+import GlassMorphism from "./ui/GlassMorphism";
+import Input from "./ui/Input";
 import { Message, Message2 } from "@/constants/Icons";
-import Button from "../ui/Button";
+import Button from "./ui/Button";
 import { ContactUsInputs } from "@/constants/Contact";
 
 interface FormData {
@@ -63,8 +63,8 @@ function ContactUs() {
                   | React.ChangeEvent<HTMLInputElement>
                   | React.ChangeEvent<HTMLTextAreaElement>
               ) => handleInputChange(input.text.toLowerCase(), e.target.value)}
-              classNameDiv="bg-white text-black rounded-lg"
-              classNameInput="font-thin"
+              classNameDiv="bg-white rounded-lg"
+              classNameInput="text-black placeholder:font-light"
               classNameText="font-semibold"
               className="my-2"
             />
