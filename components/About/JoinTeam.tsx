@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../ui/Button";
+import Link from "next/link";
 
 function JoinTeam() {
   return (
@@ -14,12 +15,14 @@ function JoinTeam() {
           of squirrels.
         </span>
       </div>
-      <Button
-        variant="primary"
-        className="mt-4 px-6 rounded-lg bg-[#444BD3] hover:border-[#444BD3] hover:bg-transparent hover:text-black border-transparent border"
-      >
-        Apply Now
-      </Button>
+      <Link href="/#contact">
+        <Button
+          variant="primary"
+          className="mt-4 px-6 rounded-lg bg-[#444BD3] hover:border-[#444BD3] hover:bg-transparent hover:text-black border-transparent border"
+        >
+          Apply Now
+        </Button>
+      </Link>
     </div>
   );
 }
