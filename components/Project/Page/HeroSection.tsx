@@ -14,9 +14,9 @@ function HeroSection({
   return (
     <div className="h-[85vh] bg-black text-white flex items-center justify-between gap-10 overflow-hidden relative">
       <div className="absolute left-0 -translate-x-1/2">
-        <Blob variant="violet" />
+        <Blob variant="violet" className=""/>
       </div>
-      <div className="absolute  right-0 translate-x-1/2 top-0 ">
+      <div className="absolute  right-0 translate-x-1/2 top-0">
         <Blob variant="yellow" />
       </div>
       <div className="w-2/5 pl-24 mb-20">

@@ -15,7 +15,8 @@ export default function Home() {
   return (
     <div className="relative h-screen bg-black pb-20 w-full overflow-hidden">
       <>
-        <GridFill className="absolute top-[18%] md:top-1/2 left-4 -translate-x-1/2 md:-translate-x-0 -translate-y-1/2 w-[180px] h-[250px] md:h-fit md:w-fit"/>
+        <GridFill
+          className="absolute top-[18%] md:top-1/2 left-4 -translate-x-1/2 md:-translate-x-0 -translate-y-1/2 w-[180px] h-[250px] md:h-fit md:w-fit"/>
         <Shade1 className="absolute left-0 -translate-y-60"/>
         <Shade2 className="absolute right-0 top-0"/>
       </>
