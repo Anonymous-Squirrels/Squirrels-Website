@@ -1,5 +1,5 @@
 "use client"
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import ServiceAccordian from "@/components/Services/ServiceAccordian";
 import Image from "next/image";
 import {data} from "@/constants/AccordianData";
@@ -13,19 +13,19 @@ function Accordion() {
         <ServiceAccordian activeIndex={activeIndex} setActiveIndex={setActiveIndex} data={data}/>
       </div>
 
-      {activeIndex ? <Image
+      {activeIndex !== null ? <Image
           src={`/${data[activeIndex].image}`}
-          alt={`${data[activeIndex].image}`}
+          alt={`${data[activeIndex].image.replace("ui_design/", "")}`}
           width={500}
           height={900}
-          className="hidden md:flex md:w-[400px] md:h-[460px]"
+          className="hidden md:flex md:w-[433px] md:h-[515px]"
         /> :
         <Image
           src="/assets/gradient.png"
           alt="gradient"
           width={500}
           height={900}
-          className="hidden md:flex md:w-[400px] md:h-[460px]"
+          className="hidden md:flex md:w-[433px] md:h-[515px]"
         />}
 
       <Image

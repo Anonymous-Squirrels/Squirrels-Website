@@ -45,11 +45,11 @@ function Branding() {
               width={150}
               height={150}
               alt="Instagram Logo"
-              className="w-[100px] h-[100px] md:w-[190px] md:h-[190px]"
+              className="w-[84px] h-[84px] md:w-[190px] md:h-[190px]"
             />
             <GlassMorphism
               variant="light"
-              className="border border-white/25 overflow-hidden absolute h-16 w-16 md:h-28 md:w-28 rounded-lg bottom-0 -translate-x-2 translate-y-2 md:-translate-x-8 md:translate-y-8"
+              className="border border-white/25 overflow-hidden absolute h-12 w-12 md:h-28 md:w-28 rounded-lg bottom-0 -translate-x-3 translate-y-3 md:-translate-x-8 md:translate-y-8"
             >
               {" "}
             </GlassMorphism>
@@ -60,11 +60,11 @@ function Branding() {
               width={180}
               height={180}
               alt="LinkedIn Logo"
-              className="w-[100px] h-[100px] md:w-[190px] md:h-[190px]"
+              className="w-[82px] h-[82px] md:w-[190px] md:h-[190px]"
             />
             <GlassMorphism
               variant="light"
-              className="border border-white/25 overflow-hidden absolute h-16 w-16 md:h-28 md:w-28 rounded-lg bottom-0 -translate-x-2 translate-y-2 md:-translate-x-8 md:translate-y-8"
+              className="border border-white/25 overflow-hidden absolute h-12 w-12 md:h-28 md:w-28 rounded-lg bottom-0 -translate-x-3 translate-y-3 md:-translate-x-8 md:translate-y-8"
             >
               {" "}
             </GlassMorphism>

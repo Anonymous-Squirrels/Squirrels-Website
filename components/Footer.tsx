@@ -72,16 +72,16 @@ function Footer() {
         </div>
         <div>
           <span className="font-medium block mb-5">Contact Us</span>
-          <div className="flex items-center rounded-lg overflow-hidden">
+          <div className="flex w-full justify-center items-center rounded-lg overflow-hidden">
             <Input
               type="text"
               placeholder="Enter email address"
               value={email}
               onChange={() => setEmail(email)}
               classNameDiv="bg-[#242424]"
-              classNameInput="h-10 px-4 w-60 text-sm"
+              classNameInput="h-10 md:px-4 w-9/12 text-sm"
             />
-            <Button variant="primary" className="rounded-none h-10 px-10 py-2">
+            <Button variant="primary" className="rounded-none h-10 w-3/12 text-center md:text-lg flex items-center justify-center">
               Join
             </Button>
           </div>
