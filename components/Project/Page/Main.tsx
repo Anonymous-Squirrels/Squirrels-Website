@@ -21,9 +21,9 @@ function Main({data}: { data: any }) {
         <div className="text-3xl border-b-2 border-[#9656FF] w-56 pb-2 mb-7 md:mb-10">
           Outcomes
         </div>
-        <div className="w-full flex flex-wrap gap-10 md:gap-y-0 md:gap-x-20 justify-center">
+        <div className="w-full flex flex-wrap gap-10 md:gap-20 justify-center">
           {data.outcomes.map((outcome: string, index: number) => (
-            <div key={outcome} className={`w-full md:w-[460px] md:h-[270px] ${index === 2 && "md:w-[700px]"}`}>
+            <div key={outcome} className={`w-full md:w-[460px]  ${index === 2 && "md:w-[600px] md:h-fit"}`}>
               <div className="bg-[#7B61FF] text-white w-20 h-20 text-4xl grid place-items-center">
                 {1 + index.valueOf()}
               </div>
