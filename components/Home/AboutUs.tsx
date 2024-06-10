@@ -52,7 +52,7 @@ function AboutUs() {
           Squirrels
         </div>
 
-        <div className="flex items-center justify-between w-full md:my-14">
+        <div className="flex items-center justify-between w-full md:mt-14">
           <Image
             src="/assets/about_us_image.png"
             alt="gradient"

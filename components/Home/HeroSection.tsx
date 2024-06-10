@@ -2,6 +2,7 @@ import Button from "@/components/ui/Button";
 import GlassMorphism from "@/components/ui/GlassMorphism";
 import {Trustee} from "@/constants/Home";
 import {
+  Blob,
   Brush,
   GridFill,
   Laptop,
@@ -10,15 +11,20 @@ import {
   Shade2,
   Squirrel,
 } from "@/constants/Icons";
+import React from "react";
 
 export default function Home() {
   return (
-    <div className="relative h-screen bg-black pb-20 w-full overflow-hidden">
+    <div className="relative h-screen bg-black pb-20 w-full overflow-hidden pt-16 md:pt-0">
+      <div className="absolute hidden md:block md:left-60 -translate-x-1/2 -top-96 md:-top-72 z-10">
+        <Blob variant="violet"/>
+      </div>
+      <div className="absolute hidden md:block -right-12 translate-x-1/2 -top-44 z-10">
+        <Blob variant="yellow"/>
+      </div>
       <>
         <GridFill
-          className="absolute top-[18%] md:top-1/2 left-4 -translate-x-1/2 md:-translate-x-0 -translate-y-1/2 w-[180px] h-[250px] md:h-fit md:w-fit"/>
-        <Shade1 className="absolute left-0 -translate-y-60"/>
-        <Shade2 className="absolute right-0 top-0"/>
+          className="absolute top-[25%] md:top-1/2 left-4 -translate-x-1/2 md:-translate-x-0 -translate-y-1/2 w-[180px] h-[250px] md:h-fit md:w-fit z-20"/>
       </>
 
       <div
@@ -65,7 +71,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="text-white w-full flex flex-col justify-center items-center">
+      <div className="text-white w-full flex flex-col justify-center items-center my-8">
         <span className="text-2xl font-semibold">Trusted By</span>
         <div className="w-full md:w-1/2 grid grid-cols-3 md:grid-cols-6 place-items-center gap-3.5 md:gap-10 mt-10">
           {Trustee.map((item: { name: string }) => (

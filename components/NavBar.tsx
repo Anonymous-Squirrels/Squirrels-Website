@@ -11,19 +11,20 @@ import {IoMdClose} from "react-icons/io";
 function NavBar() {
   const path = usePathname();
   const [isOpen, setIsOpen] = React.useState(false);
+
   return (
-    <div className=" h-28 md:h-fit md:p-4 bg-black z-50 relative flex items-center justify-center">
-      <div className="w-full p-4 fixed md:static">
+    <div className="h-20 md:h-fit bg-black z-50 relative flex items-center justify-center pt-8 md:pt-0 ">
+      <div className="w-full px-4 md:p-4 fixed md:static">
         <div className={`w-full h-fit ${isOpen && "mt-60"} md:mt-0`}>
           <GlassMorphism
             variant="light"
-            className={`text-white rounded-lg py-2 md:py-4  md:px-8 min-h-16 md:h-20 w-full backdrop-blur-xl bg-opacity-20 md:bg-opacity-15
+            className={`text-white rounded-lg transform ${!isOpen ? "flex items-center" : "bg-opacity-20"}  md:px-8 min-h-16 md:h-20 w-full backdrop-blur-xl bg-opacity-[0.09] 
              ${isOpen && "backdrop-blur-2xl"}`}
           >
-            <div className="flex items-center justify-between ">
+            <div className="flex items-center justify-between w-full">
               <Link href="/" className="flex items-center gap-3">
                 <Logo className="h-9 md:h-fit"/>
-                <div className="flex flex-col text-base h-11">
+                <div className="flex flex-col text-base h-11 md:hidden">
                   <span>Anonymous</span>
                   <span>Squirrels</span>
                 </div>

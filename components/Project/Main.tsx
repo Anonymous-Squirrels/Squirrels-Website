@@ -7,14 +7,11 @@ import {Blob} from "@/constants/Icons";
 function Main({section}: { section: string }) {
   return (
     <div className="bg-black text-white grid grid-cols-1 md:grid-cols-2  py-16 overflow-x-hidden relative">
-      <div className="absolute right-0 translate-x-1/2 -top-[200px]">
-        <Blob variant="yellow" className=" md:hidden "/>
-      </div>
 
       {Projects.filter(
         (i) => section === "All" || i.tags?.includes(section)
       ).map((i, index) => (
-        <div key={index} className=" h-fit flex flex-col gap-y-1 md:gap-y-3 mb-9 md:mb-20 mx-9 md:mx-16 z-10">
+        <div key={index} className=" h-fit flex flex-col gap-y-1 md:gap-y-3 mb-9 md:mb-20 mx-9 md:mx-16 z-50">
           <Link href={`/project/${i.url}`}>
             <Image
               src={i.image}
