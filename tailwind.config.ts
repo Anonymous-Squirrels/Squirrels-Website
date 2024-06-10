@@ -13,11 +13,22 @@ const config: Config = {
   darkMode: "class",
   theme: {
     extend: {
-      colors: {"sq-violet": "#7B61FF", "dim-gray": "#828282"},
+      colors: {
+        "sq-violet": "#7B61FF",
+        "dim-gray": "#828282"},
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "contact-us": "url('/assets/contact-bg.png')",
+      },
+      keyframes: {
+        bounce: {
+          '0%, 100%': { transform: 'translateY(10%)' },
+          '50%': { transform: 'translateY(0%)' },
+        },
+      },
+      animation: {
+        bounce: 'bounce 10s infinite alternate',
       },
     },
   },

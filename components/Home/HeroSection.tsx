@@ -24,7 +24,7 @@ export default function Home() {
       </div>
       <>
         <GridFill
-          className="absolute top-[25%] md:top-1/2 left-4 -translate-x-1/2 md:-translate-x-0 -translate-y-1/2 w-[180px] h-[250px] md:h-fit md:w-fit z-20"/>
+          className="absolute top-[25%] md:top-[10%] left-4 -translate-x-1/2 md:-translate-x-0 -translate-y-1/2 w-[180px] h-[250px] md:h-fit md:w-fit z-20 md:animate-bounce "/>
       </>
 
       <div
