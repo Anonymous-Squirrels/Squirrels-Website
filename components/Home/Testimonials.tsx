@@ -48,8 +48,8 @@ function Testimonials() {
         </div>
       </div>*/}
 
-      <div className="w-full h-60 px-10">
-        <Swiper slidesPerView={2} spaceBetween={20} navigation={true} modules={[Navigation]} className="">
+      <div className="hidden md:flex w-full h-64 px-10">
+        <Swiper slidesPerView={2} spaceBetween={25} navigation={true} modules={[Navigation]} className="">
           {TestimonialData.map((i, index) => (
             <SwiperSlide key={index}>
               <Item
