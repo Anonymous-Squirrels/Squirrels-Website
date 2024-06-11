@@ -24,7 +24,7 @@
   cursor: pointer;
 }
 .question_container.active {
-  color: #1d054f;
+  color: rgb(255, 255, 255);
   background-image: linear-gradient(
     90deg,
     transparent,
@@ -46,7 +46,7 @@
 }
 .arrow.active {
   rotate: 180deg;
-  color: #1d054f;
+  color: rgb(255, 255, 255);
 }
 .wrapper .answer_container {
   padding: 0 1rem;

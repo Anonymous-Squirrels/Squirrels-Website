@@ -1,8 +1,8 @@
 "use client"
 import React, {useState} from 'react';
-import ServiceAccordian from "@/components/Services/ServiceAccordian";
+import ServiceAccordian from "@/components/Services/accordion_component/ServiceAccordian";
 import Image from "next/image";
-import {data} from "@/constants/AccordianData";
+import {data} from "@/constants/ServiceAccordianData";
 
 function Accordion() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
