@@ -15,7 +15,7 @@ import React from "react";
 
 export default function Home() {
   return (
-    <div className="relative h-screen bg-black pb-20 w-full overflow-hidden pt-16 md:pt-0">
+    <div className="relative h-fit md:h-screen bg-black pb-20 w-full overflow-hidden pt-16 md:pt-0">
       <div className="absolute hidden md:block md:left-60 -translate-x-1/2 -top-96 md:-top-72 z-10">
         <Blob variant="violet"/>
       </div>
@@ -24,7 +24,7 @@ export default function Home() {
       </div>
       <>
         <GridFill
-          className="absolute top-[25%] md:top-[10%] left-4 -translate-x-1/2 md:-translate-x-0 -translate-y-1/2 w-[180px] h-[250px] md:h-fit md:w-fit z-20 md:animate-bounce "/>
+          className="absolute top-[25%] md:top-[20%] left-4 -translate-x-1/2 md:-translate-x-0 -translate-y-1/2 w-[180px] h-[250px] md:h-fit md:w-fit z-20 md:animate-dotted-bounce "/>
       </>
 
       <div

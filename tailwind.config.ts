@@ -22,13 +22,13 @@ const config: Config = {
         "contact-us": "url('/assets/contact-bg.png')",
       },
       keyframes: {
-        bounce: {
-          '0%, 100%': { transform: 'translateY(10%)' },
+        'dotted-bounce': {
+          '0%, 100%': { transform: 'translateY(0)' },
           '50%': { transform: 'translateY(0%)' },
         },
       },
       animation: {
-        bounce: 'bounce 10s infinite alternate',
+        'dotted-bounce': 'bounce 20s infinite alternate',
       },
     },
   },

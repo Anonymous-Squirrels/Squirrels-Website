@@ -18,7 +18,7 @@ function NavBar() {
         <div className={`w-full h-fit ${isOpen && "mt-60"} md:mt-0`}>
           <GlassMorphism
             variant="light"
-            className={`text-white rounded-lg transform ${!isOpen ? "flex items-center" : "bg-opacity-20"}  md:px-8 min-h-16 md:h-20 w-full backdrop-blur-xl bg-opacity-[0.09] 
+            className={`text-white rounded-lg  ${!isOpen ? "flex items-center" : "bg-opacity-20 "} md:px-8 min-h-16 md:h-20 w-full backdrop-blur-xl bg-opacity-[0.09] 
              ${isOpen && "backdrop-blur-2xl"}`}
           >
             <div className="flex items-center justify-between w-full">
