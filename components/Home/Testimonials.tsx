@@ -3,7 +3,6 @@ import React, {useRef, useState} from "react";
 import {Message} from "@/constants/Icons";
 import Item from "./Testimonials/Item";
 import {TestimonialData} from "@/constants/Testimonials";
-// import {IoArrowForwardCircle, IoArrowBackCircle} from "react-icons/io5";
 
 import {Swiper, SwiperSlide} from 'swiper/react';
 
@@ -65,10 +64,6 @@ function Testimonials() {
         </Swiper>
       </div>
 
-      {/*<div className="flex w-full h-10 md:h-16 items-center justify-center">
-          <IoArrowBackCircle className="h-full w-fit"/>
-          <IoArrowForwardCircle className="h-full w-fit" color="#8B68D5"/>
-      </div>*/}
     </div>
   );
 }

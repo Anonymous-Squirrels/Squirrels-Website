@@ -1,6 +1,6 @@
 "use client";
 import React, {useRef,} from "react";
-import styles from "@/style/Services.module.css";
+import styles from "@/style/StepProcess.module.css";
 import {IoMdAdd} from "react-icons/io";
 import {FaMinus} from "react-icons/fa6";
 
@@ -50,16 +50,16 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
   return (
     <div className={`${styles.wrapper} text-[FFFFFF]`}>
       <button
-        className={`${styles.question_container} ${
+        className={`${styles.question_container}  ${
           isOpen ? styles.active : ""
-        }`}
+        } p-2.5 md:px-5 md:py-3`}
         onClick={onClick}
       >
 
-        <div className={` font-bold  border-[#5C3095] text-3xl py-4 w-full`}>
+        <div className={`font-bold  border-[#5C3095] text-2xl md:text-3xl py-4 w-full`}>
           <span className="border text-center h-10 w-10 inline-block mr-4">{currIndex + 1}</span>
           <span>{question}</span>
-          <p className="border-b-8 relative top-6 w-[120%] border-[#5C3095]"></p>
+          <p className="border-b-8 relative top-6 w-[110%] border-[#5C3095]"></p>
         </div>
         {!isOpen ? <IoMdAdd/> : <FaMinus/>}
 

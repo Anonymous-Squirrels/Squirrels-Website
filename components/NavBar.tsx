@@ -18,8 +18,8 @@ function NavBar() {
         <div className={`w-full h-fit ${isOpen && "mt-60"} md:mt-0`}>
           <GlassMorphism
             variant="light"
-            className={`text-white rounded-lg  ${!isOpen ? "flex items-center" : "bg-opacity-20 "} md:px-8 min-h-16 md:h-20 w-full backdrop-blur-xl bg-opacity-[0.09] 
-             ${isOpen && "backdrop-blur-2xl"}`}
+            className={`text-white rounded-lg md:px-8 min-h-16 md:h-20 w-full backdrop-blur-xl bg-opacity-[0.09]
+            ${!isOpen ? "flex items-center" : "bg-opacity-25 backdrop-blur-2xl"}`}
           >
             <div className="flex items-center justify-between w-full">
               <Link href="/" className="flex items-center gap-3">
@@ -60,6 +60,7 @@ function NavBar() {
                     href={item.path}
                     key={item.tag}
                     className="block text-center font-medium text-lg my-4"
+                    onClick={() => setIsOpen(false)}
                   >
                     {item.tag}
                   </Link>
