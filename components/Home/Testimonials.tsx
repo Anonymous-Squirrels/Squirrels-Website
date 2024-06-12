@@ -17,7 +17,7 @@ import {Navigation} from "swiper/modules";
 function Testimonials() {
 
   return (
-    <div className="h-fit flex flex-col gap-y-6 md:gap-y-10 bg-black text-white py-12">
+    <div className="h-fit flex flex-col gap-y-6 md:gap-y-10 bg-black text-white pt-8 pb-4 md:py-14">
       <div className="text-center grid place-items-center">
         <div className="from-[#B897FF] to-black bg-gradient-to-b rounded-full p-[1px]">
           <span className="items-center flex gap-3 p-4 rounded-full bg-black">
@@ -33,8 +33,8 @@ function Testimonials() {
         </div>
       </div>
 
-      {/*<div className="w-full h-fit overflow-x-scroll scrollbar-hide">
-        <div className="w-fit flex gap-x-3.5 md:gap-x-7 px-5 md:px-8 py-8">
+      <div className="flex md:hidden w-full h-fit overflow-x-scroll scrollbar-hide">
+        <div className="w-fit flex gap-x-3.5  px-5 py-8">
           {TestimonialData.map((i, index) => (
             <Item
               key={index}
@@ -46,7 +46,7 @@ function Testimonials() {
             />
           ))}
         </div>
-      </div>*/}
+      </div>
 
       <div className="hidden md:flex w-full h-64 px-10">
         <Swiper slidesPerView={2} spaceBetween={25} navigation={true} modules={[Navigation]} className="">
