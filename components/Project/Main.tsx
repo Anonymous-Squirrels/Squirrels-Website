@@ -11,14 +11,14 @@ function Main({section}: { section: string }) {
       {Projects.filter(
         (i) => section === "All" || i.tags?.includes(section)
       ).map((i, index) => (
-        <div key={index} className=" h-fit flex flex-col gap-y-1 md:gap-y-3 mb-9 md:mb-20 mx-9 md:mx-16 z-50">
+        <div key={index} className=" h-fit flex flex-col gap-y-1 md:gap-y-3 mb-9 md:mb-20 mx-9 md:mx-16 z-20">
           <Link href={`/project/${i.url}`}>
             <Image
               src={i.image}
               alt={i.name}
               width={300}
               height={300}
-              className="w-full"
+              className="w-full rounded-md"
             />
           </Link>
           <div className="text-3xl font-medium my-2">

@@ -21,7 +21,7 @@ function Page({params}: { params: { project_id: string } }) {
         <div className="absolute md:left-52 -translate-x-1/2 -top-96 md:-top-72">
           <Blob variant="violet"/>
         </div>
-        <div className="absolute right-28 md:right-40 translate-x-1/2 top-60">
+        <div className="absolute right-28 md:right-52 translate-x-1/2 top-60">
           <Blob variant="yellow"/>
         </div>
         <HeroSection title={data?.name} image={data?.image} tag={data?.tags}/>

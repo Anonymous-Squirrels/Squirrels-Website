@@ -1,40 +1,47 @@
+"use client"
 import {Sparkle} from "@/constants/Icons";
 import Image from "next/image";
-import React from "react";
+import React, {useState} from "react";
+import ProcessAccordion from "@/components/About/accordian_component/ProcessAccordion";
+import {data} from "@/constants/ProcessAccordianData";
 
 function ThreeStepProcess() {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
   return (
-    <div className="h-[95vh] md:h-screen bg-black text-white px-7 py-14 md:p-24 overflow-hidden">
-      <div className="flex w-full text-2xl md:text-2xl gap-3.5 items-center justify-center md:justify-start">
+    <div className="h-fit md:h-fit bg-black text-white px-7 py-14 md:p-24 overflow-hidden">
+      <div className="flex w-full text-2xl pl-0 md:pl-5 md:text-2xl gap-3.5 items-center justify-center md:justify-start z-20">
         <Sparkle/>
         <span>OUR 3-STEP PROCESS</span>
       </div>
-      <div className="flex flex-col md:flex-row items-center justify-evenly md:justify-center gap-0 md:gap-10 h-full w-full">
-        <div className="w-full md:w-1/2">
-          <div className="border-b-8 border-[#5C3095] my-5 text-3xl py-4">
-            <span className="border text-center h-10 w-10 inline-block mr-4">
-              1
-            </span>
-            <span>BrainStorming</span>
-          </div>
-          <div className="border-b-8 border-[#5C3095] my-5 text-3xl py-4">
-            <span className="border text-center h-10 w-10 inline-block mr-4">
-              2
-            </span>
-            <span>Research</span>
-          </div>
-          <div className="border-b-8 border-[#5C3095] my-5 text-3xl  py-4">
-            <span className="border text-center h-10 w-10 inline-block mr-4">
-              3
-            </span>
-            <span>Execution</span>
+
+      <div
+        className="flex flex-col md:flex-row items-center justify-evenly md:justify-center gap-0 md:gap-16 h-fit w-full mt-12">
+
+        <div className="w-full md:w-1/2 z-20">
+          <ProcessAccordion activeIndex={activeIndex} setActiveIndex={setActiveIndex} data={data}/>
+        </div>
+
+        <div className="hidden md:flex md:h-fit md:w-1/2 ">
+          <div className="w-full relative z-20">
+            {activeIndex !== null ? <Image
+                src={`/${data[activeIndex].image}`} alt={data[activeIndex].image.replace("about_services/", "")}
+                width={500} height={500}
+                className="h-[500px] w-[500px]"
+              /> :
+              <Image
+                src="/assets/gear.png" width={500} height={500} alt="gear"
+                className="h-fit w-fit"
+              />
+            }
           </div>
         </div>
-        <div className=" w-[150%] h-[300px] md:w-1/2">
-          <div className="w-full relative">
+
+        <div className="md:hidden w-[150%] h-[300px] md:h-fit md:w-1/2 ">
+          <div className="w-full relative z-20">
             <Image
               src="/assets/gear.png" width={500} height={500} alt="gear"
-              className="h-[500px] w-[550px] absolute md:static -top-32"/>
+              className="h-[480px] w-[480px] md:h-fit md:w-fit absolute md:static left-7 -top-10"/>
           </div>
         </div>
       </div>

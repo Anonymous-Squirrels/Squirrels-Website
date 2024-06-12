@@ -38,7 +38,7 @@ function HeroSection({
             alt={title || "title"}
             width={520}
             height={520}
-            className=" z-10 relative w-[360px] h-64 md:w-full md:h-fit "
+            className=" z-10 relative w-[360px] h-64 md:w-full md:h-fit rounded-md md:rounded-none"
           />
         )}
         <div className="hidden md:block absolute z-0 border-4 border-white h-20 w-full top-0 translate-x-10 -translate-y-5"></div>

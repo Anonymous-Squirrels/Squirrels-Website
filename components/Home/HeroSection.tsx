@@ -15,7 +15,7 @@ import React from "react";
 
 export default function Home() {
   return (
-    <div className="relative h-screen bg-black pb-20 w-full overflow-hidden pt-16 md:pt-0">
+    <div className="relative h-fit md:h-screen bg-black pb-20 w-full overflow-hidden pt-16 md:pt-0">
       <div className="absolute hidden md:block md:left-60 -translate-x-1/2 -top-96 md:-top-72 z-10">
         <Blob variant="violet"/>
       </div>
@@ -24,7 +24,7 @@ export default function Home() {
       </div>
       <>
         <GridFill
-          className="absolute top-[25%] md:top-[10%] left-4 -translate-x-1/2 md:-translate-x-0 -translate-y-1/2 w-[180px] h-[250px] md:h-fit md:w-fit z-20 md:animate-bounce "/>
+          className="absolute top-[25%] md:top-[20%] left-4 -translate-x-1/2 md:-translate-x-0 -translate-y-1/2 w-[180px] h-[250px] md:h-fit md:w-fit z-20 md:animate-dotted-bounce "/>
       </>
 
       <div
@@ -40,10 +40,13 @@ export default function Home() {
             Elevate your content marketing with a powerful brand strategy.
           </div>
           <Button
-            className=" md:p-5 md:text-xl rounded-lg whitespace-nowrap overflow-hidden"
+            className="md:p-4 text-sm md:text-xl rounded-lg whitespace-nowrap w-40  md:w-[270px] bg-home-button"
             variant="primary"
-          >
-            Get a Free Consultation
+          ><p className="w-full h-fit overflow-clip">
+            <span className="scroll-text inline-block">
+              Get a Free Consultation Get a Free Consultation Get a Free Consultation
+            </span>
+          </p>
           </Button>
         </div>
 
@@ -51,22 +54,22 @@ export default function Home() {
           <Squirrel className="md:h-[500px] md:w-[420px]"/>
           <GlassMorphism
             variant="light"
-            className="rounded-xl inline-block absolute top-0 right-0 translate-x-1/2"
+            className="rounded-xl inline-block absolute -top-2 md:top-0 right-0 translate-x-1/2"
           >
-            <Laptop/>
+            <Laptop className="h-7 w-7 md:h-fit md:w-fit"/>
           </GlassMorphism>
           <GlassMorphism
             variant="light"
-            className="rounded-xl inline-block absolute bottom-0 right-0 -translate-x-1/2"
+            className="rounded-xl inline-block absolute -bottom-2 -right-6 md:bottom-0 md:right-0 -translate-x-1/2"
           >
-            <Brush/>
+            <Brush className="h-7 w-7 md:h-fit md:w-fit"/>
           </GlassMorphism>
 
           <GlassMorphism
             variant="light"
-            className="rounded-xl inline-block absolute left-0 top-1/2 -translate-y-1/2"
+            className="rounded-xl inline-block absolute -left-3 top-[40%] md:left-0 md:top-1/2 -translate-y-1/2"
           >
-            <PenRuler/>
+            <PenRuler className="h-7 w-7 md:h-fit md:w-fit"/>
           </GlassMorphism>
         </div>
       </div>
