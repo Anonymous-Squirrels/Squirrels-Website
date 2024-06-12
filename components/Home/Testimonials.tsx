@@ -33,7 +33,7 @@ function Testimonials() {
       </div>
 
       <div className="flex md:hidden w-full h-fit overflow-x-scroll scrollbar-hide">
-        <div className="w-fit flex gap-x-3.5  px-5 py-8">
+        <div className="w-fit flex gap-x-3.5 px-5 py-8">
           {TestimonialData.map((i, index) => (
             <Item
               key={index}

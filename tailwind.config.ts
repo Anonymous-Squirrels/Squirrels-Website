@@ -15,7 +15,9 @@ const config: Config = {
     extend: {
       colors: {
         "sq-violet": "#7B61FF",
-        "dim-gray": "#828282"},
+        "dim-gray": "#828282",
+        "home-button" : "5237D8"
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",

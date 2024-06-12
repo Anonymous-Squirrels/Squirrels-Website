@@ -19,7 +19,7 @@ function NavBar() {
           <GlassMorphism
             variant="light"
             className={`text-white rounded-lg md:px-8 min-h-16 md:h-20 w-full backdrop-blur-xl bg-opacity-[0.09]
-            ${!isOpen ? "flex items-center" : "bg-opacity-25 backdrop-blur-2xl"}`}
+            ${!isOpen ? "flex items-center" : "bg-opacity-30 backdrop-blur-xl"}`}
           >
             <div className="flex items-center justify-between w-full">
               <Link href="/" className="flex items-center gap-3">
