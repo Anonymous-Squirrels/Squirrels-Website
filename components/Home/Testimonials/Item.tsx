@@ -17,8 +17,8 @@ function Item({
   name: string;
 }) {
   return (
-    <GlassMorphism variant="light" className=" rounded-lg w-[85vw] md:w-full h-full flex flex-col justify-between gap-y-5 md:gap-y-0">
-      <div className="w-full text-sm md:text-xl md:leading-9  md:px-8">{content}</div>
+    <GlassMorphism variant="light" className=" rounded-lg w-[85vw] md:w-full h-full flex flex-col justify-between gap-y-5 md:gap-y-7 py-5 md:py-9">
+      <div className="w-full text-left text-sm md:text-xl md:leading-9  md:px-10">{content}</div>
       <div className="flex items-center justify-between text-sm font-light  md:px-8">
         <div className="flex items-center gap-2 md:w-[70%] md:gap-x-6 h-16">
           <div className="h-12 w-12 md:h-20 md:w-20">

@@ -33,7 +33,7 @@ function Testimonials() {
       </div>
 
       <div className="flex md:hidden w-full h-fit overflow-x-scroll scrollbar-hide">
-        <div className="w-fit flex gap-x-3.5 px-5 py-8">
+        <div className="w-fit flex gap-x-3.5 px-5 py-9">
           {TestimonialData.map((i, index) => (
             <Item
               key={index}
@@ -47,7 +47,7 @@ function Testimonials() {
         </div>
       </div>
 
-      <div className="hidden md:flex w-full h-64 px-10">
+      <div className="hidden md:flex w-full h-80 px-10">
         <Swiper slidesPerView={2} spaceBetween={25} navigation={true} modules={[Navigation]} className="">
           {TestimonialData.map((i, index) => (
             <SwiperSlide key={index}>
