@@ -7,8 +7,6 @@ import {
   GridFill,
   Laptop,
   PenRuler,
-  Shade1,
-  Shade2,
   Squirrel,
 } from "@/constants/Icons";
 import React from "react";
@@ -40,7 +38,7 @@ export default function Home() {
             Elevate your content marketing with a powerful brand strategy.
           </div>
           <Button
-            className="md:p-4 text-sm md:text-xl rounded-lg whitespace-nowrap w-40  md:w-[270px] bg-home-button"
+            className="md:p-4 text-sm md:text-xl rounded-md md:rounded-lg whitespace-nowrap w-40 md:w-[270px] bg-button-color"
             variant="primary"
           ><p className="w-full h-fit overflow-clip">
             <span className="scroll-text inline-block">

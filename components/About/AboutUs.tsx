@@ -5,14 +5,14 @@ function AboutUs() {
   return (
     <div
       id="about-us"
-      className=" md:min-h-screen w-full bg-black text-white py-9 md:py-16 grid place-items-center relative overflow-hidden"
+      className="md:min-h-screen w-full bg-black text-white py-9 md:py-16 grid place-items-center relative overflow-hidden"
     >
       <div className="flex w-full items-center justify-center text-2xl py-9 relative">
         <div className="w-fit flex items-center justify-center md:absolute md:left-24 gap-2">
           <Sparkle/> <span className="uppercase">About US</span>
         </div>
       </div>
-      <div className="h-full w-full grid place-items-center gap-y-24 font-bold space-y-10">
+      <div className="h-full w-full grid place-items-center gap-y-20 md:gap-y-24 font-bold">
         <div className="w-full md:px-56">
           <span className="text-xl md:text-3xl px-5 text-center md:px-56 inline-block w-full">
             We are a{" "}
