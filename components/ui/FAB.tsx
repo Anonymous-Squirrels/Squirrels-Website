@@ -15,7 +15,7 @@ function FAB({
       btnStyle = "bg-sq-violet text-white";
       break;
     case "secondary":
-      btnStyle = "text-[#1D054F] hover:bg-[#1D054F] hover:text-white";
+      btnStyle = "text-[#1D054F] active:bg-[#1D054F] active:text-white md:hover:bg-[#1D054F] md:hover:text-white";
       break;
   }
   return (
