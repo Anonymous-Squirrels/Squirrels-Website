@@ -23,7 +23,7 @@ function Testimonials() {
             <Message/> Testimonials
           </span>
         </div>
-        <span className="text-3xl md:text-6xl md:py-8">What are people saying</span>
+        <span className="text-3xl md:text-6xl py-3 md:py-8">What are people saying</span>
         <div className="text-[#9B9CA1] text-sm md:text-lg w-10/12 md:w-3/5 mt-5">
           &quot;Thank you for your trust in Anonymous Squirrels! We are grateful
           for your feedback and are committed to providing the best
@@ -33,7 +33,7 @@ function Testimonials() {
       </div>
 
       <div className="flex md:hidden w-full h-fit overflow-x-scroll scrollbar-hide">
-        <div className="w-fit flex gap-x-3.5 px-5 py-8">
+        <div className="w-fit flex gap-x-3.5 px-5 py-9">
           {TestimonialData.map((i, index) => (
             <Item
               key={index}
@@ -47,7 +47,7 @@ function Testimonials() {
         </div>
       </div>
 
-      <div className="hidden md:flex w-full h-64 px-10">
+      <div className="hidden md:flex w-full h-80 px-10">
         <Swiper slidesPerView={2} spaceBetween={25} navigation={true} modules={[Navigation]} className="">
           {TestimonialData.map((i, index) => (
             <SwiperSlide key={index}>

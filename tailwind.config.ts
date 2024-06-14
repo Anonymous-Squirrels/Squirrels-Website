@@ -16,7 +16,7 @@ const config: Config = {
       colors: {
         "sq-violet": "#7B61FF",
         "dim-gray": "#828282",
-        "home-button" : "5237D8"
+        "button-color" : "#5237D8"
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

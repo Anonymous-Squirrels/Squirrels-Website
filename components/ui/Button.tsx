@@ -18,7 +18,7 @@ function Button({
       break;
     case "secondary":
       btnStyle =
-        "bg-transparent border-2 border-sq-violet text-sq-violet hover:bg-sq-violet hover:border-white";
+        "bg-transparent border-2 border-sq-violet text-sq-violet active:bg-sq-violet active:border-white md:hover:bg-sq-violet md:hover:border-white";
       break;
     case "light":
       btnStyle = "bg-white text-black";

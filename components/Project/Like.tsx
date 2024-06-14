@@ -8,13 +8,12 @@ function Like() {
         <span>Liked what you saw?</span>{" "}
         <span className="text-[#444BD3]">Get one for yourself.</span>
       </div>
-      {/*<br className="hidden md:block"/>*/}
-      <div className="text-center text-xs md:text-lg text-gray-500 px-[5px] ">
+      <div className="text-center text-xs md:text-lg text-gray-500 px-[4px] ">
         We are looking for individuals with skills who could join our family of
         squirrels.
       </div>
       <div className="text-center">
-        <Button className="bg-[#444BD3] text-white text-xs md:text-base rounded-md md:rounded-lg px-2.5 md:px-8 md:py-3">
+        <Button className="bg-[#444BD3] text-white border border-[#444BD3] transition-all duration-200 md:hover:bg-white md:hover:text-[#444BD3] active:bg-white active:text-[#444BD3] text-xs md:text-base rounded-md md:rounded-lg px-2.5 md:px-8 md:py-3">
           Apply Here
         </Button>
       </div>
