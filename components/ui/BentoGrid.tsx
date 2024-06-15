@@ -1,4 +1,4 @@
-import {cn} from "@/utils/cn";
+import { cn } from "@/utils/cn";
 import GlassMorphism from "./GlassMorphism";
 
 export const BentoGrid = ({
@@ -33,16 +33,14 @@ export const BentoGridItem = ({
       <div className="text-sm transition duration-200">
         <span
           className="text-center text-xl font-bold block mb-5"
-          dangerouslySetInnerHTML={{__html: title ?? ""}}
+          dangerouslySetInnerHTML={{ __html: title ?? "" }}
         ></span>
         <span className="text-center text-xs md:text-lg inline-block text-dim-gray">
           {description}
         </span>
       </div>
       <div className="flex items-center justify-center w-full h-full">
-        <span className="w-fit h-fit">
         {content}
-        </span>
       </div>
     </GlassMorphism>
   );
