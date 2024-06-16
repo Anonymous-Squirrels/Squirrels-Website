@@ -5,6 +5,7 @@ import Home from "@/components/Home/HeroSection";
 import Testimonials from "@/components/Home/Testimonials";
 import React from "react";
 import {Blob} from "@/constants/Icons";
+import Engage from "@/components/Home/Engage";
 
 function Page() {
   return (
@@ -17,7 +18,7 @@ function Page() {
           <Blob variant="yellow"/>
         </div>
         <Home/>
-        {/* <Engage/> */}
+         {/*<Engage/>*/}
         <AboutUs/>
       </div>
       <BentoBox/>

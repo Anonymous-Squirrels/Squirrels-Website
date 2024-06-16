@@ -2,7 +2,7 @@
 import React from "react";
 import GlassMorphism from "./ui/GlassMorphism";
 import Input from "./ui/Input";
-import { Message, Message2 } from "@/constants/Icons";
+import { Message2 } from "@/constants/Icons";
 import Button from "./ui/Button";
 import { ContactUsInputs } from "@/constants/Contact";
 
@@ -25,7 +25,7 @@ function ContactUs() {
   return (
     <div
       id="contact"
-      className="bg-contact-us bg-center bg-cover h-[95vh] md:h-screen grid place-items-center text-white"
+      className="bg-contact-us bg-center bg-cover h-fit md:h-screen grid place-items-center text-white py-7"
     >
       <div className="flex flex-col md:flex-row items-center justify-between md:justify-around gap-y-6 md:gap-y-0 w-full">
         <div className="px-8 md:px-0">
@@ -63,7 +63,7 @@ function ContactUs() {
                   | React.ChangeEvent<HTMLInputElement>
                   | React.ChangeEvent<HTMLTextAreaElement>
               ) => handleInputChange(input.text.toLowerCase(), e.target.value)}
-              classNameDiv="bg-white rounded-lg"
+              classNameDiv="bg-white rounded-lg p-0"
               classNameInput="text-black placeholder:font-light"
               classNameText="font-semibold"
               className="my-2"

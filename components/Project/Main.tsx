@@ -94,7 +94,7 @@ function Main({section}: { section: string }) {
             onClick={() => setExpand((prevState) => !prevState)}
           >
             {!expand ? "View More" : "View Less"}
-            <ArrowRight className="group-focus:rotate-45 group-hover:rotate-45 transition-all duration-300 h-5 w-5 md:h-fit md:w-fit"/>
+            <ArrowRight className="group-active:rotate-45 md:group-hover:rotate-45 transition-all duration-300 h-5 w-5 md:h-fit md:w-fit"/>
           </Button>)}
       </div>
     </div>

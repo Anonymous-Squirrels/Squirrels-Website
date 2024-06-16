@@ -35,7 +35,7 @@ function Input({
             onChange={onChange}
             type={type}
             placeholder={placeholder}
-            className={`p-4 bg-transparent outline-none border-none w-full ${classNameInput}`}
+            className={`p-1.5 md:p-4 bg-transparent outline-none border-none w-full ${classNameInput}`}
           />
         ) : (
           <textarea
