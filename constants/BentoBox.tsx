@@ -1,5 +1,6 @@
 import Button from "@/components/ui/Button";
 import Image from "next/image";
+import Link from "next/link";
 
 export const BentoItems = [
   {
@@ -7,8 +8,12 @@ export const BentoItems = [
     description: `Fixed pricing and high ppw custom pricing and lowest charges in segment.`,
     content: (
       <Image
-        src="/assets/graph.png" width={180} height={180} alt="graph"
-        className=" md:w-[550px] md:h-[200px]"/>
+        src="/assets/graph.png"
+        width={180}
+        height={180}
+        alt="graph"
+        className="md:w-[600px] md:h-[600px]"
+      />
     ),
   },
   {
@@ -44,17 +49,24 @@ export const BentoItems = [
       "Take the pain out of book keeping! Wave goodbye to mountains of paperwork and endless email reminders. We manage it all !!",
     content: (
       <div className="w-full">
-        <Button variant="light" className="rounded-2xl px-10 py-2">
-          View More
-        </Button>
-        <div className="flex items-center justify-between w-full">
+        <Link href="/project">
+          <Button
+            variant="light"
+            className="rounded-2xl py-0 font-medium px-6 md:py-1 md:px-10"
+          >
+            View More
+          </Button>
+        </Link>
+        <div className="flex items-end justify-between w-full">
           <Image
             src="/assets/oyoOfficial.png"
-            width={180}
-            height={180}
+            width={150}
+            height={150}
             alt="Oyo"
+            className="h-20 border mt-10"
           />
-          <Image src="/assets/leo9.png" width={180} height={180} alt="Leo 9"/>
+
+          <Image src="/assets/leo9.png" width={150} height={150} alt="Leo 9" />
         </div>
       </div>
     ),
@@ -65,9 +77,14 @@ export const BentoItems = [
     description:
       "Our Company provides a lot of services ranging from Brand strategies to SEO Optimization to Web Content Management",
     content: (
-      <Button variant="light" className="rounded-full p-4">
-        View our services
-      </Button>
+      <Link href="/services">
+        <Button
+          variant="light"
+          className="rounded-full py-3 px-6 md:py-2 md:px-10 font-medium"
+        >
+          View our services
+        </Button>
+      </Link>
     ),
   },
 ];
