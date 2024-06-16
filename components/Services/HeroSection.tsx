@@ -27,8 +27,8 @@ function HeroSection() {
               variant="secondary"
               className="text-white flex items-center gap-3 group"
             >
-              Contact Us{" "}
-              <ArrowRight className=" group-hover:rotate-45 transition-all duration-300"/>
+              Contact Us
+              <ArrowRight className="group-active:rotate-45 md:group-hover:rotate-45 transition-all duration-300"/>
             </Button>
           </div>
         </div>

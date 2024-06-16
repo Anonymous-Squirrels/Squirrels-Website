@@ -2,20 +2,21 @@ import {ArrowRight, LogoLarge} from "@/constants/Icons";
 import React from "react";
 import Button from "../ui/Button";
 import Image from "next/image";
+import AboutUsIcon from "@/components/Home/AboutUsIcon";
 
 function AboutUs() {
   return (
     <div className=" bg-black text-white ">
-      <div className="flex justify-between  items-start px-7 md:pt-10">
+      <div className="flex justify-between  items-start px-7 md:p-14 md:pt-10">
         <span className="uppercase text-5xl md:text-9xl font-bold">
           About <br/> Us
         </span>
-        <LogoLarge className="w-[120px] h-[90px] md:w-[210px] md:h-[164px] "/>
+        <AboutUsIcon/>
       </div>
 
       <div className="flex flex-col items-center justify-between pt-9 gap-y-8">
-        <div className="md:px-72 ">
-          <div className="text-center text-xl md:text-2xl px-8 md:px-36 italic">
+        <div className="">
+          <div className="text-center text-xl md:text-2xl px-8 md:px-0 max-w-[900px] italic">
             We are a team of{" "}
             <span className="text-[#864EFF] italic">
             storytellers, creative wizards and tech geeks
@@ -43,7 +44,7 @@ function AboutUs() {
             className="group flex items-center text-white gap-4 px-8"
           >
             <span className="text-lg">Know More</span>{" "}
-            <ArrowRight className="group-hover:rotate-45 transition-all duration-300"/>
+            <ArrowRight className="group-active:rotate-45 md:group-hover:rotate-45 transition-all duration-300"/>
           </Button>
         </div>
 

@@ -1,42 +1,53 @@
 "use client";
-
-import { motion } from "framer-motion";
-import React, { useEffect, useState } from "react";
+import {motion} from "framer-motion";
+import React, {useEffect, useState} from "react";
+import "@/style/MaskedCursor.css";
 
 function Engage() {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [cursorVariant, setCursorVariant] = useState("default");
+
+  // define cursor coordinates
+  const [mousePosition, setMousePosition] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
+  const [isHovered, setIsHovered] = useState<boolean>(false);
 
   useEffect(() => {
-    const mouseMove = (e: MouseEvent) =>
+    const setFromEvent = (e: MouseEvent) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
-    window.addEventListener("mousemove", mouseMove);
-    return () => window.removeEventListener("mousemove", mouseMove);
+    };
+    window.addEventListener('mousemove', setFromEvent);
+
+    return () => {
+      window.removeEventListener('mousemove', setFromEvent);
+    };
   }, []);
 
-  const variants = {
-    default: { x: mousePosition.x - 16, y: mousePosition.y - 16 },
-    text: { x: mousePosition.x - 16, y: mousePosition.y - 16, scale: 1.5 },
-  };
-
-  const textEnter = () => setCursorVariant("text");
-  const textLeave = () => setCursorVariant("default");
+  const size = isHovered ? 450 : 30;
 
   return (
-    <div className="h-screen bg-[#E2E2E2] md:grid place-items-center pb-32 hidden cursor-none">
+    <div className="container">
       <motion.div
-        className="fixed top-0 left-0 pointer-events-none bg-black w-32 h-32 rounded-full"
-        variants={variants}
-        animate={cursorVariant}
-      />
-      <div
-        className="flex flex-col gap-6"
-        onMouseEnter={textEnter}
-        onMouseLeave={textLeave}
+        className="mask"
+        animate={{
+          WebkitMaskPosition: `${mousePosition.x - size / 2}px ${mousePosition.y - size / 2}px`,
+          WebkitMaskSize: `${size}px`,
+        }}
+        transition={{ ease: 'backOut', duration: 0.4 }}
       >
-        <span className="text-8xl">Brand Identity.</span>
-        <span className="text-9xl font-semibold">ENGAGE</span>
-        <span className="text-8xl">Digital Marketing</span>
+        <div
+          className="flex flex-col gap-6"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
+          <span className="text-8xl">Brand Identity.</span>
+          <span className="text-9xl font-semibold">ENGAGE</span>
+          <span className="text-8xl">Digital Marketing</span>
+        </div>
+      </motion.div>
+      <div className="normal">
+        <div className="flex flex-col gap-6">
+          <span className="text-8xl">Brand Identity.</span>
+          <span className="text-9xl font-semibold">ENGAGE</span>
+          <span className="text-8xl">Digital Marketing</span>
+        </div>
       </div>
     </div>
   );
