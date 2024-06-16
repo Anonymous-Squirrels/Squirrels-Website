@@ -8,7 +8,7 @@ export const BentoItems = [
     content: (
       <Image
         src="/assets/graph.png" width={180} height={180} alt="graph"
-        className="md:w-[600px] md:h-[600px]"/>
+        className=" md:w-[550px] md:h-[200px]"/>
     ),
   },
   {

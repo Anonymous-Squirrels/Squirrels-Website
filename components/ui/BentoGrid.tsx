@@ -40,9 +40,7 @@ export const BentoGridItem = ({
         </span>
       </div>
       <div className="flex items-center justify-center w-full h-full">
-        <span className="w-fit h-fit">
         {content}
-        </span>
       </div>
     </GlassMorphism>
   );
