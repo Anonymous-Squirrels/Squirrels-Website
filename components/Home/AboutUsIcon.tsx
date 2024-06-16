@@ -15,7 +15,7 @@ function AboutUsIcon() {
         setColor(true);
         setTimeout(() => setColor(false), 500);
       }}>
-      <LogoLarge className="w-[120px] h-[90px] md:w-[210px] md:h-[164px]" color={color ? "#7B61FF" : "#E7E7E7"}/>
+      <LogoLarge className="w-[110px] h-[80px] md:w-[190px] md:h-[155px]" color={color ? "#7B61FF" : "#E7E7E7"}/>
     </p>
   );
 }
