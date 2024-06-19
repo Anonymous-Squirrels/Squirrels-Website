@@ -1,17 +1,15 @@
 "use client";
-import React, { ForwardedRef } from "react";
+import React, {ForwardedRef} from "react";
 
-interface InputProps {
+interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   className?: string;
   classNameDiv?: string;
   classNameInput?: string;
   classNameText?: string;
-  type: string;
-  placeholder: string;
   text?: string;
 }
 
-const Input = React.forwardRef<HTMLInputElement | HTMLTextAreaElement, InputProps>(({
+const Input = React.forwardRef<HTMLInputElement, InputProps>(({
   className,
   classNameDiv,
   classNameInput,
@@ -20,13 +18,13 @@ const Input = React.forwardRef<HTMLInputElement | HTMLTextAreaElement, InputProp
   placeholder,
   text,
   ...rest
-}, ref: ForwardedRef<HTMLInputElement | HTMLTextAreaElement>) => {
+}, ref: any) => {
 
   return (
     <div className={className}>
       {text && <div className={`${classNameText}`}>{text}</div>}
       <div className={`overflow-hidden ${classNameDiv}`}>
-        {type !== "textarea" ? (
+        {type !== "textarea" && (
           <input
             type={type}
             placeholder={placeholder}
@@ -34,14 +32,6 @@ const Input = React.forwardRef<HTMLInputElement | HTMLTextAreaElement, InputProp
             className={`p-1.5 md:p-4 bg-transparent outline-none border-none w-full ${classNameInput}`}
             {...rest}
           />
-        ) : (
-          <textarea
-            placeholder={placeholder}
-            rows={5}
-            ref={ref}
-            className={`resize-none p-4 bg-transparent outline-none border-none w-full ${classNameInput}`}
-            {...rest}
-          ></textarea>
         )}
       </div>
     </div>

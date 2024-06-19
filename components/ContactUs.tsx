@@ -65,12 +65,12 @@ function ContactUs() {
               <Input
                 text="Name (Required)"
                 type="text"
-                {...register("name")}
                 placeholder="i.e. John Doe"
                 classNameDiv="bg-white rounded-lg p-0"
                 classNameInput="text-black placeholder:font-light"
                 classNameText="font-semibold"
                 className="my-2"
+                {...register("name")}
               />
               {errors && <p className={"text-red-500"}>{errors.name?.message}</p>}
             </div>
@@ -79,12 +79,13 @@ function ContactUs() {
               <Input
                 text="Email (Required)"
                 type="email"
-                {...register("email")}
+
                 placeholder="i.e. john@mail.com"
                 classNameDiv="bg-white rounded-lg p-0"
                 classNameInput="text-black placeholder:font-light"
                 classNameText="font-semibold"
                 className="my-2"
+                {...register("email")}
               />
               {errors && <p className={"text-red-500"}>{errors.email?.message}</p>}
             </div>
@@ -93,12 +94,12 @@ function ContactUs() {
               <Input
                 text="Phone"
                 type="text"
-                {...register("phone")}
                 placeholder="i.e. 123-456-7890"
                 classNameDiv="bg-white rounded-lg p-0"
                 classNameInput="text-black placeholder:font-light"
                 classNameText="font-semibold"
                 className="my-2"
+                {...register("phone")}
               />
               {errors && <p className={"text-red-500"}>{errors.phone?.message}</p>}
             </div>
@@ -107,12 +108,12 @@ function ContactUs() {
               <Input
                 text="Company Socials (LinkedIn, Instagram)"
                 type="text"
-                {...register("social")}
                 placeholder="Please provide a link"
                 classNameDiv="bg-white rounded-lg p-0"
                 classNameInput="text-black placeholder:font-light"
                 classNameText="font-semibold"
                 className="my-2"
+                {...register("social")}
               />
               {errors && <p className={"text-red-500"}>{errors.social?.message}</p>}
             </div>
@@ -121,12 +122,12 @@ function ContactUs() {
               <Input
                 text="Company Website"
                 type="text"
-                {...register("website")}
                 placeholder="Please provide us a link"
                 classNameDiv="bg-white rounded-lg p-0"
                 classNameInput="text-black placeholder:font-light"
                 classNameText="font-semibold"
                 className="my-2"
+                {...register("website")}
               />
               {errors && <p className={"text-red-500"}>{errors.website?.message}</p>}
             </div>
@@ -135,12 +136,12 @@ function ContactUs() {
               <Input
                 text="Message to the team"
                 type="text"
-                {...register("messageToTeam")}
                 placeholder="Enter your message"
                 classNameDiv="bg-white rounded-lg p-0"
                 classNameInput="text-black placeholder:font-light"
                 classNameText="font-semibold"
                 className="my-2"
+                {...register("messageToTeam")}
               />
               {errors && <p className={"text-red-500"}>{errors.messageToTeam?.message}</p>}
             </div>
