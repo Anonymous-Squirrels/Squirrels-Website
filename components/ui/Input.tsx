@@ -1,54 +1,42 @@
-import React from "react";
+"use client";
+import React, {ForwardedRef} from "react";
 
-function Input({
+interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+  className?: string;
+  classNameDiv?: string;
+  classNameInput?: string;
+  classNameText?: string;
+  text?: string;
+}
+
+const Input = React.forwardRef<HTMLInputElement, InputProps>(({
   className,
   classNameDiv,
   classNameInput,
   classNameText,
   type,
-  onChange,
-  value,
   placeholder,
   text,
-}: {
-  className?: string;
-  classNameDiv?: string;
-  classNameInput?: string;
-  classNameText?: string;
-  type: string;
-  onChange: (
-    e:
-      | React.ChangeEvent<HTMLInputElement>
-      | React.ChangeEvent<HTMLTextAreaElement>
-  ) => void;
-  value: string;
-  placeholder: string;
-  text?: string;
-}) {
+  ...rest
+}, ref: any) => {
+
   return (
     <div className={className}>
       {text && <div className={`${classNameText}`}>{text}</div>}
       <div className={`overflow-hidden ${classNameDiv}`}>
-        {type !== "textarea" ? (
+        {type !== "textarea" && (
           <input
-            value={value}
-            onChange={onChange}
             type={type}
             placeholder={placeholder}
+            ref={ref}
             className={`p-1.5 md:p-4 bg-transparent outline-none border-none w-full ${classNameInput}`}
+            {...rest}
           />
-        ) : (
-          <textarea
-            value={value}
-            onChange={onChange}
-            placeholder={placeholder}
-            rows={5}
-            className={`resize-none p-4 bg-transparent outline-none border-none w-full ${classNameInput}`}
-          ></textarea>
         )}
       </div>
     </div>
   );
-}
+});
+Input.displayName = "Input";
 
 export default Input;
