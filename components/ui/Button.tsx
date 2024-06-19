@@ -27,6 +27,7 @@ function Button({
   return (
     <button
       onClick={onClick}
+      type="submit"
       className={`transition-all duration-300 p-2 md:p-4 rounded-full ${btnStyle} ${className}`}
     >
       {children}

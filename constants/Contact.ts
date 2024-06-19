@@ -4,5 +4,5 @@ export const ContactUsInputs = [
   { text: "Phone", type: "text", placeholder: "i.e. 123-456-7890" },
   { text: "Company Socials (LinkedIn, Instagram)", type: "text", placeholder: "Please provide a link" },
   { text: "Company Website", type: "text", placeholder: "Please provide us a link" },
-  { text: "Message to the team", type: "text", placeholder: "Please provide us a link" },
+  { text: "Message to the team", type: "text", placeholder: "Enter your message" },
 ];
