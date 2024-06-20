@@ -245,7 +245,9 @@ function ContactUs() {
 
               <Button
                 variant="primary"
-                className="font-semibold w-full rounded-md mt-8 col-span-2"
+                isSubmitting={isSubmitting}
+                className={`font-semibold w-full rounded-md mt-8 col-span-2 hover:opacity-90 ${isSubmitting && "hover:opacity-90"}`}
+
               > {isSubmitting ? "Submitting..." : "Get Free Consultancy"}
               </Button>
             </form>
