@@ -1,5 +1,5 @@
 "use client";
-import React, {ForwardedRef} from "react";
+import React from "react";
 
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   className?: string;
@@ -37,6 +37,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(({
     </div>
   );
 });
+
 Input.displayName = "Input";
 
 export default Input;

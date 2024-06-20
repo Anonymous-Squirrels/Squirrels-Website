@@ -10,6 +10,7 @@ import {
   Squirrel,
 } from "@/constants/Icons";
 import React from "react";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -74,15 +75,9 @@ export default function Home() {
 
       <div className="text-white w-full flex flex-col justify-center items-center my-8">
         <span className="text-2xl font-semibold">Trusted By</span>
-        <div className="w-full md:w-1/2 grid grid-cols-3 md:grid-cols-6 place-items-center gap-3.5 md:gap-10 mt-10">
-          {Trustee.map((item: { name: string }) => (
-            <GlassMorphism
-              variant="light"
-              className="w-fit rounded-xl "
-              key={item.name}
-            >
-              {item.name}
-            </GlassMorphism>
+        <div className="w-full md:w-1/2 grid grid-cols-3 md:grid-cols-6 place-items-center gap-3.5 md:gap-10 mt-10 gap-y-5">
+          {Trustee.map((item: { alt: string, slug: string }, index) => (
+            <Image key={index} src={`/${item.slug}`} alt={item.alt} height={150} width={150} className={"rounded-[50%] h-16 w-16 md:h-fit md:w-fit"}/>
           ))}
         </div>
       </div>
