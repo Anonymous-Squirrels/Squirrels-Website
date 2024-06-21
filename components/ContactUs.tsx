@@ -168,11 +168,12 @@ function ContactUs() {
               <Button
                 variant="primary"
                 isSubmitting={isSubmitting1}
-                className="font-semibold w-full rounded-md mt-8"
+                className={`font-semibold w-full rounded-md mt-8 active:opacity-90 ${isSubmitting1 && "opacity-90"}`}
               > {isSubmitting1 ? "Submitting..." : "Get Free Consultancy"}
               </Button>
             </form>
           </GlassMorphism>
+
 
           <div className="w-[70%] py-10 hidden md:flex">
             <form onSubmit={handleSubmit2(onSubmit2)} className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-5 w-full">
@@ -246,7 +247,7 @@ function ContactUs() {
                 {errors2 && <p className={"text-red-500"}>{errors2.phone?.message}</p>}
               </div>
 
-              <div className="h-fit w-full col-span-2">
+              <div className="h-fit w-full">
                 <Input
                   text="Message to the team"
                   type="text"
@@ -263,7 +264,7 @@ function ContactUs() {
               <Button
                 variant="primary"
                 isSubmitting={isSubmitting2}
-                className="font-semibold w-full rounded-md mt-8 md:col-span-2"
+                className={`font-semibold w-full rounded-md mt-8 md:col-span-2 hover:opacity-90 ${isSubmitting2 && "opacity-90"}`}
               > {isSubmitting2 ? "Submitting..." : "Get Free Consultancy"}
               </Button>
             </form>

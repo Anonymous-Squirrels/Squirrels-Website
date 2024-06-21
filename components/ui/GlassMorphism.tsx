@@ -16,11 +16,14 @@ function GlassMorphism({
     case "dark":
       glassCss = "bg-black bg-opacity-10";
       break;
+    case "light":
+      glassCss = "bg-white bg-opacity-10";
+      break;
     default:
       glassCss = "bg-white bg-opacity-10";
   }
   return (
-    <div id={id} className={`p-4 backdrop-blur-sm ${glassCss} ${className} `}>
+    <div id={id} className={`p-4 backdrop-blur-sm h-fit w-fit ${glassCss} ${className} `}>
       {children}
     </div>
   );
