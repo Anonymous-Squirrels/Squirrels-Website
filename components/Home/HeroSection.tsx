@@ -75,9 +75,13 @@ export default function Home() {
 
       <div className="text-white w-full flex flex-col justify-center items-center my-8">
         <span className="text-2xl font-semibold">Trusted By</span>
-        <div className="w-full md:w-1/2 grid grid-cols-3 md:grid-cols-6 place-items-center gap-3.5 md:gap-10 mt-10 gap-y-5">
+        <div
+          className="w-full md:w-3/5 grid grid-cols-3 md:grid-cols-6 place-items-center gap-3.5 md:gap-10 mt-10 gap-y-5 z-20">
           {Trustee.map((item: { alt: string, slug: string }, index) => (
-            <Image key={index} src={`/${item.slug}`} alt={item.alt} height={150} width={150} className={"rounded-[50%] h-16 w-16 md:h-fit md:w-fit"}/>
+            <GlassMorphism variant={"light"} key={index} className=" bg-white  rounded-lg p-[8px]">
+              <Image src={`/${item.slug}`} alt={item.alt} height={150} width={150}
+                     className={"rounded-[50%] h-16 w-16 md:h-fit md:w-fit"}/>
+            </GlassMorphism>
           ))}
         </div>
       </div>

@@ -26,7 +26,7 @@ export const BentoGridItem = ({
     <GlassMorphism
       variant="light"
       className={cn(
-        "h-72 md:h-96 overflow-hidden rounded-xl group/bento transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:-white/[0.2] justify-between flex flex-col space-y-6",
+        "h-72 md:h-[400px] overflow-hidden rounded-xl group/bento transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:-white/[0.2] space-y-4",
         className
       )}
     >
@@ -35,11 +35,11 @@ export const BentoGridItem = ({
           className="text-center text-xl font-bold block mb-5"
           dangerouslySetInnerHTML={{ __html: title ?? "" }}
         ></span>
-        <span className="text-center text-xs md:text-lg inline-block text-dim-gray">
+        <span className="text-center text-xs md:text-lg inline-block text-[#D2D2D2]">
           {description}
         </span>
       </div>
-      <div className="flex items-center justify-center w-full h-full">
+      <div className="grid place-items-center items-center  w-full h-fit">
         {content}
       </div>
     </GlassMorphism>

@@ -9,10 +9,10 @@ export const BentoItems = [
     content: (
       <Image
         src="/assets/graph.png"
-        width={180}
-        height={180}
+        width={250}
+        height={250}
         alt="graph"
-        className="md:w-[600px] md:h-[600px]"
+        className="h-48 w-48 md:w-[300px] md:h-[300px]"
       />
     ),
   },
@@ -40,6 +40,7 @@ export const BentoItems = [
         width={180}
         height={180}
         alt="collaboration"
+        className={"h-92 w-92"}
       />
     ),
   },
@@ -48,7 +49,7 @@ export const BentoItems = [
     description:
       "Take the pain out of book keeping! Wave goodbye to mountains of paperwork and endless email reminders. We manage it all !!",
     content: (
-      <div className="w-full">
+      <div className="w-fit h-fit">
         <Link href="/project">
           <Button
             variant="light"
@@ -57,16 +58,16 @@ export const BentoItems = [
             View More
           </Button>
         </Link>
-        <div className="flex items-end justify-between w-full">
+        <div className="flex items-end justify-between w-fit">
           <Image
             src="/assets/oyoOfficial.png"
-            width={150}
-            height={150}
+            width={200}
+            height={200}
             alt="Oyo"
-            className="h-20 border mt-10"
+            className="h-20 md:h-fit border mt-10"
           />
 
-          <Image src="/assets/leo9.png" width={150} height={150} alt="Leo 9" />
+          <Image src="/assets/leo9.png" width={200} height={200} alt="Leo 9" className={"w-40 h-40 md:w-fit md:h-fit "}/>
         </div>
       </div>
     ),
@@ -80,7 +81,7 @@ export const BentoItems = [
       <Link href="/services">
         <Button
           variant="light"
-          className="rounded-full py-3 px-6 md:py-2 md:px-10 font-medium"
+          className="rounded-full py-3 px-6 md:mt-16 md:px-10 font-medium"
         >
           View our services
         </Button>
