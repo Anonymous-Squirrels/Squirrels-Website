@@ -24,33 +24,41 @@ function Footer() {
             <br className="" />
           </div>
           <div className="flex items-center gap-2 relative md:-left-16 mt-2">
-            <Link href="#">
-              <Image src="/logo/x.png" alt="logo" width={30} height={30} />
-            </Link>
-            <Link href="#">
-              <Image
-                src="/logo/facebook.png"
-                alt="logo"
-                width={30}
-                height={30}
-              />
-            </Link>
-            <Link href="#">
+            <a href="https://www.linkedin.com/company/anonymous-squirrels/?viewAsMember=true"  target="_blank" rel="noopener noreferrer">
               <Image
                 src="/logo/linkedin.png"
                 alt="logo"
                 width={30}
                 height={30}
               />
-            </Link>
-            <Link href="#">
+            </a>
+
+            <a href="https://api.whatsapp.com/send?phone=919122823474" target="_blank" rel="noopener noreferrer">
               <Image
                 src="/logo/whatsapp.png"
                 alt="logo"
                 width={30}
                 height={30}
               />
-            </Link>
+            </a>
+
+            <a href="https://www.instagram.com/anonymous_squirrels/" target="_blank" rel="noopener noreferrer">
+              <Image
+                src="/logo/instagramLogo.png"
+                alt="logo"
+                width={30}
+                height={30}
+              />
+            </a>
+            <a href="https://linktr.ee/kingshukbanerjee/" target="_blank" rel="noopener noreferrer">
+              <Image
+                src="/logo/LinkTree.png"
+                alt="logo"
+                width={30}
+                height={30}
+                className="rounded-lg"
+              />
+            </a>
           </div>
         </div>
 

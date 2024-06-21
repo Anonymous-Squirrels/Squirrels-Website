@@ -22,3 +22,14 @@ html {
     transform: translateX(0);
   }
 }
+
+@media ( min-width: 768px) {
+  .hidden-parent {
+    visibility: hidden;
+  }
+
+}
+
+.visible-child {
+  visibility: visible !important;
+}

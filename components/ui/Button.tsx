@@ -5,11 +5,13 @@ function Button({
   children,
   variant,
   onClick,
+  isSubmitting
 }: {
   className?: string;
   children: React.ReactNode;
   variant?: "primary" | "secondary" | "light";
   onClick?: () => void;
+  isSubmitting?: boolean
 }) {
   let btnStyle;
   switch (variant) {
@@ -27,7 +29,9 @@ function Button({
   return (
     <button
       onClick={onClick}
-      className={`transition-all duration-300 p-2 md:p-4 rounded-full ${btnStyle} ${className}`}
+      type="submit"
+      disabled={isSubmitting}
+      className={`transition-all duration-300 p-2 md:p-4 rounded-full ${btnStyle} ${className} `}
     >
       {children}
     </button>
