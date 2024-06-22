@@ -18,7 +18,9 @@ function Page() {
           <Blob variant="yellow"/>
         </div>
         <Home/>
-         {/*<Engage/>*/}
+        <div className="hidden md:block w-full h-[800px]">
+          <Engage/>
+        </div>
         <AboutUs/>
       </div>
       <BentoBox/>
