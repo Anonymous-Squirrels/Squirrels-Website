@@ -17,7 +17,7 @@ export const BentoItems = [
     ),
   },
   {
-    title: `Boosting Business. <br/> Today and Tomorrow.`,
+    title: `Boosting Business. Today and Tomorrow.`,
     description:
       "Bring harmony to team expenses with budget limits and real-time monitoring. Freedom for your staff. Peace of mind for you.",
     content: (
