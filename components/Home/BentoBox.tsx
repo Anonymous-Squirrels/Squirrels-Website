@@ -10,6 +10,7 @@ export function BentoBox() {
       <div className="grid grid-cols-1 md:grid-cols-6 gap-10 ">
         {BentoItems.map((item, i) => (
           <GlassMorphism
+            key={i}
             variant={"light"}
             className={`h-72 md:h-[400px] overflow-hidden rounded-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:-white/[0.2] space-y-4  ${
               i === 3 || i === 4 ? "md:col-span-3" : "md:col-span-2"
