@@ -39,9 +39,9 @@ export default function Home() {
             Elevate your content marketing with a powerful brand strategy.
           </div>
           <Button
-            className="md:p-4 text-sm md:text-xl rounded-md md:rounded-lg whitespace-nowrap w-40 md:w-[270px] bg-[#5237D8]"
+            className="md:p-3 rounded-md md:rounded-lg whitespace-nowrap w-40 md:w-[270px] bg-[#5237D8]"
             variant="primary"
-          ><p className="w-full h-fit overflow-clip">
+          ><p className="w-full h-fit overflow-clip  text-sm md:text-xl ">
             <span className="scroll-text inline-block">
               Get a Free Consultation Get a Free Consultation Get a Free Consultation
             </span>
