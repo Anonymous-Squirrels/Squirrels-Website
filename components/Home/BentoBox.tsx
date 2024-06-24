@@ -1,24 +1,48 @@
 "use client";
 import React from "react";
-import { BentoItems } from "@/constants/BentoBox";
-import { BentoGrid, BentoGridItem } from "../ui/BentoGrid";
+import {BentoItems} from "@/constants/BentoBox";
+import {BentoGridItem} from "../ui/BentoGrid";
+import GlassMorphism from "@/components/ui/GlassMorphism";
 
 export function BentoBox() {
   return (
     <div className="bg-[url('/assets/baltic-rose.webp')] bg-cover text-white p-10 md:p-32">
-      <BentoGrid className="grid grid-cols-1 md:grid-cols-6 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-6 gap-10 ">
         {BentoItems.map((item, i) => (
-          <BentoGridItem
+          <GlassMorphism
             key={i}
-            title={item.title}
-            description={item.description}
-            content={item.content}
-            className={`${
+            variant={"light"}
+            className={`h-72 md:h-[400px] overflow-hidden rounded-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:-white/[0.2] space-y-4  ${
               i === 3 || i === 4 ? "md:col-span-3" : "md:col-span-2"
-            }`}
-          />
+            }`}>
+            {/*<BentoGridItem
+              key={i}
+              title={item.title}
+              description={item.description}
+              content={item.content}
+              className={`${
+                i === 3 || i === 4 ? "md:col-span-3" : "md:col-span-2"
+              }`}
+            />*/}
+
+            <div className={`text-sm transition duration-200 w-full`}>
+              <p
+                className="text-center text-xl font-bold block mb-5"
+              >
+                {item.title}
+              </p>
+
+              <p className="text-center text-xs md:text-lg inline-block text-[#D2D2D2]">
+                {item.description}
+              </p>
+            </div>
+
+            <div className="grid place-items-center items-center  w-full h-fit">
+              {item.content}
+            </div>
+          </GlassMorphism>
         ))}
-      </BentoGrid>
+      </div>
     </div>
   );
 }
