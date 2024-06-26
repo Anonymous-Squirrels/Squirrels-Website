@@ -154,7 +154,7 @@ function Footer() {
         </div>
       </div>
       <div className="flex md:flex-col items-center justify-center gap-x-3">
-        <p className="w-fit text-center text-sm hidden md:flex">Made with love 💓 by</p>
+        <p className="w-fit text-center text-sm hidden md:flex">Made with 💜 by</p>
         <p className="w-fit text-center text-base flex md:hidden text-md">Made by</p>
         <div className="w-fit h-fit flex items-center justify justify-center py-4">
           <AnimatedTooltip items={people}/>
