@@ -77,11 +77,14 @@ export default function Home() {
         <span className="text-2xl font-semibold">Trusted By</span>
         <div
           className="w-full md:w-3/5 grid grid-cols-3 md:grid-cols-6 place-items-center gap-3.5 md:gap-10 mt-10 gap-y-5 z-20">
-          {Trustee.map((item: { alt: string, slug: string }, index) => (
-            <GlassMorphism variant={"light"} key={index} className=" bg-white  rounded-lg p-[8px]">
-              <Image src={`/${item.slug}`} alt={item.alt} height={150} width={150}
-                     className={"rounded-[50%] h-16 w-16 md:h-fit md:w-fit"}/>
-            </GlassMorphism>
+          {Trustee.map((item: { alt: string; slug: string; name: string }, index) => (
+            <div key={index} className="w-full grid place-items-center text-sm md:text-base text-center ">
+              <GlassMorphism variant={"light"}  className=" bg-white  rounded-lg p-[8px]">
+                <Image src={`/${item.slug}`} alt={item.alt} height={150} width={150}
+                       className={"rounded-[50%] h-16 w-16 md:h-fit md:w-fit"}/>
+              </GlassMorphism>
+              <p className="my-2.5 max-w-[90px] md:max-w-fit">{item.name}</p>
+            </div>
           ))}
         </div>
       </div>
