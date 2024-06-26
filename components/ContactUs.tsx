@@ -92,7 +92,7 @@ function ContactUs() {
                   className="my-2"
                   {...register1("name")}
                 />
-                {errors1 && <p className={"text-red-500"}>{errors1.name?.message}</p>}
+                {errors1 && <p className={"text-red-500 text-xs"}>{errors1.name?.message}</p>}
               </div>
 
               <div className="h-fit w-full">
@@ -106,7 +106,7 @@ function ContactUs() {
                   className="my-2"
                   {...register1("email")}
                 />
-                {errors1 && <p className={"text-red-500"}>{errors1.email?.message}</p>}
+                {errors1 && <p className={"text-red-500 text-xs"}>{errors1.email?.message}</p>}
               </div>
 
               <div className="h-fit w-full">
@@ -120,7 +120,7 @@ function ContactUs() {
                   className="my-2"
                   {...register1("phone")}
                 />
-                {errors1 && <p className={"text-red-500"}>{errors1.phone?.message}</p>}
+                {errors1 && <p className={"text-red-500 text-xs"}>{errors1.phone?.message}</p>}
               </div>
 
               <div className="h-fit w-full">
@@ -134,7 +134,7 @@ function ContactUs() {
                   className="my-2"
                   {...register1("social")}
                 />
-                {errors1 && <p className={"text-red-500"}>{errors1.social?.message}</p>}
+                {errors1 && <p className={"text-red-500 text-xs"}>{errors1.social?.message}</p>}
               </div>
 
               <div className="h-fit w-full">
@@ -148,7 +148,7 @@ function ContactUs() {
                   className="my-2"
                   {...register1("website")}
                 />
-                {errors1 && <p className={"text-red-500"}>{errors1.website?.message}</p>}
+                {errors1 && <p className={"text-red-500 text-xs"}>{errors1.website?.message}</p>}
               </div>
 
               <div className="h-fit w-full">
@@ -162,7 +162,7 @@ function ContactUs() {
                   className="my-2"
                   {...register1("messageToTeam")}
                 />
-                {errors1 && <p className={"text-red-500"}>{errors1.messageToTeam?.message}</p>}
+                {errors1 && <p className={"text-red-500 text-xs"}>{errors1.messageToTeam?.message}</p>}
               </div>
 
               <Button
@@ -176,7 +176,7 @@ function ContactUs() {
 
 
           <div className="w-[70%] py-10 hidden md:flex">
-            <form onSubmit={handleSubmit2(onSubmit2)} className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-5 w-full">
+            <form onSubmit={handleSubmit2(onSubmit2)} className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-5 w-full text-sm">
               <div className="h-fit w-full">
                 <Input
                   text="Name (Required)"
@@ -188,7 +188,7 @@ function ContactUs() {
                   className="my-2"
                   {...register2("name")}
                 />
-                {errors2 && <p className={"text-red-500"}>{errors2.name?.message}</p>}
+                {errors2 && <p className={"text-red-500 text-sm"}>{errors2.name?.message}</p>}
               </div>
 
               <div className="h-fit w-full">
@@ -202,7 +202,7 @@ function ContactUs() {
                   className="my-2"
                   {...register2("social")}
                 />
-                {errors2 && <p className={"text-red-500"}>{errors2.social?.message}</p>}
+                {errors2 && <p className={"text-red-500 text-sm"}>{errors2.social?.message}</p>}
               </div>
 
               <div className="h-fit w-full">
@@ -216,7 +216,7 @@ function ContactUs() {
                   className="my-2"
                   {...register2("email")}
                 />
-                {errors2 && <p className={"text-red-500"}>{errors2.email?.message}</p>}
+                {errors2 && <p className={"text-red-500 text-sm"}>{errors2.email?.message}</p>}
               </div>
 
               <div className="h-fit w-full">
@@ -230,7 +230,7 @@ function ContactUs() {
                   className="my-2"
                   {...register2("website")}
                 />
-                {errors2 && <p className={"text-red-500"}>{errors2.website?.message}</p>}
+                {errors2 && <p className={"text-red-500 text-sm"}>{errors2.website?.message}</p>}
               </div>
 
               <div className="h-fit w-full">
@@ -244,7 +244,7 @@ function ContactUs() {
                   className="my-2"
                   {...register2("phone")}
                 />
-                {errors2 && <p className={"text-red-500"}>{errors2.phone?.message}</p>}
+                {errors2 && <p className={"text-red-500 text-sm"}>{errors2.phone?.message}</p>}
               </div>
 
               <div className="h-fit w-full">
@@ -258,7 +258,7 @@ function ContactUs() {
                   className="my-2"
                   {...register2("messageToTeam")}
                 />
-                {errors2 && <p className={"text-red-500"}>{errors2.messageToTeam?.message}</p>}
+                {errors2 && <p className={"text-red-500 text-sm"}>{errors2.messageToTeam?.message}</p>}
               </div>
 
               <Button

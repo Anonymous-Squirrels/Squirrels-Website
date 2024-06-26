@@ -18,7 +18,7 @@ function Page() {
           <Blob variant="yellow"/>
         </div>
         <Home/>
-        <div className="hidden md:block w-full h-[800px]">
+        <div className="hidden md:block w-full h-[700px]">
           <Engage/>
         </div>
         <AboutUs/>
