@@ -12,21 +12,21 @@ function OurValues() {
       </div>
 
       <div className="flex flex-col md:flex-row items-center md:items-start justify-between px-7 md:p-24 gap-y-8">
-        <div className="w-full md:w-fit rounded-lg">
-          <div className="w-full md:w-fit flex flex-col items-start justify-around gap-y-5 rounded-lg shadow-md p-6 md:mr-20">
+        <div className="w-full md:w-fit rounded-lg grid place-items-center">
+          <div className="w-full md:w-fit flex flex-col items-center justify-around gap-y-5 rounded-lg shadow-md p-6 md:mr-20">
             <span className="uppercase font-bold">Trust</span>
             <span className="text-sm leading-7 w-3/4">
               Cultivating Enduring Relationships Through Unwavering Integrity
               and Reliability.
             </span>
           </div>
-          <div className="grid place-items-center w-[90%]">
+          <div className="w-fit md:relative right-9">
             <Image
               src="/assets/handshake.png"
               width={500}
               height={500}
               alt="handshake"
-              className="w-full"
+              className="w-fit"
             />
           </div>
         </div>

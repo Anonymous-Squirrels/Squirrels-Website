@@ -11,29 +11,49 @@ import {zodResolver} from "@hookform/resolvers/zod";
 
 function ContactUs() {
   const {
-    register, handleSubmit,
-    formState: {errors, isSubmitting}
+    register: register1,
+    handleSubmit: handleSubmit1,
+    formState: { errors: errors1, isSubmitting: isSubmitting1 }
   } = useForm<z.infer<typeof formInputSchema>>({
-      resolver: zodResolver(formInputSchema),
-      defaultValues: {
-        name: "",
-        email: "",
-        phone: "",
-        messageToTeam: "",
-        social: "",
-        website: "",
-      }
+    resolver: zodResolver(formInputSchema),
+    defaultValues: {
+      name: "",
+      email: "",
+      phone: "",
+      messageToTeam: "",
+      social: "",
+      website: "",
     }
-  )
+  });
 
-  const onSubmit: SubmitHandler<z.infer<typeof formInputSchema>> = async (data: z.infer<typeof formInputSchema>) => {
+  const {
+    register: register2,
+    handleSubmit: handleSubmit2,
+    formState: { errors: errors2, isSubmitting: isSubmitting2 }
+  } = useForm<z.infer<typeof formInputSchema>>({
+    resolver: zodResolver(formInputSchema),
+    defaultValues: {
+      name: "",
+      email: "",
+      phone: "",
+      messageToTeam: "",
+      social: "",
+      website: "",
+    }
+  });
+
+  const onSubmit1: SubmitHandler<z.infer<typeof formInputSchema>> = async (data) => {
+    console.log(data);
+  }
+
+  const onSubmit2: SubmitHandler<z.infer<typeof formInputSchema>> = async (data) => {
     console.log(data);
   }
 
   return (
     <div
       id="contact"
-      className="bg-contact-us bg-center bg-cover h-fit grid place-items-center text-white py-7 md:py-14 md:px-36 "
+      className="bg-contact-us bg-center bg-cover h-fit grid place-items-center text-white py-7 md:py-14 md:px-36"
     >
       <GlassMorphism variant={"light"} className="invisible md:visible w-full rounded-2xl">
         <div className="flex flex-col items-center justify-between md:justify-around gap-y-6 md:gap-y-0 w-full visible md:mt-6">
@@ -42,17 +62,17 @@ function ContactUs() {
               variant="light"
               className="rounded-full p-0 text-white w-fit h-fit self-start md:self-auto"
             >
-              <Message2 className="w-14 h-14 md:w-20 md:h-20"/>
+              <Message2 className="w-14 h-14 md:w-20 md:h-20" />
             </GlassMorphism>
 
             <div className="w-fit md:w-fit mt-5 md:mt-0 md:px-4">
-            <span className="text-2xl md:text-4xl font-bold block my-3 leading-normal">
-              Get a free consultancy from our expert right now!
-            </span>
+              <span className="text-2xl md:text-4xl font-bold block my-3 leading-normal">
+                Get a free consultancy from our expert right now!
+              </span>
               <span className="text-sm font-light leading-8">
-              With lots of unique elements, you can promote and grow your
-              business to the sky. Really!
-            </span>
+                With lots of unique elements, you can promote and grow your
+                business to the sky. Really!
+              </span>
             </div>
           </div>
 
@@ -60,8 +80,7 @@ function ContactUs() {
             variant="light"
             className="border rounded-xl text-white w-[350px] md:w-full p-4 md:hidden"
           >
-            <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-1 gap-x-8">
-
+            <form onSubmit={handleSubmit1(onSubmit1)} className="grid grid-cols-1 gap-x-8">
               <div className="h-fit w-full">
                 <Input
                   text="Name (Required)"
@@ -71,24 +90,23 @@ function ContactUs() {
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
                   className="my-2"
-                  {...register("name")}
+                  {...register1("name")}
                 />
-                {errors && <p className={"text-red-500"}>{errors.name?.message}</p>}
+                {errors1 && <p className={"text-red-500 text-xs"}>{errors1.name?.message}</p>}
               </div>
 
               <div className="h-fit w-full">
                 <Input
                   text="Email (Required)"
                   type="email"
-
                   placeholder="i.e. john@mail.com"
                   classNameDiv="bg-white rounded-lg p-0"
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
                   className="my-2"
-                  {...register("email")}
+                  {...register1("email")}
                 />
-                {errors && <p className={"text-red-500"}>{errors.email?.message}</p>}
+                {errors1 && <p className={"text-red-500 text-xs"}>{errors1.email?.message}</p>}
               </div>
 
               <div className="h-fit w-full">
@@ -100,9 +118,9 @@ function ContactUs() {
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
                   className="my-2"
-                  {...register("phone")}
+                  {...register1("phone")}
                 />
-                {errors && <p className={"text-red-500"}>{errors.phone?.message}</p>}
+                {errors1 && <p className={"text-red-500 text-xs"}>{errors1.phone?.message}</p>}
               </div>
 
               <div className="h-fit w-full">
@@ -114,9 +132,9 @@ function ContactUs() {
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
                   className="my-2"
-                  {...register("social")}
+                  {...register1("social")}
                 />
-                {errors && <p className={"text-red-500"}>{errors.social?.message}</p>}
+                {errors1 && <p className={"text-red-500 text-xs"}>{errors1.social?.message}</p>}
               </div>
 
               <div className="h-fit w-full">
@@ -128,9 +146,9 @@ function ContactUs() {
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
                   className="my-2"
-                  {...register("website")}
+                  {...register1("website")}
                 />
-                {errors && <p className={"text-red-500"}>{errors.website?.message}</p>}
+                {errors1 && <p className={"text-red-500 text-xs"}>{errors1.website?.message}</p>}
               </div>
 
               <div className="h-fit w-full">
@@ -142,22 +160,23 @@ function ContactUs() {
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
                   className="my-2"
-                  {...register("messageToTeam")}
+                  {...register1("messageToTeam")}
                 />
-                {errors && <p className={"text-red-500"}>{errors.messageToTeam?.message}</p>}
+                {errors1 && <p className={"text-red-500 text-xs"}>{errors1.messageToTeam?.message}</p>}
               </div>
 
               <Button
                 variant="primary"
-                className="font-semibold w-full rounded-md mt-8"
-              > {isSubmitting ? "Submitting..." : "Get Free Consultancy"}
+                isSubmitting={isSubmitting1}
+                className={`font-semibold w-full rounded-md mt-8 active:opacity-90 ${isSubmitting1 && "opacity-90"}`}
+              > {isSubmitting1 ? "Submitting..." : "Get Free Consultancy"}
               </Button>
             </form>
           </GlassMorphism>
 
 
           <div className="w-[70%] py-10 hidden md:flex">
-            <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-5 w-full">
+            <form onSubmit={handleSubmit2(onSubmit2)} className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-5 w-full text-sm">
               <div className="h-fit w-full">
                 <Input
                   text="Name (Required)"
@@ -167,9 +186,9 @@ function ContactUs() {
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
                   className="my-2"
-                  {...register("name")}
+                  {...register2("name")}
                 />
-                {errors && <p className={"text-red-500"}>{errors.name?.message}</p>}
+                {errors2 && <p className={"text-red-500 text-sm"}>{errors2.name?.message}</p>}
               </div>
 
               <div className="h-fit w-full">
@@ -181,24 +200,23 @@ function ContactUs() {
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
                   className="my-2"
-                  {...register("social")}
+                  {...register2("social")}
                 />
-                {errors && <p className={"text-red-500"}>{errors.social?.message}</p>}
+                {errors2 && <p className={"text-red-500 text-sm"}>{errors2.social?.message}</p>}
               </div>
 
               <div className="h-fit w-full">
                 <Input
                   text="Email (Required)"
                   type="email"
-
                   placeholder="i.e. john@mail.com"
                   classNameDiv="bg-white rounded-lg p-0"
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
                   className="my-2"
-                  {...register("email")}
+                  {...register2("email")}
                 />
-                {errors && <p className={"text-red-500"}>{errors.email?.message}</p>}
+                {errors2 && <p className={"text-red-500 text-sm"}>{errors2.email?.message}</p>}
               </div>
 
               <div className="h-fit w-full">
@@ -210,9 +228,9 @@ function ContactUs() {
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
                   className="my-2"
-                  {...register("website")}
+                  {...register2("website")}
                 />
-                {errors && <p className={"text-red-500"}>{errors.website?.message}</p>}
+                {errors2 && <p className={"text-red-500 text-sm"}>{errors2.website?.message}</p>}
               </div>
 
               <div className="h-fit w-full">
@@ -224,9 +242,9 @@ function ContactUs() {
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
                   className="my-2"
-                  {...register("phone")}
+                  {...register2("phone")}
                 />
-                {errors && <p className={"text-red-500"}>{errors.phone?.message}</p>}
+                {errors2 && <p className={"text-red-500 text-sm"}>{errors2.phone?.message}</p>}
               </div>
 
               <div className="h-fit w-full">
@@ -238,24 +256,23 @@ function ContactUs() {
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
                   className="my-2"
-                  {...register("messageToTeam")}
+                  {...register2("messageToTeam")}
                 />
-                {errors && <p className={"text-red-500"}>{errors.messageToTeam?.message}</p>}
+                {errors2 && <p className={"text-red-500 text-sm"}>{errors2.messageToTeam?.message}</p>}
               </div>
 
               <Button
                 variant="primary"
-                isSubmitting={isSubmitting}
-                className={`font-semibold w-full rounded-md mt-8 col-span-2 hover:opacity-90 ${isSubmitting && "hover:opacity-90"}`}
-
-              > {isSubmitting ? "Submitting..." : "Get Free Consultancy"}
+                isSubmitting={isSubmitting2}
+                className={`font-semibold w-full rounded-md mt-8 md:col-span-2 hover:opacity-90 ${isSubmitting2 && "opacity-90"}`}
+              > {isSubmitting2 ? "Submitting..." : "Get Free Consultancy"}
               </Button>
             </form>
           </div>
         </div>
       </GlassMorphism>
     </div>
-  );
+  )
 }
 
 export default ContactUs;

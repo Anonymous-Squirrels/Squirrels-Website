@@ -5,7 +5,6 @@ import Item from "./Testimonials/Item";
 import {TestimonialData} from "@/constants/Testimonials";
 
 import {Swiper, SwiperSlide} from 'swiper/react';
-
 // Import Swiper styles
 import '@/app/local_swiper.css';
 import 'swiper/css/navigation';

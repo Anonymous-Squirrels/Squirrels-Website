@@ -9,7 +9,7 @@ import Engage from "@/components/Home/Engage";
 
 function Page() {
   return (
-    <div className="scrollbar-hide">
+    <div className="scrollbar-hide cursor-default">
       <div className="w-full relative overflow-hidden">
         <div className="absolute md:hidden -translate-x-1/2 -top-52 z-10">
           <Blob variant="violet"/>
@@ -18,7 +18,9 @@ function Page() {
           <Blob variant="yellow"/>
         </div>
         <Home/>
-         {/*<Engage/>*/}
+        <div className="hidden md:block w-full h-[700px]">
+          <Engage/>
+        </div>
         <AboutUs/>
       </div>
       <BentoBox/>
