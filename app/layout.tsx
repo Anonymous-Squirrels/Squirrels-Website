@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
+import { Toaster } from "sonner";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -39,9 +40,10 @@ export default function RootLayout({
       <link rel="icon" href="/logo.ico"/>
     </head>
     <body className={`${inter.className} scrollbar-hide`}>
-        <NavBar />
-        <>{children}</>
-        <Footer />
+    <Toaster/>
+    <NavBar/>
+    <>{children}</>
+    <Footer />
       </body>
     </html>
   );

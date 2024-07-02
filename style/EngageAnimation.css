@@ -20,15 +20,15 @@
 .cursor {
   pointer-events: none;
   position: fixed;
-  padding: 0.3rem;
+  padding: 1.5rem;
   background-color: #fff;
-  border-radius: 50%;
+  border-radius: 100%;
   mix-blend-mode: difference;
   transition: transform 0.3s ease;
 }
 
 .hover-this:hover ~ .cursor {
-  transform: translate(-50%, -50%) scale(30);
+  transform: translate(-50%, -50%) scale(8);
 }
 
 .brand {
@@ -46,7 +46,7 @@
 }
 
 .content {
-  animation: content-animation  2s ease-in-out;
+  animation: content-animation 2s ease-in-out;
   animation-fill-mode: forwards;
 }
 

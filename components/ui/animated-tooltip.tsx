@@ -8,6 +8,7 @@ import {
   useMotionValue,
   useSpring,
 } from "framer-motion";
+import Link from "next/link";
 
 export const AnimatedTooltip = ({
   items,
@@ -17,6 +18,7 @@ export const AnimatedTooltip = ({
     name: string;
     designation: string;
     image: string;
+    linkedIn: string;
   }[];
 }) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -40,7 +42,8 @@ export const AnimatedTooltip = ({
   return (
     <>
       {items.map((item, idx) => (
-        <div
+        <Link
+          href={item.linkedIn}
           className="-mr-4  relative group"
           key={item.name}
           onMouseEnter={() => setHoveredIndex(item.id)}
@@ -67,9 +70,7 @@ export const AnimatedTooltip = ({
                   whiteSpace: "nowrap",
                 }}
                 className=""
-              >
-
-              </motion.div>
+              ></motion.div>
             )}
           </AnimatePresence>
           <Image
@@ -80,7 +81,7 @@ export const AnimatedTooltip = ({
             alt={item.name}
             className="object-cover !m-0 !p-0 object-top rounded-full h-9 w-9 md:h-10 md:w-10 border-2 group-hover:scale-105 group-hover:z-20 border-white  relative transition duration-500"
           />
-        </div>
+        </Link>
       ))}
     </>
   );

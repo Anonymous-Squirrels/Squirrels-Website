@@ -2,18 +2,20 @@
 import React from "react";
 import GlassMorphism from "./ui/GlassMorphism";
 import Input from "./ui/Input";
-import {Message2} from "@/constants/Icons";
+import { Message2 } from "@/constants/Icons";
 import Button from "./ui/Button";
-import {formInputSchema} from "@/form_schema/formInputSchema";
-import {SubmitHandler, useForm} from "react-hook-form";
+import { formInputSchema } from "@/form_schema/formInputSchema";
+import { SubmitHandler, useForm } from "react-hook-form";
 import * as z from "zod";
-import {zodResolver} from "@hookform/resolvers/zod";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { sendMail } from "@/actions/resend";
+import { toast } from "sonner";
 
 function ContactUs() {
   const {
-    register: register1,
-    handleSubmit: handleSubmit1,
-    formState: { errors: errors1, isSubmitting: isSubmitting1 }
+    register: register,
+    handleSubmit: handleSubmit,
+    formState: { errors: errors, isSubmitting: isSubmitting },
   } = useForm<z.infer<typeof formInputSchema>>({
     resolver: zodResolver(formInputSchema),
     defaultValues: {
@@ -23,39 +25,28 @@ function ContactUs() {
       messageToTeam: "",
       social: "",
       website: "",
-    }
+    },
   });
 
-  const {
-    register: register2,
-    handleSubmit: handleSubmit2,
-    formState: { errors: errors2, isSubmitting: isSubmitting2 }
-  } = useForm<z.infer<typeof formInputSchema>>({
-    resolver: zodResolver(formInputSchema),
-    defaultValues: {
-      name: "",
-      email: "",
-      phone: "",
-      messageToTeam: "",
-      social: "",
-      website: "",
-    }
-  });
-
-  const onSubmit1: SubmitHandler<z.infer<typeof formInputSchema>> = async (data) => {
-    console.log(data);
-  }
-
-  const onSubmit2: SubmitHandler<z.infer<typeof formInputSchema>> = async (data) => {
-    console.log(data);
-  }
+  const onSubmit: SubmitHandler<z.infer<typeof formInputSchema>> = async (
+    data
+  ) => {
+    sendMail(JSON.stringify(data))
+      .then(() =>
+        toast.success("Mail sent successfully! You will be contacted soon.")
+      )
+      .catch(() => toast.error("Mail not sent. Please try again later."));
+  };
 
   return (
     <div
       id="contact"
       className="bg-contact-us bg-center bg-cover h-fit grid place-items-center text-white py-7 md:py-14 md:px-36"
     >
-      <GlassMorphism variant={"light"} className="invisible md:visible w-full rounded-2xl">
+      <GlassMorphism
+        variant={"light"}
+        className="invisible md:visible w-full rounded-2xl"
+      >
         <div className="flex flex-col items-center justify-between md:justify-around gap-y-6 md:gap-y-0 w-full visible md:mt-6">
           <div className="md:w-full px-8 md:px-0 flex flex-col md:flex-row items-center justify-center gap-x-4">
             <GlassMorphism
@@ -80,7 +71,10 @@ function ContactUs() {
             variant="light"
             className="border rounded-xl text-white w-[350px] md:w-full p-4 md:hidden"
           >
-            <form onSubmit={handleSubmit1(onSubmit1)} className="grid grid-cols-1 gap-x-8">
+            <form
+              onSubmit={handleSubmit(onSubmit)}
+              className="grid grid-cols-1 gap-x-8"
+            >
               <div className="h-fit w-full">
                 <Input
                   text="Name (Required)"
@@ -90,9 +84,13 @@ function ContactUs() {
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
                   className="my-2"
-                  {...register1("name")}
+                  {...register("name")}
                 />
-                {errors1 && <p className={"text-red-500 text-xs"}>{errors1.name?.message}</p>}
+                {errors && (
+                  <p className={"text-red-500 text-xs"}>
+                    {errors.name?.message}
+                  </p>
+                )}
               </div>
 
               <div className="h-fit w-full">
@@ -104,9 +102,13 @@ function ContactUs() {
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
                   className="my-2"
-                  {...register1("email")}
+                  {...register("email")}
                 />
-                {errors1 && <p className={"text-red-500 text-xs"}>{errors1.email?.message}</p>}
+                {errors && (
+                  <p className={"text-red-500 text-xs"}>
+                    {errors.email?.message}
+                  </p>
+                )}
               </div>
 
               <div className="h-fit w-full">
@@ -118,9 +120,13 @@ function ContactUs() {
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
                   className="my-2"
-                  {...register1("phone")}
+                  {...register("phone")}
                 />
-                {errors1 && <p className={"text-red-500 text-xs"}>{errors1.phone?.message}</p>}
+                {errors && (
+                  <p className={"text-red-500 text-xs"}>
+                    {errors.phone?.message}
+                  </p>
+                )}
               </div>
 
               <div className="h-fit w-full">
@@ -132,9 +138,13 @@ function ContactUs() {
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
                   className="my-2"
-                  {...register1("social")}
+                  {...register("social")}
                 />
-                {errors1 && <p className={"text-red-500 text-xs"}>{errors1.social?.message}</p>}
+                {errors && (
+                  <p className={"text-red-500 text-xs"}>
+                    {errors.social?.message}
+                  </p>
+                )}
               </div>
 
               <div className="h-fit w-full">
@@ -146,9 +156,13 @@ function ContactUs() {
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
                   className="my-2"
-                  {...register1("website")}
+                  {...register("website")}
                 />
-                {errors1 && <p className={"text-red-500 text-xs"}>{errors1.website?.message}</p>}
+                {errors && (
+                  <p className={"text-red-500 text-xs"}>
+                    {errors.website?.message}
+                  </p>
+                )}
               </div>
 
               <div className="h-fit w-full">
@@ -160,23 +174,33 @@ function ContactUs() {
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
                   className="my-2"
-                  {...register1("messageToTeam")}
+                  {...register("messageToTeam")}
                 />
-                {errors1 && <p className={"text-red-500 text-xs"}>{errors1.messageToTeam?.message}</p>}
+                {errors && (
+                  <p className={"text-red-500 text-xs"}>
+                    {errors.messageToTeam?.message}
+                  </p>
+                )}
               </div>
 
               <Button
                 variant="primary"
-                isSubmitting={isSubmitting1}
-                className={`font-semibold w-full rounded-md mt-8 active:opacity-90 ${isSubmitting1 && "opacity-90"}`}
-              > {isSubmitting1 ? "Submitting..." : "Get Free Consultancy"}
+                isSubmitting={isSubmitting}
+                className={`font-semibold w-full rounded-md mt-8 active:opacity-90 ${
+                  isSubmitting && "opacity-90"
+                }`}
+              >
+                {" "}
+                {isSubmitting ? "Submitting..." : "Get Free Consultancy"}
               </Button>
             </form>
           </GlassMorphism>
 
-
           <div className="w-[70%] py-10 hidden md:flex">
-            <form onSubmit={handleSubmit2(onSubmit2)} className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-5 w-full text-sm">
+            <form
+              onSubmit={handleSubmit(onSubmit)}
+              className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-5 w-full text-sm"
+            >
               <div className="h-fit w-full">
                 <Input
                   text="Name (Required)"
@@ -186,9 +210,13 @@ function ContactUs() {
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
                   className="my-2"
-                  {...register2("name")}
+                  {...register("name")}
                 />
-                {errors2 && <p className={"text-red-500 text-sm"}>{errors2.name?.message}</p>}
+                {errors && (
+                  <p className={"text-red-500 text-sm"}>
+                    {errors.name?.message}
+                  </p>
+                )}
               </div>
 
               <div className="h-fit w-full">
@@ -200,9 +228,13 @@ function ContactUs() {
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
                   className="my-2"
-                  {...register2("social")}
+                  {...register("social")}
                 />
-                {errors2 && <p className={"text-red-500 text-sm"}>{errors2.social?.message}</p>}
+                {errors && (
+                  <p className={"text-red-500 text-sm"}>
+                    {errors.social?.message}
+                  </p>
+                )}
               </div>
 
               <div className="h-fit w-full">
@@ -214,9 +246,13 @@ function ContactUs() {
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
                   className="my-2"
-                  {...register2("email")}
+                  {...register("email")}
                 />
-                {errors2 && <p className={"text-red-500 text-sm"}>{errors2.email?.message}</p>}
+                {errors && (
+                  <p className={"text-red-500 text-sm"}>
+                    {errors.email?.message}
+                  </p>
+                )}
               </div>
 
               <div className="h-fit w-full">
@@ -228,9 +264,13 @@ function ContactUs() {
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
                   className="my-2"
-                  {...register2("website")}
+                  {...register("website")}
                 />
-                {errors2 && <p className={"text-red-500 text-sm"}>{errors2.website?.message}</p>}
+                {errors && (
+                  <p className={"text-red-500 text-sm"}>
+                    {errors.website?.message}
+                  </p>
+                )}
               </div>
 
               <div className="h-fit w-full">
@@ -242,9 +282,13 @@ function ContactUs() {
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
                   className="my-2"
-                  {...register2("phone")}
+                  {...register("phone")}
                 />
-                {errors2 && <p className={"text-red-500 text-sm"}>{errors2.phone?.message}</p>}
+                {errors && (
+                  <p className={"text-red-500 text-sm"}>
+                    {errors.phone?.message}
+                  </p>
+                )}
               </div>
 
               <div className="h-fit w-full">
@@ -256,23 +300,30 @@ function ContactUs() {
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
                   className="my-2"
-                  {...register2("messageToTeam")}
+                  {...register("messageToTeam")}
                 />
-                {errors2 && <p className={"text-red-500 text-sm"}>{errors2.messageToTeam?.message}</p>}
+                {errors && (
+                  <p className={"text-red-500 text-sm"}>
+                    {errors.messageToTeam?.message}
+                  </p>
+                )}
               </div>
 
               <Button
                 variant="primary"
-                isSubmitting={isSubmitting2}
-                className={`font-semibold w-full rounded-md mt-8 md:col-span-2 hover:opacity-90 ${isSubmitting2 && "opacity-90"}`}
-              > {isSubmitting2 ? "Submitting..." : "Get Free Consultancy"}
+                isSubmitting={isSubmitting}
+                className={`font-semibold w-full rounded-md mt-8 md:col-span-2 hover:opacity-90 ${
+                  isSubmitting && "opacity-90"
+                }`}
+              >
+                {isSubmitting ? "Submitting..." : "Get Free Consultancy"}
               </Button>
             </form>
           </div>
         </div>
       </GlassMorphism>
     </div>
-  )
+  );
 }
 
 export default ContactUs;

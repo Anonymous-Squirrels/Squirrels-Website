@@ -21,7 +21,6 @@ export const GreenCleanSquad = {
   image: "/assets/gcs.png",
   overview:
     "Lorem ipsum dolor sit amet consectetur. Feugiat enim ullamcorper integer volutpat blandit viverra viverra. Magna pellentesque nam massa eu enim. Varius mi tellus eleifend orci vel. Vitae et fames risus orci sapien sit pharetra.",
-
   challenge:
     "Our client, a green tech consultancy, lacked a memorable brand name and a clear brand identity. This hindered their ability to attract potential clients and establish themselves in the market.",
   brandIdentityDevelopment:
@@ -31,5 +30,22 @@ export const GreenCleanSquad = {
     "Brand Recognition Boost",
     "Improved Client Acquisition",
     "Lead Generation Explosion: Our content marketing strategy led to a significant increase in leads. The client saw a surge of 300+ leads per week, indicating the effectiveness of our targeted approach.",
+  ],
+};
+
+export const MountMagica = {
+  name: "Mount Magica",
+  tags: ["Branding & Identity", "Content Marketing"],
+  image: "/assets/magica.jpg",
+  overview:
+    "This case study explores how we transformed Mount Magica, a village-themed resort near Ranchi, by revamping their brand identity and marketing strategy.",
+  challenge:
+    "Mount Magica, while offering a unique village experience, struggled to attract guests due to an outdated brand image and limited marketing reach.",
+  brandIdentityDevelopment:
+    "Brand Refresh: We redesigned the logo and visual identity to capture the essence of a charming village escape. This included creating a cohesive brand style guide for consistent messaging across all marketing channels.",
+  outcomes: [
+    "Elevated Brand Image: The brand refresh created a more modern and appealing image, attracting a wider range of potential guests.",
+    "Increased Social Media Engagement: Compelling social media content with influencer collaborations led to over 1 million impressions, significantly increasing brand awareness.",
+    "Surging Client Acquisition: The combined effect of online and offline marketing strategies resulted in a 30% increase in on-ground bookings, demonstrating the effectiveness of the revamped approach.",
   ],
 };
