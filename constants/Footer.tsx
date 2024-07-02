@@ -17,8 +17,8 @@ export const developers = [
     id: 4,
     name: "Souradip",
     designation: "Web Developer",
-    image: "",
-    linkedIn: "https://www.google.com",
+    image: "/profile/souradip.webp",
+    linkedIn: "https://www.linkedin.com/in/souradip-saha-b5b9a6306/",
   },
   {
     id: 3,

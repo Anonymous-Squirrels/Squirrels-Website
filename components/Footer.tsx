@@ -1,11 +1,11 @@
 "use client";
-import { MainLogo } from "@/constants/Icons";
+import {MainLogo} from "@/constants/Icons";
 import Image from "next/image";
 import React from "react";
 import Button from "./ui/Button";
 import Input from "./ui/Input";
-import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
-import { developers } from "@/constants/Footer";
+import {AnimatedTooltip} from "@/components/ui/animated-tooltip";
+import {developers} from "@/constants/Footer";
 
 function Footer() {
   const [email, setEmail] = React.useState("");
@@ -14,15 +14,15 @@ function Footer() {
       <div className="flex flex-col md:flex-row justify-around pb-5 border-b border-[#333333] mb-5 gap-y-5 px-10">
         <div className="w-full md:w-fit flex flex-col items-center justify-center">
           <div className="flex items-center gap-2 mb-5 text-center">
-            <MainLogo />
+            <MainLogo/>
             <span className="text-2xl">Anonymous Squirrels</span>
           </div>
           <div className="text-[#B9B3B3] text-center md:text-left ">
             <span className="font-thin">We help build brands.</span>
-            <br />
+            <br/>
             <span className="font-medium">Connect. Promote. Engage. Grow.</span>
-            <br className="md:hidden" />
-            <br className="" />
+            <br className="md:hidden"/>
+            <br className=""/>
           </div>
           <div className="flex items-center gap-2 relative md:-left-16 mt-2">
             <a
@@ -139,7 +139,7 @@ function Footer() {
           Made by
         </p>
         <div className="w-fit h-fit flex items-center justify justify-center py-4">
-          <AnimatedTooltip items={developers} />
+          <AnimatedTooltip items={developers}/>
         </div>
       </div>
       <div className="w-full text-center text-sm font-thin px-4">

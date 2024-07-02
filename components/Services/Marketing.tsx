@@ -5,14 +5,14 @@ import { ContentMarketing, MarketingConsult, Tick } from "@/constants/Icons";
 function Marketing() {
   return (
     <div className="py-10 bg-[#F0E9FB] grid gap-y-8 place-items-center">
-      <FAB variant="secondary">Marketing</FAB>
-      <div className="md:px-32">
-        <div className="mb-10 pl-6 md:pl-[68px]">
+      <FAB variant="secondary" className="self-start">Marketing</FAB>
+      <div className="md:flex flex-col items-center justify-center ">
+        <div className="mb-10 pl-6 md:pl-28 self-start">
           <span className="text-[#5C3095] font-bold">STRATEGIZE</span>
           <br />
           <span className="text-3xl text-black font-bold">Grow your Reach</span>
         </div>
-        <div className="w-full flex flex-col md:flex-row items-center justify-around gap-10">
+        <div className="w-full flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20">
           <div className="w-screen md:w-2/5">
             <span className="text-[#5C3095] font-extrabold whitespace-nowrap px-6 md:px-0">
               Content Marketing & Brand Strategy
