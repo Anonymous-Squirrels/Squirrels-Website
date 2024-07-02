@@ -23,7 +23,7 @@ function GlassMorphism({
       glassCss = "bg-white bg-opacity-10";
   }
   return (
-    <div id={id} className={`p-4 backdrop-blur-sm h-fit w-fit ${glassCss} ${className} `}>
+    <div id={id} className={`p-4 backdrop-blur-sm h-fit  ${glassCss} ${className} `}>
       {children}
     </div>
   );

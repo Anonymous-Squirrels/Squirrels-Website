@@ -42,7 +42,9 @@ export const AnimatedTooltip = ({
   return (
     <>
       {items.map((item, idx) => (
-        <Link
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
           href={item.linkedIn}
           className="-mr-4  relative group"
           key={item.name}
@@ -81,7 +83,7 @@ export const AnimatedTooltip = ({
             alt={item.name}
             className="object-cover !m-0 !p-0 object-top rounded-full h-9 w-9 md:h-10 md:w-10 border-2 group-hover:scale-105 group-hover:z-20 border-white  relative transition duration-500"
           />
-        </Link>
+        </a>
       ))}
     </>
   );
