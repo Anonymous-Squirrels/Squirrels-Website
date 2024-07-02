@@ -18,12 +18,11 @@ function HeroSection({
       </span>
       <div className="flex items-center justify-center md:w-screen gap-5 md:gap-10 px-8 flex-wrap z-20">
         {Tags.map((i, index) => (
-          <>
+          <React.Fragment key={index}>
             <span
               className={`${
                 section === i && "text-[#9747FF]"
               } cursor-pointer whitespace-nowrap`}
-              key={index}
               onClick={() => setSection(i)}
             >
               {i}
@@ -31,10 +30,9 @@ function HeroSection({
             {index < Tags.length - 1 && (
               <span
                 className="border-[#5C3095] border-r border-l h-5"
-                key={"a" + index}
               ></span>
             )}
-          </>
+          </React.Fragment>
         ))}
       </div>
     </div>
