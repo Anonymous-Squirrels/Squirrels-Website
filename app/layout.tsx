@@ -35,12 +35,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} scrollbar-hide`}>
-        <Toaster />
-        <NavBar />
-        <>{children}</>
-        <Footer />
+    <head>
+      <title>Anonymous Squirrels</title>
+      <link rel="icon" href="/logo.ico"/>
+    </head>
+    <body className={`${inter.className} scrollbar-hide`}>
+    <Toaster/>
+    <NavBar/>
+    <>{children}</>
+    <Footer />
       </body>
     </html>
   );
 }
+
