@@ -9,7 +9,7 @@ function Accordion() {
 
   return (
     <>
-      <div className="w-full px-7 md:px-0 md:w-[720px]">
+      <div className="w-full px-7 md:px-0 md:w-2/5">
         <ServiceAccordian activeIndex={activeIndex} setActiveIndex={setActiveIndex} data={data}/>
       </div>
 
@@ -25,7 +25,7 @@ function Accordion() {
           alt="gradient"
           width={500}
           height={900}
-          className="hidden md:flex md:w-[433px] md:h-[515px]"
+          className="hidden md:flex md:w-2/6 md:h-[515px]"
         />}
 
       <Image

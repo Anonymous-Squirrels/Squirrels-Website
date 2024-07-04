@@ -37,7 +37,7 @@ export default function RootLayout({
     <html lang="en">
     <head>
       <title>Anonymous Squirrels</title>
-      <link rel="icon" href="/logo.ico"/>
+      <link rel="icon" href="/group.ico"/>
     </head>
     <body className={`${inter.className} scrollbar-hide`}>
     <Toaster/>
