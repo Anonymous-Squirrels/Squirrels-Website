@@ -79,7 +79,7 @@ function ContactUs() {
                 <Input
                   text="Name (Required)"
                   type="text"
-                  placeholder="i.e. John Doe"
+                  placeholder="i.e. Rahul Sharma"
                   classNameDiv="bg-white rounded-lg p-0"
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
@@ -97,7 +97,7 @@ function ContactUs() {
                 <Input
                   text="Email (Required)"
                   type="email"
-                  placeholder="i.e. john@mail.com"
+                  placeholder="i.e. rahulsharma@mail.com"
                   classNameDiv="bg-white rounded-lg p-0"
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
@@ -205,7 +205,7 @@ function ContactUs() {
                 <Input
                   text="Name (Required)"
                   type="text"
-                  placeholder="i.e. John Doe"
+                  placeholder="i.e. Rahul Sharma"
                   classNameDiv="bg-white rounded-lg p-0"
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
@@ -241,7 +241,7 @@ function ContactUs() {
                 <Input
                   text="Email (Required)"
                   type="email"
-                  placeholder="i.e. john@mail.com"
+                  placeholder="i.e. rahulsharma@mail.com"
                   classNameDiv="bg-white rounded-lg p-0"
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"

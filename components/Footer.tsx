@@ -6,6 +6,7 @@ import Button from "./ui/Button";
 import Input from "./ui/Input";
 import {AnimatedTooltip} from "@/components/ui/animated-tooltip";
 import {developers} from "@/constants/Footer";
+import Link from "next/link";
 
 function Footer() {
   const [email, setEmail] = React.useState("");
@@ -82,31 +83,26 @@ function Footer() {
         <div>
           <div className="font-medium mb-5">Company</div>
           <ul className="font-thin text-[#B9B3B3]">
+
             <li className="hover:text-white transition-colors duration-300 cursor-pointer">
-              Service
+              <Link href={"/services"}>
+                Service
+              </Link>
             </li>
+
             <li className="hover:text-white transition-colors duration-300 cursor-pointer">
+              <Link href={"/#contact"}>
               Contact Us
+              </Link>
             </li>
             <li className="hover:text-white transition-colors duration-300 cursor-pointer">
+              <Link href={"/about"}>
               About US
+              </Link>
             </li>
           </ul>
         </div>
-        <div>
-          <div className="font-medium mb-5">Help</div>
-          <ul className="font-thin text-[#B9B3B3]">
-            <li className="hover:text-white transition-colors duration-300 cursor-pointer">
-              Customer Support
-            </li>
-            <li className="hover:text-white transition-colors duration-300 cursor-pointer">
-              Terms & Conditions
-            </li>
-            <li className="hover:text-white transition-colors duration-300 cursor-pointer">
-              Privacy Policy
-            </li>
-          </ul>
-        </div>
+
         <div>
           <span className="font-medium block mb-5">Contact Us</span>
 
