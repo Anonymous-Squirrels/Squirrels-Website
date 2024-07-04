@@ -138,7 +138,7 @@ function Footer() {
         <p className="w-fit text-center text-base flex md:hidden text-md">
           Made by
         </p>
-        <div className="w-fit h-fit flex items-center justify justify-center py-4">
+        <div className="w-fit h-fit flex items-center justify justify-center md:py-4 relative top-2.5 md:top-0">
           <AnimatedTooltip items={developers}/>
         </div>
       </div>
