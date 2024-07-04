@@ -10,7 +10,7 @@ function UIDesign() {
       <div className="text-[#5C3095] text-3xl md:text-4xl font-bold w-[85vw] md:w-96 text-center">
         Get The Best Design, No Compromise
       </div>
-      <div className="flex w-screen md:w-fit flex-col md:flex-row items-center gap-1 md:gap-32">
+      <div className="flex w-screen md:w-fit flex-col md:flex-row items-center md:justify-center gap-1 md:gap-24">
         <Accordion/>
       </div>
       <div className="hidden md:flex items-center gap-8 px-48">

@@ -36,11 +36,6 @@ export const data = [
     image: "ui_design/illustration_icons.png"
   },
   {
-    question: "Product Packaging",
-    answer: "Design that makes your product stand out on the shelf.",
-    image: "assets/gradient.png"
-  },
-  {
     question: "Web Design & More",
     answer:
       "We craft websites that are not only visually stunning but also strategically designed to convert visitors into customers. We offer a wide range of design services. Feel free to inquire..",

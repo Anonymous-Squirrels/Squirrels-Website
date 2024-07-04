@@ -7,7 +7,7 @@ import Link from "next/link";
 function HeroSection() {
   return (
     <div className="h-[85vh] md:h-[85vh] bg-black text-white grid place-items-center">
-      <div className="relative ">
+      <div className="relative top-1/2 h-fit">
         <div className={`${styles.blob} md:w-[639px] w-[360px]`}></div>
         <div
           className="text-center absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 grid place-items-center gap-10">
@@ -23,19 +23,21 @@ function HeroSection() {
           </div>
 
           <div className="grid place-items-center ">
-            <Button
-              variant="secondary"
-              className="text-white flex items-center gap-3 group"
-            >
-              Contact Us
-              <ArrowRight className="group-active:rotate-45 md:group-hover:rotate-45 transition-all duration-300"/>
-            </Button>
+            <Link href={"/#contact"}>
+              <Button
+                variant="secondary"
+                className="text-white flex items-center gap-3 group"
+              >
+                Contact Us
+                <ArrowRight className="group-active:rotate-45 md:group-hover:rotate-45 transition-all duration-300"/>
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
       <Link href="#ui-design">
-        <div className="animate-bounce z-20">
-          <DownArrow className="animate-bounce h-11 w-11 md:w-14 md:h-14" />
+        <div className=" z-20">
+          <DownArrow className="animate-bounce h-11 w-11 md:w-14 md:h-14 relative top-28"/>
         </div>
       </Link>
     </div>
