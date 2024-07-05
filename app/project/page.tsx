@@ -19,7 +19,7 @@ function Page() {
           <Blob variant="yellow"/>
         </div>
         <HeroSection section={section} setSection={setSection}/>
-        <Main section={section}/>
+        {/*<Main section={section}/>*/}
         <MarqueeSlide/>
       </div>
 
