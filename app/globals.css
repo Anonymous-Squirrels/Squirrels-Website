@@ -34,3 +34,6 @@ html {
   visibility: visible !important;
 }
 
+.element:hover + .text-animation {
+  animation: slideIn 0.5s forwards;
+}

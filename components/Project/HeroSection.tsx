@@ -16,7 +16,7 @@ function HeroSection({
         Here&apos;s is some work we are{" "}
         <span className="text-[#7B61FF]">proud of</span>.
       </span>
-      <div className="flex items-center justify-center md:w-screen gap-5 md:gap-10 px-8 flex-wrap z-20">
+      {/*<div className="flex items-center justify-center md:w-screen gap-5 md:gap-10 px-8 flex-wrap z-20">
         {Tags.map((i, index) => (
           <React.Fragment key={index}>
             <span
@@ -34,7 +34,7 @@ function HeroSection({
             )}
           </React.Fragment>
         ))}
-      </div>
+      </div>*/}
     </div>
   );
 }

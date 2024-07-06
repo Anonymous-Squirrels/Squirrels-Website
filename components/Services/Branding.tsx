@@ -5,7 +5,7 @@ import GlassMorphism from "../ui/GlassMorphism";
 
 function Branding() {
   return (
-    <div className="bg-black pt-10 text-white relative overflow-hidden">
+    <div className="bg-[#1E1E1E] pt-10 text-white relative overflow-hidden">
       <div className="grid place-items-center">
         <FAB variant="secondary" className="h-11 md:h-fit">Branding</FAB>
         <br/>
@@ -30,11 +30,11 @@ function Branding() {
           </div>
 
           <Image
-            src="/assets/woman.png"
+            src="/assets/statistics.png"
             width={900}
             height={800}
             alt="woman with megaphone"
-            className="-translate-x-32 hidden md:inline"
+            className="-translate-x-[135px] translate-y-4 hidden md:block mt-16"
           />
         </div>
 
@@ -71,13 +71,13 @@ function Branding() {
           </div>
         </div>
 
-        <div className="w-full md:hidden flex items-center justify-center">
+        <div className="w-full md:hidden flex items-center justify-center mt-4">
           <Image
-            src="/assets/woman.png"
+            src="/assets/statistics.png"
             width={360}
             height={360}
             alt="woman with megaphone"
-            className="md:hidden relative left-4"
+            className="md:hidden relative"
           />
         </div>
       </div>

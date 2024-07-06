@@ -21,13 +21,22 @@ function NavBar() {
             className={`text-white rounded-lg md:px-8 min-h-16 md:h-20 w-full backdrop-blur-xl bg-opacity-[0.09]
             ${!isOpen ? "flex items-center" : "bg-opacity-30 backdrop-blur-xl"}`}
           >
-            <div className="flex items-center justify-between w-full">
-              <Link href="/" className="flex items-center gap-3">
-                <Logo className="h-9 md:h-fit"/>
-                <div className="flex flex-col text-base h-11 md:hidden">
+            <div className="flex items-center justify-between w-full relative">
+              <Link href="/" className="flex items-center gap-3 ">
+                <div className="h-fit w-fi">
+                  <Logo className="h-9 md:h-fit "/>
+                </div>
+                <div className="flex flex-col text-base md:hidden">
                   <span>Anonymous</span>
                   <span>Squirrels</span>
                 </div>
+                  {/*<div className="h-fit w-fit hidden md:flex element z-20">
+                    <Logo className="h-9 md:h-fit"/>
+                  </div>
+                  <div className="font-semibold text-lg hidden md:flex flex-col absolute z-10 text-animation">
+                    <span>Anonymous</span>
+                    <span>Squirrels</span>
+                  </div>*/}
               </Link>
               <ul className="hidden md:flex items-center gap-10 group text-lg">
                 {NavLinks.map((item) => (

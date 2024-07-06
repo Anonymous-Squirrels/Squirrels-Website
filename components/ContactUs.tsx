@@ -13,9 +13,25 @@ import { toast } from "sonner";
 
 function ContactUs() {
   const {
-    register: register,
-    handleSubmit: handleSubmit,
-    formState: { errors: errors, isSubmitting: isSubmitting },
+    register: register1,
+    handleSubmit: handleSubmit1,
+    formState: { errors: errors1, isSubmitting: isSubmitting1 },
+  } = useForm<z.infer<typeof formInputSchema>>({
+    resolver: zodResolver(formInputSchema),
+    defaultValues: {
+      name: "",
+      email: "",
+      phone: "",
+      messageToTeam: "",
+      social: "",
+      website: "",
+    },
+  });
+
+  const {
+    register: register2,
+    handleSubmit: handleSubmit2,
+    formState: { errors: errors2, isSubmitting: isSubmitting2 },
   } = useForm<z.infer<typeof formInputSchema>>({
     resolver: zodResolver(formInputSchema),
     defaultValues: {
@@ -32,10 +48,10 @@ function ContactUs() {
     data
   ) => {
     sendMail(JSON.stringify(data))
-      .then(() =>
-        toast.success("Mail sent successfully! You will be contacted soon.")
-      )
-      .catch(() => toast.error("Mail not sent. Please try again later."));
+    .then(() =>
+      toast.success("Mail sent successfully! You will be contacted soon.")
+    )
+    .catch(() => toast.error("Mail not sent. Please try again later."));
   };
 
   return (
@@ -72,7 +88,7 @@ function ContactUs() {
             className="border rounded-xl text-white w-[350px] md:w-full p-4 md:hidden"
           >
             <form
-              onSubmit={handleSubmit(onSubmit)}
+              onSubmit={handleSubmit1(onSubmit)}
               className="grid grid-cols-1 gap-x-8"
             >
               <div className="h-fit w-full">
@@ -84,11 +100,11 @@ function ContactUs() {
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
                   className="my-2"
-                  {...register("name")}
+                  {...register1("name")}
                 />
-                {errors && (
+                {errors1 && (
                   <p className={"text-red-500 text-xs"}>
-                    {errors.name?.message}
+                    {errors1.name?.message}
                   </p>
                 )}
               </div>
@@ -102,11 +118,11 @@ function ContactUs() {
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
                   className="my-2"
-                  {...register("email")}
+                  {...register1("email")}
                 />
-                {errors && (
+                {errors1 && (
                   <p className={"text-red-500 text-xs"}>
-                    {errors.email?.message}
+                    {errors1.email?.message}
                   </p>
                 )}
               </div>
@@ -120,11 +136,11 @@ function ContactUs() {
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
                   className="my-2"
-                  {...register("phone")}
+                  {...register1("phone")}
                 />
-                {errors && (
+                {errors1 && (
                   <p className={"text-red-500 text-xs"}>
-                    {errors.phone?.message}
+                    {errors1.phone?.message}
                   </p>
                 )}
               </div>
@@ -138,11 +154,11 @@ function ContactUs() {
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
                   className="my-2"
-                  {...register("social")}
+                  {...register1("social")}
                 />
-                {errors && (
+                {errors1 && (
                   <p className={"text-red-500 text-xs"}>
-                    {errors.social?.message}
+                    {errors1.social?.message}
                   </p>
                 )}
               </div>
@@ -156,11 +172,11 @@ function ContactUs() {
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
                   className="my-2"
-                  {...register("website")}
+                  {...register1("website")}
                 />
-                {errors && (
+                {errors1 && (
                   <p className={"text-red-500 text-xs"}>
-                    {errors.website?.message}
+                    {errors1.website?.message}
                   </p>
                 )}
               </div>
@@ -174,31 +190,31 @@ function ContactUs() {
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
                   className="my-2"
-                  {...register("messageToTeam")}
+                  {...register1("messageToTeam")}
                 />
-                {errors && (
+                {errors1 && (
                   <p className={"text-red-500 text-xs"}>
-                    {errors.messageToTeam?.message}
+                    {errors1.messageToTeam?.message}
                   </p>
                 )}
               </div>
 
               <Button
                 variant="primary"
-                isSubmitting={isSubmitting}
+                isSubmitting={isSubmitting1}
                 className={`font-semibold w-full rounded-md mt-8 active:opacity-90 ${
-                  isSubmitting && "opacity-90"
+                  isSubmitting1 && "opacity-90"
                 }`}
               >
                 {" "}
-                {isSubmitting ? "Submitting..." : "Get Free Consultancy"}
+                {isSubmitting1 ? "Submitting..." : "Get Free Consultancy"}
               </Button>
             </form>
           </GlassMorphism>
 
           <div className="w-[70%] py-10 hidden md:flex">
             <form
-              onSubmit={handleSubmit(onSubmit)}
+              onSubmit={handleSubmit2(onSubmit)}
               className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-5 w-full text-sm"
             >
               <div className="h-fit w-full">
@@ -210,11 +226,11 @@ function ContactUs() {
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
                   className="my-2"
-                  {...register("name")}
+                  {...register2("name")}
                 />
-                {errors && (
+                {errors2 && (
                   <p className={"text-red-500 text-sm"}>
-                    {errors.name?.message}
+                    {errors2.name?.message}
                   </p>
                 )}
               </div>
@@ -228,11 +244,11 @@ function ContactUs() {
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
                   className="my-2"
-                  {...register("social")}
+                  {...register2("social")}
                 />
-                {errors && (
+                {errors2 && (
                   <p className={"text-red-500 text-sm"}>
-                    {errors.social?.message}
+                    {errors2.social?.message}
                   </p>
                 )}
               </div>
@@ -246,11 +262,11 @@ function ContactUs() {
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
                   className="my-2"
-                  {...register("email")}
+                  {...register2("email")}
                 />
-                {errors && (
+                {errors2 && (
                   <p className={"text-red-500 text-sm"}>
-                    {errors.email?.message}
+                    {errors2.email?.message}
                   </p>
                 )}
               </div>
@@ -264,11 +280,11 @@ function ContactUs() {
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
                   className="my-2"
-                  {...register("website")}
+                  {...register2("website")}
                 />
-                {errors && (
+                {errors2 && (
                   <p className={"text-red-500 text-sm"}>
-                    {errors.website?.message}
+                    {errors2.website?.message}
                   </p>
                 )}
               </div>
@@ -282,11 +298,11 @@ function ContactUs() {
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
                   className="my-2"
-                  {...register("phone")}
+                  {...register2("phone")}
                 />
-                {errors && (
+                {errors2 && (
                   <p className={"text-red-500 text-sm"}>
-                    {errors.phone?.message}
+                    {errors2.phone?.message}
                   </p>
                 )}
               </div>
@@ -300,23 +316,23 @@ function ContactUs() {
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
                   className="my-2"
-                  {...register("messageToTeam")}
+                  {...register2("messageToTeam")}
                 />
-                {errors && (
+                {errors2 && (
                   <p className={"text-red-500 text-sm"}>
-                    {errors.messageToTeam?.message}
+                    {errors2.messageToTeam?.message}
                   </p>
                 )}
               </div>
 
               <Button
                 variant="primary"
-                isSubmitting={isSubmitting}
+                isSubmitting={isSubmitting2}
                 className={`font-semibold w-full rounded-md mt-8 md:col-span-2 hover:opacity-90 ${
-                  isSubmitting && "opacity-90"
+                  isSubmitting2 && "opacity-90"
                 }`}
               >
-                {isSubmitting ? "Submitting..." : "Get Free Consultancy"}
+                {isSubmitting2 ? "Submitting..." : "Get Free Consultancy"}
               </Button>
             </form>
           </div>
