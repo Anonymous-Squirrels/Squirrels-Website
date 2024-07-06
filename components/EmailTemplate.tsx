@@ -3,10 +3,10 @@ import * as React from "react";
 interface EmailTemplateProps {
   name: string;
   email: string;
-  phone: string;
-  social: string;
-  website: string;
-  messageToTeam: string;
+  phone?: string;
+  social?: string;
+  website?: string;
+  messageToTeam?: string;
 }
 
 export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
@@ -21,10 +21,10 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
     <p>Someone has filled up the contact form.</p>
     <h2>Name: {name}</h2>
     <h2>Email: {email}</h2>
-    <h2>Phone: {phone}</h2>
-    <h2>Socials: {social}</h2>
-    <h2>Website: {website}</h2>
-    <h2>Message: {messageToTeam}</h2>
+    {phone && <h2>Phone: {phone}</h2>}
+    {social && <h2>Socials: {social}</h2>}
+    {website && <h2>Website: {website}</h2>}
+    {messageToTeam && <h2>Message: {messageToTeam}</h2>}
   </div>
 );
 
