@@ -22,7 +22,7 @@ function Testimonials() {
             <Message/> Testimonials
           </span>
         </div>
-        <span className="text-3xl md:text-6xl py-3 md:py-8">What are people saying</span>
+        <span className="text-3xl md:text-6xl mx-[6px] py-3 md:py-8">What are people saying</span>
         <div className="text-[#9B9CA1] text-sm md:text-lg w-10/12 md:w-3/5 mt-5">
           &quot;Thank you for your trust in Anonymous Squirrels! We are grateful
           for your feedback and are committed to providing the best

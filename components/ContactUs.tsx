@@ -57,14 +57,14 @@ function ContactUs() {
   return (
     <div
       id="contact"
-      className="bg-contact-us bg-center bg-cover h-fit grid place-items-center text-white py-7 md:py-14 md:px-36"
+      className="bg-contact-us bg-center bg-cover h-fit flex flex-col items-center text-white py-7 md:py-14 md:px-36"
     >
       <GlassMorphism
         variant={"light"}
         className="invisible md:visible w-full rounded-2xl"
       >
         <div className="flex flex-col items-center justify-between md:justify-around gap-y-6 md:gap-y-0 w-full visible md:mt-6">
-          <div className="md:w-full px-8 md:px-0 flex flex-col md:flex-row items-center justify-center gap-x-4">
+          <div className="md:w-full px-4 md:px-0 flex flex-col md:flex-row items-center justify-center gap-x-4">
             <GlassMorphism
               variant="light"
               className="rounded-full p-0 text-white w-fit h-fit self-start md:self-auto"
@@ -72,7 +72,7 @@ function ContactUs() {
               <Message2 className="w-14 h-14 md:w-20 md:h-20" />
             </GlassMorphism>
 
-            <div className="w-fit md:w-fit mt-5 md:mt-0 md:px-4">
+            <div className=" w-full md:w-fit mt-5 md:mt-0 md:px-4">
               <span className="text-2xl md:text-4xl font-bold block my-3 leading-normal">
                 Get a free consultancy from our expert right now!
               </span>
@@ -85,11 +85,11 @@ function ContactUs() {
 
           <GlassMorphism
             variant="light"
-            className="border rounded-xl text-white w-[350px] md:w-full p-4 md:hidden"
+            className="border rounded-xl text-white w-full md:w-full p-4 md:hidden"
           >
             <form
               onSubmit={handleSubmit1(onSubmit)}
-              className="grid grid-cols-1 gap-x-8"
+              className="grid grid-cols-1 gap-x-8 "
             >
               <div className="h-fit w-full">
                 <Input

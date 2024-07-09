@@ -15,7 +15,7 @@ function OurValues() {
         <div className="w-full md:w-fit rounded-lg grid place-items-center">
           <div className="w-full md:w-fit flex flex-col items-center justify-around gap-y-5 rounded-lg shadow-xl p-6 md:mr-20">
             <span className="uppercase font-bold">Trust</span>
-            <span className="text-sm leading-7 w-3/4">
+            <span className="text-sm leading-7 w-full md:w-3/4">
               Cultivating Enduring Relationships Through Unwavering Integrity
               and Reliability.
             </span>

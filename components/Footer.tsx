@@ -12,10 +12,10 @@ function Footer() {
   const [email, setEmail] = React.useState("");
   return (
     <div className="bg-[#0F0F0F] text-white md:px-20 pt-20 pb-10 cursor-default text-center md:text-justify">
-      <div className="flex flex-col md:flex-row justify-around pb-5 border-b border-[#333333] mb-5 gap-y-5 px-10">
+      <div className="flex flex-col md:flex-row justify-around pb-5 border-b border-[#333333] mb-5 gap-y-5 md:px-10">
         <div className="w-full md:w-fit flex flex-col items-center justify-center">
           <div className="flex items-center gap-2 mb-5 text-center">
-            <MainLogo/>
+            <MainLogo className={"w-10 h-10"}/>
             <span className="text-2xl">Anonymous Squirrels</span>
           </div>
           <div className="text-[#B9B3B3] text-center md:text-left ">
@@ -103,7 +103,7 @@ function Footer() {
           </ul>
         </div>
 
-        <div>
+        {/*<div>
           <span className="font-medium block mb-5">Contact Us</span>
 
           <div className="inline-flex items-center text-sm justify-center rounded-lg overflow-hidden h-10">
@@ -125,14 +125,14 @@ function Footer() {
               Join
             </Button>
           </div>
-        </div>
+        </div>*/}
       </div>
-      <div className="flex md:flex-col items-center justify-center gap-x-3">
+      <div className="flex flex-col items-center justify-center gap-x-3 mb-9 md:mb-0">
         <p className="w-fit text-center text-sm hidden md:flex">
-          Made with 💜 by
+          Made with 💜 by team Squirrels
         </p>
         <p className="w-fit text-center text-base flex md:hidden text-md">
-          Made by
+          Made by team Squirrels
         </p>
         <div className="w-fit h-fit flex items-center justify justify-center md:py-4 relative top-2.5 md:top-0">
           <AnimatedTooltip items={developers}/>

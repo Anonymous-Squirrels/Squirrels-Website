@@ -5,7 +5,7 @@ import AboutUsIcon from "@/components/Home/AboutUsIcon";
 
 function AboutUs() {
   return (
-    <div className=" bg-black text-white ">
+    <div id={"about-us"} className=" bg-black text-white">
       <div className="flex justify-between  items-start px-7 md:p-14 md:pt-10">
         <span className="uppercase text-5xl md:text-8xl font-bold">
           About <br/> Us
