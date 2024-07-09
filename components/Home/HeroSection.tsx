@@ -11,6 +11,7 @@ import {
 } from "@/constants/Icons";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -23,30 +24,33 @@ export default function Home() {
       </div>
       <>
         <GridFill
-          className="absolute top-[25%] md:top-[20%] left-4 -translate-x-1/2 md:-translate-x-0 -translate-y-1/2 w-[180px] h-[250px] md:h-fit md:w-fit z-20 md:animate-dotted-bounce "/>
+          className="absolute top-[25%] md:top-[20%] left-2 md:left-0 -translate-x-1/2 md:-translate-x-0 -translate-y-1/2 w-[180px] h-[250px] md:h-fit md:w-fit z-20 md:animate-dotted-bounce "/>
       </>
 
       <div
         className="relative z-20 flex flex-col md:flex-row items-center justify-between md:mx-32 py-4 md:py-8 gap-y-14 md:gap-y-0 mx-0 ">
-        <div className="w-10/12 md:w-1/2 order-last md:order-first">
-          <div className="text-white font-semibold text-4xl  md:text-6xl">
+        <div className="w-10/12 px-2.5 md:w-1/2 order-last md:order-first">
+          <div className="w-full text-white font-semibold text-3xl  md:text-6xl">
             <span>Unlock your</span>{" "}
             <span className="text-sq-violet">Brand&apos;s Potential</span>.{" "}
             <span className="hidden md:inline-flex">One at a time Promote and</span>{" "}
             <span className="text-sq-violet hidden md:inline-flex">Grow</span>
           </div>
-          <div className="text-white text-xl md:text-2xl my-5">
+          <div className="text-white text-lg md:text-2xl my-5">
             Elevate your content marketing with a powerful brand strategy.
           </div>
-          <Button
-            className="md:p-3 rounded-md md:rounded-lg whitespace-nowrap w-40 md:w-[270px] bg-[#5237D8]"
-            variant="primary"
-          ><p className="w-full h-fit overflow-clip  text-sm md:text-xl ">
+          <Link className={"w-fit h-fit"} href={"/#about-us"}>
+            <Button
+              className="md:p-3 rounded-md md:rounded-lg whitespace-nowrap w-40 md:w-40 bg-[#5237D8] active:opacity-8 md:hover:opacity-85"
+              variant="primary"
+            >{/*<p className="w-full h-fit overflow-clip  text-sm md:text-xl ">
             <span className="scroll-text inline-block">
               Get a Free Consultation Get a Free Consultation Get a Free Consultation
             </span>
-          </p>
-          </Button>
+          </p>*/}
+              <p className={"text-xl"}>Explore more</p>
+            </Button>
+          </Link>
         </div>
 
         <div className="relative order-first md:order-last">

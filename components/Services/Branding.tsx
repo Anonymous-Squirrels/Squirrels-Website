@@ -5,7 +5,7 @@ import GlassMorphism from "../ui/GlassMorphism";
 
 function Branding() {
   return (
-    <div className="bg-[#1E1E1E] pt-10 text-white relative overflow-hidden">
+    <div className="bg-black pt-10 text-white relative overflow-hidden">
       <div className="grid place-items-center">
         <FAB variant="secondary" className="h-11 md:h-fit">Branding</FAB>
         <br/>
@@ -49,7 +49,7 @@ function Branding() {
             />
             <GlassMorphism
               variant="light"
-              className="border border-white/25 overflow-hidden absolute h-12 w-12 md:h-28 md:w-28 rounded-lg bottom-0 -translate-x-3 translate-y-3 md:-translate-x-8 md:translate-y-8"
+              className="border border-white/25 overflow-hidden hidden md:flex absolute h-12 w-12 md:h-28 md:w-28 rounded-lg bottom-0 -translate-x-3 translate-y-3 md:-translate-x-8 md:translate-y-8"
             >
               {" "}
             </GlassMorphism>
@@ -64,7 +64,7 @@ function Branding() {
             />
             <GlassMorphism
               variant="light"
-              className="border border-white/25 overflow-hidden absolute h-12 w-12 md:h-28 md:w-28 rounded-lg bottom-0 -translate-x-3 translate-y-3 md:-translate-x-8 md:translate-y-8"
+              className="border border-white/25 overflow-hidden hidden md:flex absolute h-12 w-12 md:h-28 md:w-28 rounded-lg bottom-0 -translate-x-3 translate-y-3 md:-translate-x-8 md:translate-y-8"
             >
               {" "}
             </GlassMorphism>

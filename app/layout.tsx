@@ -1,9 +1,10 @@
-import { Inter } from "next/font/google";
+import {Inter} from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
-import { Toaster } from "sonner";
-const inter = Inter({ subsets: ["latin"] });
+import {Toaster} from "sonner";
+
+const inter = Inter({subsets: ["latin"]});
 
 export const metadata = {
   title: "Anonymous Squirrels",
@@ -43,8 +44,8 @@ export default function RootLayout({
     <Toaster/>
     <NavBar/>
     <>{children}</>
-    <Footer />
-      </body>
+    <Footer/>
+    </body>
     </html>
   );
 }

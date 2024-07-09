@@ -12,10 +12,10 @@ function Engage() {
         Connect with Anonymous Squirrels today to boost your creativity and
         promote your brand with maximum potential.
       </div>
-        <Button className="bg-white rounded-md text-button-color transition-all duration-200 md:hover:bg-button-color md:hover:text-white active:bg-button-color active:text-white w-28 md:px-5 md:w-fit
+       {/* <Button className="bg-white rounded-md text-button-color transition-all duration-200  md:hover:bg-button-color md:hover:text-white active:bg-button-color active:text-white w-28 md:px-5 md:w-fit
         ">
           Connect with us
-        </Button>
+        </Button>*/}
     </div>
   );
 }
