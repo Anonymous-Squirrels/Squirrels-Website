@@ -15,7 +15,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="relative h-fit bg-black pb-20 md:pb-10 w-full overflow-hidden pt-16 md:pt-0">
+    <div className="relative h-fit bg-black pb-7 md:pb-10 w-full overflow-hidden pt-16 md:pt-0">
       <div className="absolute hidden md:block md:left-60 -translate-x-1/2 -top-96 md:-top-72 z-10">
         <Blob variant="violet"/>
       </div>

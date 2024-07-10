@@ -14,7 +14,7 @@ function OurValues() {
       <div className="flex flex-col md:flex-row items-center md:items-start justify-between px-7 md:p-24 gap-y-8">
         <div className="w-full md:w-fit rounded-lg grid place-items-center">
           <div className="w-full md:w-fit flex flex-col items-center justify-around gap-y-5 rounded-lg shadow-xl p-6 md:mr-20">
-            <span className="uppercase font-bold">Trust</span>
+            <span className="uppercase self-start md:self-auto font-bold">Trust</span>
             <span className="text-sm leading-7 w-full md:w-3/4">
               Cultivating Enduring Relationships Through Unwavering Integrity
               and Reliability.
@@ -34,7 +34,7 @@ function OurValues() {
         <div className="w-full md:w-fit flex flex-col items-start justify-around rounded-lg shadow-xl p-6 md:mr-20">
           <span className="uppercase font-bold">Loyalty</span>
           <br />
-          <span className="text-sm leading-7 w-3/4">
+          <span className="text-sm leading-7 w-full md:w-3/4">
             Fostering Deep, Long-Lasting Partnerships Built on Commitment and
             Dedication.
           </span>
@@ -53,7 +53,7 @@ function OurValues() {
           <div className="w-full md:w-fit flex flex-col items-start justify-around rounded-lg shadow-xl p-6">
             <span className="uppercase font-bold">Transparency</span>
             <br />
-            <span className="text-sm leading-7 w-3/4">
+            <span className="text-sm leading-7 w-full md:w-3/4">
               Promoting Open, Honest Communication to Ensure Clarity and Mutual
               Success.
             </span>
