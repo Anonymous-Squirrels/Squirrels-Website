@@ -14,17 +14,16 @@ function AboutUs() {
       if(item[0].isIntersecting){
         setIsIntersecting(true);
       }
-      console.log(item[0]);
     }, {threshold: 0.7});
 
     if(divRef.current){
       observer.observe(divRef.current);
     }
-  }, []);
 
-  useEffect(() => {
-    console.log(intersecting, brand)
-  }, [intersecting, brand]);
+    if(intersecting && divRef.current){
+      observer.unobserve(divRef.current);
+    }
+  }, [intersecting]);
 
   useEffect(() => {
     if (brand < 54 && intersecting) {

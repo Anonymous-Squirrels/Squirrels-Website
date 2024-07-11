@@ -5,7 +5,9 @@ import Link from "next/link";
 export const BentoItems = [
   {
     title: "Custom Pricing",
-    description: `Fixed pricing and high ppw custom pricing and lowest charges in segment.`,
+    description: `Not everyone can fit S, nor can everyone wear XXL. 
+    We tailor the packages to fit your budget.
+    `,
     content: (
       <Image
         src="/assets/graph.png"
@@ -19,7 +21,8 @@ export const BentoItems = [
   {
     title: `Boosting Business. Today and Tomorrow.`,
     description:
-      "Bring harmony to team expenses with budget limits and real-time monitoring. Freedom for your staff. Peace of mind for you.",
+      "You invest in branding to brighten your sales.\n" +
+      "We understand that.",
     content: (
       <Image
         src="/assets/boost_business.png"
@@ -33,7 +36,8 @@ export const BentoItems = [
   {
     title: "Easy Collaboration",
     description:
-      "Seamlessly collaborate with your team members like never before.",
+      `1 POC
+That's it!`,
     content: (
       <Image
         src="/assets/collaboration.png"
@@ -45,18 +49,18 @@ export const BentoItems = [
     ),
   },
   {
-    title: "Some of our Work.",
+    title: "Our Wonders",
     description:
-      "Take the pain out of book keeping! Wave goodbye to mountains of paperwork and endless email reminders. We manage it all !!",
+      "We have handled projects for more than 50+ companies. Would love to add you to our clientele.",
     content: (
       <div className="w-fit h-fit">
         <Link href="/project">
-          <Button
+          {/*<Button
             variant="light"
             className="rounded-2xl py-0 font-medium px-6 md:py-1 md:px-10"
           >
             View More
-          </Button>
+          </Button>*/}
         </Link>
         <div className="flex items-end justify-between w-fit">
           <Image
@@ -67,7 +71,8 @@ export const BentoItems = [
             className="h-20 md:h-fit border mt-10"
           />
 
-          <Image src="/assets/leo9.png" width={200} height={200} alt="Leo 9" className={"w-40 h-40 md:w-fit md:h-fit "}/>
+          <Image src="/assets/leo9.png" width={200} height={200} alt="Leo 9"
+                 className={"w-40 h-40 md:w-fit md:h-fit "}/>
         </div>
       </div>
     ),
@@ -81,7 +86,7 @@ export const BentoItems = [
       <Link href="/services">
         <Button
           variant="light"
-          className="rounded-full py-3 px-6 md:mt-16 md:px-10 font-medium"
+          className="rounded-full md:my-32 px-6 md:mt-16 md:px-10 font-medium"
         >
           View our services
         </Button>

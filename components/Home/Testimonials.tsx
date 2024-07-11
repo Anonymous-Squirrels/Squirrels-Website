@@ -24,10 +24,7 @@ function Testimonials() {
         </div>
         <span className="text-3xl md:text-6xl mx-[6px] py-3 md:py-8">What are people saying</span>
         <div className="text-[#9B9CA1] text-sm md:text-lg w-10/12 md:w-3/5 mt-5">
-          &quot;Thank you for your trust in Anonymous Squirrels! We are grateful
-          for your feedback and are committed to providing the best
-          [products/services offered]. Read what our clients have to say about
-          their experience with us.
+          As you scrolled till this point. Now you need some extra validation about us. So, here it from our clients.
         </div>
       </div>
 
