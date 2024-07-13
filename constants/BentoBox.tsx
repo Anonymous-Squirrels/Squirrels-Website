@@ -35,17 +35,18 @@ export const BentoItems = [
   },
   {
     title: "Easy Collaboration",
-    description:
-      `1 POC
+    description: `1 POC
 That's it!`,
     content: (
-      <Image
-        src="/assets/collaboration.png"
-        width={180}
-        height={180}
-        alt="collaboration"
-        className={"h-92 w-92"}
-      />
+      <div className="w-full grid place-items-center h-72 p-6">
+        <Image
+          src="/assets/collaboration.png"
+          width={180}
+          height={180}
+          alt="collaboration"
+          className="w-full"
+        />
+      </div>
     ),
   },
   {
@@ -62,17 +63,22 @@ That's it!`,
             View More
           </Button>*/}
         </Link>
-        <div className="flex items-end justify-between w-fit">
+        <div className="flex w-fit">
           <Image
             src="/assets/oyoOfficial.png"
             width={200}
             height={200}
             alt="Oyo"
-            className="h-20 md:h-fit border mt-10"
+            className="h-20 md:h-fit mt-10"
           />
 
-          <Image src="/assets/leo9.png" width={200} height={200} alt="Leo 9"
-                 className={"w-40 h-40 md:w-fit md:h-fit "}/>
+          <Image
+            src="/assets/leo9.png"
+            width={200}
+            height={200}
+            alt="Leo 9"
+            className={"w-40 h-40 md:w-fit md:h-fit "}
+          />
         </div>
       </div>
     ),
@@ -83,7 +89,7 @@ That's it!`,
     description:
       "Our Company provides a lot of services ranging from Brand strategies to SEO Optimization to Web Content Management",
     content: (
-      <Link href="/services">
+      <Link href="/services" className="mt-10">
         <Button
           variant="light"
           className="rounded-full md:my-32 px-6 md:mt-16 md:px-10 font-medium"

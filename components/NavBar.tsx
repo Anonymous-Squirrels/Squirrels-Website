@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
 import GlassMorphism from "./ui/GlassMorphism";
-import {usePathname} from "next/navigation";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
-import {NavLinks} from "@/constants/Navbar";
-import {Logo} from "@/constants/Icons";
-import {FiMenu} from "react-icons/fi";
-import {IoMdClose} from "react-icons/io";
+import { NavLinks } from "@/constants/Navbar";
+import { Logo } from "@/constants/Icons";
+import { FiMenu } from "react-icons/fi";
+import { IoMdClose } from "react-icons/io";
 
 function NavBar() {
   const path = usePathname();
@@ -19,24 +19,19 @@ function NavBar() {
           <GlassMorphism
             variant="light"
             className={`text-white rounded-lg md:px-8 min-h-16 md:h-20 w-full backdrop-blur-xl bg-opacity-[0.09]
-            ${!isOpen ? "flex items-center" : "bg-opacity-30 backdrop-blur-xl"}`}
+            ${
+              !isOpen ? "flex items-center" : "bg-opacity-30 backdrop-blur-xl"
+            }`}
           >
             <div className="flex items-center justify-between w-full relative">
-              <Link href="/" className="flex items-center gap-3 ">
-                <div className="h-fit w-fi">
-                  <Logo className="h-9 md:h-fit "/>
+              <Link href="/" className="flex items-center gap-3 group">
+                <div className="h-fit w-fit hidden md:flex element z-20 -ml-5 px-5 py-4">
+                  <Logo className="h-9 md:h-fit" />
                 </div>
-                <div className="flex flex-col text-base md:hidden">
+                <div className="font-semibold text-lg hidden md:flex flex-col absolute z-10 group-hover:opacity-100 opacity-0 duration-300 group-hover:left-20 left-0">
                   <span>Anonymous</span>
                   <span>Squirrels</span>
                 </div>
-                  {/*<div className="h-fit w-fit hidden md:flex element z-20">
-                    <Logo className="h-9 md:h-fit"/>
-                  </div>
-                  <div className="font-semibold text-lg hidden md:flex flex-col absolute z-10 text-animation">
-                    <span>Anonymous</span>
-                    <span>Squirrels</span>
-                  </div>*/}
               </Link>
               <ul className="hidden md:flex items-center gap-10 group text-lg">
                 {NavLinks.map((item) => (
@@ -56,9 +51,9 @@ function NavBar() {
 
               <div onClick={() => setIsOpen(!isOpen)} className="md:hidden">
                 {!isOpen ? (
-                  <FiMenu className="h-8 w-8"/>
+                  <FiMenu className="h-8 w-8" />
                 ) : (
-                  <IoMdClose className="h-8 w-8"/>
+                  <IoMdClose className="h-8 w-8" />
                 )}
               </div>
             </div>

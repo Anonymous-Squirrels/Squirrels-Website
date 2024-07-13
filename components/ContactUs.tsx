@@ -48,10 +48,10 @@ function ContactUs() {
     data
   ) => {
     sendMail(JSON.stringify(data))
-    .then(() =>
-      toast.success("Mail sent successfully! You will be contacted soon.")
-    )
-    .catch(() => toast.error("Mail not sent. Please try again later."));
+      .then(() =>
+        toast.success("Mail sent successfully! You will be contacted soon.")
+      )
+      .catch(() => toast.error("Mail not sent. Please try again later."));
   };
 
   return (
@@ -74,7 +74,7 @@ function ContactUs() {
 
             <div className=" w-full md:w-fit mt-5 md:mt-0 md:px-4">
               <span className="text-2xl md:text-4xl font-bold block my-3 leading-normal">
-                Get a free consultancy from our expert right now!
+                Let&apos;s jump on a discovery call
               </span>
               <span className="text-sm font-light leading-8">
                 With lots of unique elements, you can promote and grow your
