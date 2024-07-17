@@ -6,8 +6,8 @@ import Link from "next/link";
 
 function HeroSection() {
   return (
-    <div className="h-[85vh] md:h-[85vh] bg-black text-white grid place-items-center">
-      <div className="relative top-1/2 h-fit">
+    <div className="h-[85vh] md:h-[85vh] relative w-full bg-black text-white flex flex-col items-center">
+      <div className="relative top-1/2 w-full h-fit">
         <div className={`${styles.blob} md:w-[639px] w-[360px]`}></div>
         <div
           className="text-center absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 grid place-items-center gap-10">
@@ -35,11 +35,14 @@ function HeroSection() {
           </div>
         </div>
       </div>
-      <Link href="#ui-design">
-        <div className=" z-20">
-          <DownArrow className="animate-bounce h-11 w-11 md:w-14 md:h-14 relative top-28"/>
-        </div>
-      </Link>
+
+
+      <div className="z-20 absolute bottom-16 md:bottom-9">
+        <Link href="#ui-design" className={"h-11 w-11 md:w-14 md:h-14"}>
+          <DownArrow className="animate-bounce h-11 w-11 md:w-14 md:h-14"/>
+        </Link>
+      </div>
+
     </div>
   );
 }

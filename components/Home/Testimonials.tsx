@@ -6,7 +6,7 @@ import { TestimonialData } from "@/constants/Testimonials";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
-import "@/app/local_swiper.css";
+import "@/style/local_swiper.css";
 import "swiper/css/navigation";
 import "@/app/styles.css";
 import { Navigation } from "swiper/modules";
@@ -17,8 +17,7 @@ function Testimonials() {
     <div className="h-fit flex flex-col gap-y-6 md:gap-y-10 bg-black text-white pt-8 pb-4 md:py-14">
       <div className="text-center grid place-items-center">
         <Button
-          variant="secondary"
-          className="flex items-center gap-3 border-[#B897FF] border-[0.5px] text-white"
+          className="flex items-center gap-3 border-[#B897FF] border-[1px] text-white"
         >
           <Message /> Testimonials
         </Button>
