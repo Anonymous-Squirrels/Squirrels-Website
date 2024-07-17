@@ -1,4 +1,3 @@
-"use client";
 import {MainLogo} from "@/constants/Icons";
 import Image from "next/image";
 import React from "react";
@@ -9,19 +8,19 @@ import {developers} from "@/constants/Footer";
 import Link from "next/link";
 
 function Footer() {
-  const [email, setEmail] = React.useState("");
   return (
     <div className="bg-[#0F0F0F] text-white md:px-20 pt-20 pb-10 cursor-default text-center md:text-justify">
       <div className="flex flex-col md:flex-row justify-around pb-5 border-b border-[#333333] mb-5 gap-y-5 md:px-10">
-        <div className="w-full md:w-fit flex flex-col items-center justify-center">
+
+        <div className="w-full md:w-fit flex flex-col items-center">
           <div className="flex items-center gap-2 mb-5 text-center">
             <MainLogo className={"w-10 h-10"}/>
             <span className="text-2xl">Anonymous Squirrels</span>
           </div>
           <div className="text-[#B9B3B3] text-center md:text-left ">
-            <span className="font-thin">We help build brands.</span>
+            <span className="font-thin text-lg">We help build brands.</span>
             <br/>
-            <span className="font-medium">Connect. Promote. Engage. Grow.</span>
+            <span className="font-medium md:text-lg">Connect. Promote. Engage. Grow.</span>
             <br className="md:hidden"/>
             <br className=""/>
           </div>
@@ -38,7 +37,6 @@ function Footer() {
                 height={30}
               />
             </a>
-
             <a
               href="https://api.whatsapp.com/send?phone=919122823474"
               target="_blank"
@@ -51,7 +49,6 @@ function Footer() {
                 height={30}
               />
             </a>
-
             <a
               href="https://www.instagram.com/anonymous_squirrels/"
               target="_blank"
@@ -80,9 +77,18 @@ function Footer() {
           </div>
         </div>
 
+        <div className={"flex flex-col items-center justify-between gap-3"}>
+          <span className={"text-lg"}>
+            Recognised by
+          </span>
+          <div className={"w-fit h-fit"}>
+            <Image src={"/startupIndia.png"} alt={"startupIndia"} height={20} width={300} className={"h-14 w-44 md:w-56 md:h-24"}/>
+          </div>
+        </div>
+
         <div>
-          <div className="font-medium mb-5">Company</div>
-          <ul className="font-thin text-[#B9B3B3]">
+          <div className="font-medium text-lg mb-5">Company</div>
+          <ul className="font-thin text-[#B9B3B3] text-base">
 
             <li className="hover:text-white transition-colors duration-300 cursor-pointer">
               <Link href={"/services"}>

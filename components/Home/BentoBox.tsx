@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { BentoItems } from "@/constants/BentoBox";
-import { BentoGridItem } from "../ui/BentoGrid";
 import GlassMorphism from "@/components/ui/GlassMorphism";
 
 export function BentoBox() {
@@ -12,21 +11,10 @@ export function BentoBox() {
           <GlassMorphism
             key={i}
             variant={"light"}
-            className={`h-72 md:h-[400px] overflow-hidden rounded-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:-white/[0.2] space-y-4  ${
-              i === 3 || i === 4 ? "md:col-span-3" : "md:col-span-2"
-            }`}
+            className={`h-72 md:h-[400px] overflow-hidden rounded-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:-white/[0.2] space-y-4 w-full place-items-center
+            ${i === 3 || i === 4 ? "md:col-span-3" : "md:col-span-2"}`}
           >
-            {/*<BentoGridItem
-              key={i}
-              title={item.title}
-              description={item.description}
-              content={item.content}
-              className={`${
-                i === 3 || i === 4 ? "md:col-span-3" : "md:col-span-2"
-              }`}
-            />*/}
-
-            <div className={`text-sm transition duration-200 w-full`}>
+            <div className={`text-sm transition duration-200 w-full flex flex-col items-center`}>
               <p className="text-center text-xl font-bold block mb-5">
                 {item.title}
               </p>

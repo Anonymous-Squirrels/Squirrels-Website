@@ -89,10 +89,10 @@ That's it!`,
     description:
       "Our Company provides a lot of services ranging from Brand strategies to SEO Optimization to Web Content Management",
     content: (
-      <Link href="/services" className="mt-10">
+      <Link href="/services" className="mt-10 ">
         <Button
           variant="light"
-          className="rounded-full md:my-32 px-6 md:mt-16 md:px-10 font-medium"
+          className="rounded-full md:my-32 px-6 md:mt-16 md:px-10 font-medium z-20"
         >
           View our services
         </Button>
