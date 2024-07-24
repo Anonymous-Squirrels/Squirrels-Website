@@ -1,8 +1,6 @@
 import {MainLogo} from "@/constants/Icons";
 import Image from "next/image";
 import React from "react";
-import Button from "./ui/Button";
-import Input from "./ui/Input";
 import {AnimatedTooltip} from "@/components/ui/animated-tooltip";
 import {developers} from "@/constants/Footer";
 import Link from "next/link";
@@ -81,14 +79,14 @@ function Footer() {
           <span className={"text-lg"}>
             Recognised by
           </span>
-          <div className={"w-fit h-fit"}>
-            <Image src={"/startupIndia.png"} alt={"startupIndia"} height={20} width={300} className={"h-14 w-44 md:w-56 md:h-24"}/>
+          <div className={"w-fit h-fit "}>
+            <Image src={"/startupIndiaLogo.png"} alt={"startupIndia"} height={20} width={250} className={"aspect-video w-48 md:w-64"}/>
           </div>
         </div>
 
         <div>
           <div className="font-medium text-lg mb-5">Company</div>
-          <ul className="font-thin text-[#B9B3B3] text-base">
+          <ul className="font-thin text-[#B9B3B3] text-lg">
 
             <li className="hover:text-white transition-colors duration-300 cursor-pointer">
               <Link href={"/services"}>
