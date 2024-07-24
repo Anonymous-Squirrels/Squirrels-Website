@@ -6,7 +6,7 @@ function Marketing() {
   return (
     <div className="w-[100%] py-10 bg-[#F0E9FB] grid gap-y-8 place-items-center">
 
-      <FAB variant="secondary" className="self-start">Marketing</FAB>
+      <FAB variant="secondary" className="self-start select-none">Marketing</FAB>
       <div className="w-full md:flex flex-col items-center justify-center">
         <div className="mb-10 w-full pl-6 md:pl-28 self-start">
           <span className="text-[#5C3095] font-bold">STRATEGIZE</span>

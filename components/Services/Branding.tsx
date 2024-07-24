@@ -7,7 +7,7 @@ function Branding() {
   return (
     <div className="bg-black pt-10 text-white relative overflow-hidden">
       <div className="grid place-items-center">
-        <FAB variant="secondary" className="h-11 md:h-fit">Branding</FAB>
+        <FAB variant="secondary" className="h-11 md:h-fit select-none">Branding</FAB>
         <br/>
         <br/>
       </div>
