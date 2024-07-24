@@ -75,18 +75,18 @@ function Footer() {
           </div>
         </div>
 
-        <div className={"flex flex-col items-center justify-between gap-3"}>
+        <div className={"flex flex-col items-center justify-between"}>
           <span className={"text-lg"}>
             Recognised by
           </span>
           <div className={"w-fit h-fit "}>
-            <Image src={"/startupIndiaLogo.png"} alt={"startupIndia"} height={20} width={250} className={"aspect-video w-48 md:w-64"}/>
+            <Image src={"/[removal.ai] (copy).png"} alt={"startupIndia"} height={20} width={250} className={"aspect-video relative md:bottom-9 w-52 md:w-72"}/>
           </div>
         </div>
 
         <div>
           <div className="font-medium text-lg mb-5">Company</div>
-          <ul className="font-thin text-[#B9B3B3] text-lg">
+          <ul className="font-thin text-[#B9B3B3] text-base md:text-lg">
 
             <li className="hover:text-white transition-colors duration-300 cursor-pointer">
               <Link href={"/services"}>
