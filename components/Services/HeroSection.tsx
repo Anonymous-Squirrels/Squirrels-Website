@@ -6,12 +6,12 @@ import Link from "next/link";
 
 function HeroSection() {
   return (
-    <div className="h-[85vh] md:h-[85vh] relative w-full bg-black text-white flex flex-col items-center">
+    <div className="h-[85vh] md:h-[100vh] relative w-full bg-black text-white flex flex-col items-center">
       <div className="relative top-1/2 w-full h-fit">
         <div className={`${styles.blob} md:w-[639px] w-[360px]`}></div>
         <div
           className="text-center absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 grid place-items-center gap-10">
-          <div className="text-4xl md:text-7xl font-semibold md:w-[50vw] w-[85vw]">
+          <div className="text-3xl md:text-6xl font-semibold md:w-[50vw] w-[85vw]">
             We Provide Services. A Lot...
           </div>
           <div className="text-[#C1C1C1] text-sm md:text-lg hidden md:grid">
@@ -23,7 +23,7 @@ function HeroSection() {
           </div>
 
           <div className="grid place-items-center ">
-            <Link href={"/#contact"}>
+            <Link href={"/contact"}>
               <Button
                 variant="secondary"
                 className="text-white flex items-center gap-3 group"
