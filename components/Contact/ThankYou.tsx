@@ -95,7 +95,7 @@ const ThankYou = () => {
             <div className='flex gap-5 justify-start items-center text-base mt-2 md:mt-5 md:text-xl'>
               <FaLocationDot className='text-base md:text-2xl text-white' />
               <p>Calgary</p>
-            </div>
+            </div> 
             <div className='flex gap-5 justify-start mt-2 md:mt-5 text-base md:text-xl'>
               <p>Mail:</p>
               <a href="mailto:hello@thesquirrels.ca" className="underline">hello@thesquirrels.ca</a>
