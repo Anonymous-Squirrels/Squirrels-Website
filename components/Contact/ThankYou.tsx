@@ -119,7 +119,7 @@ const ThankYou = () => {
       </div>
 
       
-      <div className="px-6 md:px-56 flex flex-col xl:flex-row items-center justify-between text-center py-5 md:py-10 bg-white">
+      <div className="px-6 md:px-52 flex flex-col xl:flex-row items-center justify-between text-center py-5 md:py-10 bg-white">
       <div>
         <div className="text-xl md:text-3xl font-semibold">
           <span className=''>View our portfolio and</span>{" "}
