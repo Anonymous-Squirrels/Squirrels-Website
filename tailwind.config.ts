@@ -16,7 +16,9 @@ const config: Config = {
       colors: {
         "sq-violet": "#7B61FF",
         "dim-gray": "#828282",
-        "button-color" : "#5237D8"
+        "button-color" : "#5237D8",
+        'light-purple':'#EDE7FF', //light mode
+        'dark-purple':"#5C3095",  //light mode
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
