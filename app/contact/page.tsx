@@ -5,7 +5,7 @@ import LightContactBackground from '@/components/Contact/LightContactBackground'
 
 const FullScreenImages = () => {
   return (
-    <div className='bg-black w-full'>
+    <div className='dark:bg-black bg-light-purple w-full'>
     <div className='hidden dark:block'>
       <ContactBackground />
 
