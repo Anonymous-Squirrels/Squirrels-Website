@@ -124,7 +124,7 @@ export default function Home() {
                     height={150}
                     width={150}
                     objectFit="cover"
-                    className="w-full h-full border-2 border-black dark:border-black rounded-full transition-transform duration-200 md:hover:scale-105"
+                    className="w-full h-full rounded-full transition-transform duration-200 md:hover:scale-105"
                   />
                 </div>
 
