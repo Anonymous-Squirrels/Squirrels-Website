@@ -6,12 +6,13 @@ import ThreeStepProcess from "@/components/About/ThreeStepProcess";
 import React from "react";
 import {Blob} from "@/constants/Icons";
 import ContactBackground from "@/components/Contact/ContactBackground";
+import LightContactBackground from '@/components/Contact/LightContactBackground';
 
 function Page() {
   return (
-    <div className="w-full ">
+    <div className="w-full bg-light-purple dark:bg-black">
       <div className="w-full relative overflow-hidden">
-      <div className="h-[15vh] bg-black"></div>
+      <div className="h-[15vh] bg-light-purple dark:bg-black"></div>
         <div className="absolute hidden md:block md:left-60 -translate-x-1/2 -top-72 z-10">
           <Blob variant="violet"/>
         </div>
@@ -25,13 +26,19 @@ function Page() {
       <OurValues/>
       <div className="w-full relative overflow-hidden">
         <ThreeStepProcess/>
-        <ContactBackground/>
+        <div className='hidden dark:block'>
+      <ContactBackground />
+
+      </div>
+      <div className='dark:hidden block'>
+          <LightContactBackground />
+        </div>
         <JoinTeam
-        content1="Become a Squirrel."
-        content2="Join our Team."
-        detail="We are looking for individuals with skills who could join our family of squirrels."
-        link1="/contact"
-        button="Apply Now"
+          content1="Become a Squirrel."
+          content2="Join our Team."
+          detail="We are looking for individuals with skills who could join our family of squirrels."
+          link1="/contact"
+          button="Apply Now"
       />
       </div>
     </div>
