@@ -51,10 +51,10 @@ const ThankYou = () => {
         </p>
         <div className="mt-10 md:mt-20 flex flex-col lg:flex-row-reverse justify-between gap-10 dark:text-white text-black max-w-6xl mx-auto">
           {/* Canada Section */}
-          <div className="">
+          <div className="lg:w-2/5">
             <div className="flex justify-between gap-10">
               <div className="">
-                <p className="text-3xl md:text-6xl font-bold">CANADA</p>
+                <p className="text-3xl xl:text-6xl font-bold">CANADA</p>
                 <p className="mt-2 text-xl md:text-3xl">{calgaryTime}</p>
               </div>
               <Image
@@ -94,11 +94,12 @@ const ThankYou = () => {
               </div>
             </div>
           </div>
+
           {/* India Section */}
-          <div className="space-y-5 w-96">
+          <div className="space-y-5 lg:w-2/5">
             <div className="flex justify-between gap-10">
               <div className="">
-                <p className="text-3xl md:text-6xl font-bold">INDIA</p>
+                <p className="text-3xl xl:text-6xl font-bold">INDIA</p>
                 <p className="mt-2 text-xl md:text-3xl">{indiaTime}</p>
               </div>
               <Image

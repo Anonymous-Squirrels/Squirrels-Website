@@ -68,7 +68,7 @@ function AboutUs() {
         </div>
       </div>
       <div className="h-full w-full flex flex-col items-center gap-y-20 md:gap-y-24 font-bold">
-        <div className="w-full md:px-56">
+        <div className="w-full xl:px-32">
           <span className="text-xl md:text-3xl px-5 text-center md:px-56 inline-block w-full">
             We are a{' '}
             <span className="text-[#7B61FF]">

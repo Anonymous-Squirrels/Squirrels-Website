@@ -11,7 +11,7 @@ function HeroSection({
 }) {
   return (
     <div className="h-[50vh] md:h-[100vh] dark:bg-black bg-light-purple dark:text-white text-black grid place-items-center relative overflow-hidden">
-      <span className="text-3xl md:text-7xl text-center font-semibold w-3/4 md:w-2/5 r-2">
+      <span className="text-3xl md:text-7xl text-center font-semibold w-3/4 xl:w-2/5 r-2">
         Here&apos;s some work we are{' '}
         <span className="text-[#5c3095] dark:text-[#7B61FF]">proud of</span>.
       </span>

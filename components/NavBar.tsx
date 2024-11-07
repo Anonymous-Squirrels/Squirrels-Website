@@ -83,9 +83,9 @@ function NavBar() {
   return (
     <div className="h-20 md:h-fit fixed top-0 left-0 right-0 z-50 flex items-center justify-center pt-8 md:pt-0 ">
       <div className="w-full px-4 md:p-4 ">
-        <div className={`w-full h-fit dark:shadow-none dark:backdrop-blur-0 shadow-[4px_4px_4px_rgba(0,0,0,0.25)] backdrop-blur-[16px] ${isOpen && 'mt-60'} md:mt-0`}>
+        <div className={`w-full rounded-lg h-fit shadow-[0px_4px_16px_rgba(0,0,0,0.1)] dark:shadow-none backdrop-blur-[16px] dark:backdrop-blur-0 ${isOpen && 'mt-60'} md:mt-0`}>
           <div
-            className={`dark:text-white text-black rounded-lg md:px-8 min-h-16 md:h-20 w-full p-2 pt-3 dark:bg-[#282828] bg-white
+            className={`dark:text-white text-black dark:rounded-lg rounded-lg md:px-8 min-h-16 md:h-20 w-full p-2 pt-3 dark:bg-[#282828] bg-white
             ${!isOpen ? 'flex items-center' : ''}`}
           >
             <div className="flex items-center justify-between xl:px-5 w-full relative">
