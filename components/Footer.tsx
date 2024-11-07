@@ -7,7 +7,7 @@ import Link from "next/link";
 
 function Footer() {
   return (
-    <div className="dark:bg-[#0F0F0F] bg-[#DDD6E5] text-black dark:text-white  md:px-20 pt-20 pb-10 cursor-default text-center md:text-justify">
+    <div className="dark:bg-[#0F0F0F] bg-[#DDD6E5] text-black dark:text-white  xl:px-20 pt-20 pb-10 cursor-default text-center md:text-justify">
       <div className="flex flex-col md:flex-row justify-around pb-5 border-b border-[#333333] mb-5 gap-y-5 md:px-10">
 
         <div className="w-full md:w-fit flex flex-col items-center">
@@ -80,10 +80,10 @@ function Footer() {
             Recognised by
           </span>
           <div className={"w-fit h-fit "}>
-            <Image src={"/[removal.ai] (copy).png"} alt={"startupIndia"} height={20} width={250} className={"aspect-video relative md:bottom-9 w-52 md:w-72"}/>
+            <Image src={"/[removal.ai] (copy).png"} alt={"startupIndia"} height={20} width={250} className={"aspect-video relative md:bottom-9 w-52 xl:w-72"}/>
           </div>
           <div>
-            <Image src={"/assets/googlePartner.png"} alt={"googlePartner"} height={250} width={250} className={" relative w-52 md:w-60 rounded-xl object-cover"}/> 
+            <Image src={"/assets/googlePartner.png"} alt={"googlePartner"} height={250} width={250} className={" relative w-52 xl:w-60 rounded-xl object-cover"}/> 
           </div>
         </div>
 
