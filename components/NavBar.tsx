@@ -81,33 +81,33 @@ function NavBar() {
   };
 
   return (
-    <div className="h-20 md:h-fit fixed top-0 left-0 right-0 z-50 flex items-center justify-center pt-8 md:pt-0 ">
-      <div className="w-full px-4 md:p-4 ">
-        <div className={`w-full rounded-lg h-fit shadow-[0px_4px_16px_rgba(0,0,0,0.1)] dark:shadow-none backdrop-blur-[16px] dark:backdrop-blur-0 ${isOpen && 'mt-60'} md:mt-0`}>
+    <div className="h-20 lg:h-fit fixed top-0 left-0 right-0 z-50 flex items-center justify-center pt-8 lg:pt-0 ">
+      <div className="w-full px-4 lg:p-4 ">
+        <div className={`w-full rounded-lg h-fit shadow-[0px_4px_16px_rgba(0,0,0,0.1)] dark:shadow-none backdrop-blur-[16px] dark:backdrop-blur-0 ${isOpen && 'mt-60'} lg:mt-0`}>
           <div
-            className={`dark:text-white text-black dark:rounded-lg rounded-lg md:px-8 min-h-16 md:h-20 w-full p-2 pt-3 dark:bg-[#282828] bg-white
+            className={`dark:text-white text-black dark:rounded-lg rounded-lg sm:px-8 min-h-16 lg:h-20 w-full p-2 pt-3 dark:bg-[#282828] bg-white
             ${!isOpen ? 'flex items-center' : ''}`}
           >
             <div className="flex items-center justify-between xl:px-5 w-full relative">
               <Link href="/" className="flex items-center gap-3 group">
-                <div className="h-fit w-fit hidden md:flex element z-20 -ml-5 px-5 py-4">
-                  <Logo className="h-9 md:h-fit dark:block hidden" />
-                  <LightLogo className="h-9 md:h-fit dark:hidden block" />
+                <div className="h-fit w-fit hidden lg:flex element z-20 -ml-5 px-5 py-4">
+                  <Logo className="h-9 lg:h-fit dark:block hidden" />
+                  <LightLogo className="h-9 lg:h-fit dark:hidden block" />
                 </div>
-                <div className="font-semibold text-lg hidden md:flex flex-col absolute z-10 group-hover:opacity-100 opacity-0 duration-300 group-hover:left-20 left-0">
+                <div className="font-semibold text-lg hidden lg:flex flex-col absolute z-10 group-hover:opacity-100 opacity-0 duration-300 group-hover:left-20 left-0">
                   <span>Anonymous</span>
                   <span>Squirrels</span>
                 </div>
-                <div className="h-fit w-fit flex md:hidden element z-20 -ml-5 px-5 ">
+                <div className="h-fit w-fit flex lg:hidden element z-20 -ml-5 px-5 ">
                   <Logo className="h-8 dark:block hidden" />
                   <LightLogo className="h-8 dark:hidden block" />
                 </div>
-                <div className="font-semibold text-base flex flex-col md:hidden absolute z-10 left-14">
+                <div className="font-semibold text-base flex flex-col lg:hidden absolute z-10 left-14">
                   <span>Anonymous</span>
                   <span>Squirrels</span>
                 </div>
               </Link>
-              <div className="hidden md:flex items-center gap-5">
+              <div className="hidden lg:flex items-center gap-5">
                 <ul className="flex items-center gap-9 group text-lg">
                   {NavLinks.map((item) => (
                     <Link
@@ -165,7 +165,7 @@ function NavBar() {
                   </button>
                 </div>
               </div>
-              <div className='flex items-center space-x-4 md:hidden'>
+              <div className='flex items-center space-x-4 lg:hidden'>
                 <div className="relative">
                   {/* we can implement the text and arrow here also  */}
                   <button
@@ -173,7 +173,7 @@ function NavBar() {
                     onClick={toggleDarkMode}
                     className="rounded-full transition-all duration-1000"
                   >
-                    <div className="relative h-7 w-7">
+                    <div className="relative h-8 mt-1.5 w-8">
                       <HiOutlineSun
                         className={`absolute h-full w-full transition-transform duration-1000 ${darkMode ? 'rotate-180 scale-0' : 'scale-100'
                           }`}
@@ -185,7 +185,7 @@ function NavBar() {
                     </div>
                   </button>
                 </div>
-                <div onClick={() => setIsOpen(!isOpen)} className="md:hidden">
+                <div onClick={() => setIsOpen(!isOpen)} className="lg:hidden">
                   {!isOpen ? (
                     <FiMenu className="h-8 w-8" />
                   ) : (
@@ -195,7 +195,7 @@ function NavBar() {
               </div>
             </div>
             {isOpen && (
-              <div className="rounded-lg mt-6 mb-2 md:hidden">
+              <div className="rounded-lg mt-6 mb-2 lg:hidden">
                 {NavLinks.map((item) => (
                   <Link
                     href={item.path}
