@@ -79,15 +79,17 @@ function Footer() {
           <span className={"text-lg"}>
             Recognised by
           </span>
-          <div className={"w-fit h-fit "}>
-            <Image src={"/[removal.ai] (copy).png"} alt={"startupIndia"} height={20} width={250} className={"aspect-video relative md:bottom-9 w-52 xl:w-72"}/>
+ <div className={"flex flex-col lg:flex-row items-center lg:gap-10 gap-5 mt-4" }>
+ <div className={"w-fit h-fit "}>
+            <Image src={"/removal.png"} alt={"startupIndia"} height={20} width={250} className={" relative w-52 xl:w-72"}/>
           </div>
           <div>
-            <Image src={"/assets/googlePartner.png"} alt={"googlePartner"} height={250} width={250} className={" relative w-52 xl:w-60 rounded-xl object-cover"}/> 
+            <Image src={"/assets/googlePartner.png"} alt={"googlePartner"} height={250} width={250} className={" relative w-52 sm:w-48 xl:w-40 rounded-xl object-cover"}/> 
           </div>
+ </div>
         </div>
 
-        <div>
+        {/* <div>
           <div className="font-medium text-lg mb-5">Company</div>
           <ul className="dark:font-thin font-normal dark:text-[#B9B3B3] text-black text-base md:text-lg">
 
@@ -108,7 +110,7 @@ function Footer() {
               </Link>
             </li>
           </ul>
-        </div>
+        </div> */}
 
         {/*<div>
           <span className="font-medium block mb-5">Contact Us</span>
