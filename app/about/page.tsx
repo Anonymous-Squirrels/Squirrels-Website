@@ -7,6 +7,7 @@ import React from "react";
 import {Blob} from "@/constants/Icons";
 import ContactBackground from "@/components/Contact/ContactBackground";
 import LightContactBackground from '@/components/Contact/LightContactBackground';
+import Google from "@/components/About/Google";
 
 function Page() {
   return (
@@ -21,6 +22,7 @@ function Page() {
         </div>
 
         <HeroSection/>
+        <Google/>
         <AboutUs/>
       </div>
       <OurValues/>
