@@ -21,6 +21,7 @@ const Google = () => {
         </h2>
         <h6 className="text-2xl md:text-3xl text-violet-700 font-bold">
           ADVANTAGE for YOU
+        
         </h6>
         <p className="text-base md:text-lg">
           We have been handling ad spends of over <span className='dark:text-yellow-400 text-red-500'>$400,000 every month</span> only for
