@@ -1,12 +1,18 @@
 import ContactBackground from '@/components/Contact/ContactBackground';
 import ThankYou from '@/components/Contact/ThankYou';
 import ContactUs from '@/components/ContactUs';
+import LightContactBackground from '@/components/Contact/LightContactBackground';
 
 const FullScreenImages = () => {
   return (
-    <div className='bg-black w-full'>
+    <div className='dark:bg-black bg-light-purple w-full'>
+    <div className='hidden dark:block'>
       <ContactBackground />
-      <ContactUs />
+
+      </div>
+      <div className='dark:hidden block'>
+          <LightContactBackground />
+        </div>      <ContactUs />
       <ThankYou />
     </div>
   );

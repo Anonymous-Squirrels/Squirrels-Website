@@ -62,7 +62,7 @@ export const BentoItems = [
         <p className="text-center text-8xl font-extrabold mt-6 md:mb-10">
           15+
         </p>
-        <p className="text-center text-xs md:text-lg inline-block text-[#D2D2D2]">creative wizards who help you achieve your goals</p>
+        <p className="text-center text-xs md:text-lg inline-block dark:text-[#D2D2D2] text-[#000000]">creative wizards who help you achieve your goals</p>
       </div>
     ),
   },

@@ -7,7 +7,7 @@ import Link from "next/link";
 
 function Footer() {
   return (
-    <div className="bg-[#0F0F0F] text-white md:px-20 pt-20 pb-10 cursor-default text-center md:text-justify">
+    <div className="dark:bg-[#0F0F0F] bg-[#DDD6E5] text-black dark:text-white  xl:px-20 pt-20 pb-10 cursor-default text-center md:text-justify">
       <div className="flex flex-col md:flex-row justify-around pb-5 border-b border-[#333333] mb-5 gap-y-5 md:px-10">
 
         <div className="w-full md:w-fit flex flex-col items-center">
@@ -15,7 +15,7 @@ function Footer() {
             <MainLogo className={"w-10 h-10"}/>
             <span className="text-2xl">Anonymous Squirrels</span>
           </div>
-          <div className="text-[#B9B3B3] text-center md:text-left ">
+          <div className="dark:text-[#B9B3B3] text-black text-center md:text-left ">
             <span className="font-thin text-lg">We help build brands.</span>
             <br/>
             <span className="font-medium md:text-lg">Connect. Promote. Engage. Grow.</span>
@@ -75,37 +75,42 @@ function Footer() {
           </div>
         </div>
 
-        <div className={"flex flex-col items-center justify-between"}>
+        <div className={"flex flex-col items-center justify-center"}>
           <span className={"text-lg"}>
             Recognised by
           </span>
-          <div className={"w-fit h-fit "}>
-            <Image src={"/[removal.ai] (copy).png"} alt={"startupIndia"} height={20} width={250} className={"aspect-video relative md:bottom-9 w-52 md:w-72"}/>
+ <div className={"flex flex-col lg:flex-row items-center lg:gap-10 gap-5 mt-4" }>
+ <div className={"w-fit h-fit "}>
+            <Image src={"/removal.png"} alt={"startupIndia"} height={20} width={250} className={" relative w-52 xl:w-72"}/>
           </div>
+          <div>
+            <Image src={"/assets/googlePartner.png"} alt={"googlePartner"} height={250} width={250} className={" relative w-52 sm:w-48 xl:w-40 rounded-xl object-cover"}/> 
+          </div>
+ </div>
         </div>
 
-        <div>
+        {/* <div>
           <div className="font-medium text-lg mb-5">Company</div>
-          <ul className="font-thin text-[#B9B3B3] text-base md:text-lg">
+          <ul className="dark:font-thin font-normal dark:text-[#B9B3B3] text-black text-base md:text-lg">
 
-            <li className="hover:text-white transition-colors duration-300 cursor-pointer">
+            <li className="hover:text-gray-700 dark:hover:text-white transition-colors duration-300 cursor-pointer">
               <Link href={"/services"}>
                 Service
               </Link>
             </li>
 
-            <li className="hover:text-white transition-colors duration-300 cursor-pointer">
+            <li className="hover:text-gray-700 dark:hover:text-white transition-colors duration-300 cursor-pointer">
               <Link href={"/contact"}>
               Contact Us
               </Link>
             </li>
-            <li className="hover:text-white transition-colors duration-300 cursor-pointer">
+            <li className="hover:text-gray-700 dark:hover:text-white transition-colors duration-300 cursor-pointer">
               <Link href={"/about"}>
               About US
               </Link>
             </li>
           </ul>
-        </div>
+        </div> */}
 
         {/*<div>
           <span className="font-medium block mb-5">Contact Us</span>
@@ -142,7 +147,7 @@ function Footer() {
           <AnimatedTooltip items={developers}/>
         </div>
       </div>
-      <div className="w-full text-center text-sm font-thin px-4">
+      <div className="w-full text-center text-sm dark:font-thin font-normal px-4">
         &copy; Copyright {new Date().getFullYear()}, All Rights Reserved by
         Anonymous Squirrels
       </div>
