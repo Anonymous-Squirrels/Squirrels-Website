@@ -24,8 +24,8 @@ const Google = () => {
         
         </h6>
         <p className="text-base md:text-lg">
-          We have been handling ad spends of over <span className='dark:text-yellow-400 text-red-500'>$400,000 every month</span> only for
-          <span className='dark:text-yellow-400 text-red-500'> our dental clients </span> and know how to exactly maximize <span className='dark:text-yellow-400 text-red-500'>the ROI</span>.
+          We have been handling ad spends of over <span className='dark:text-yellow-400 text-red-500'>1.5 cr every month</span> only for
+          <span className='dark:text-yellow-400 text-red-500'> our clients </span> and know how to exactly maximize <span className='dark:text-yellow-400 text-red-500'>the ROI</span>.
         </p>
       </div>
     </div>
