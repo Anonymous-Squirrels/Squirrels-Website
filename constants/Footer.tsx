@@ -8,30 +8,17 @@ export const developers = [
   },
   {
     id: 2,
-    name: "Sohan Pattnaik",
+    name: "Ujwal Mohanty ",
     designation: "UI/UX Designer",
-    image: "/profile/soham.webp",
-    linkedIn: "https://www.linkedin.com/in/sohan-pattnaik-7a318817b",
+    image: "/profile/ujwal.jpg",
+    linkedIn: "https://www.linkedin.com/in/ujwal-mohanty-0abbb4231?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     id: 3,
-    name: "Ashish Pothal",
-    designation: "UI/UX Designer",
-    image: "/profile/ashish.webp",
-    linkedIn: "https://www.linkedin.com/in/ashish-pothal/",
-  },
-  {
-    id: 4,
-    name: "Souradip Saha",
+    name: "Soumyadip Maity",
     designation: "Web Developer",
-    image: "/profile/souradip.webp",
-    linkedIn: "https://www.linkedin.com/in/souradip-saha-b5b9a6306/",
+    image: "/profile/soumyadip.jpg",
+    linkedIn: "https://www.linkedin.com/in/soumyadip-maity-a77b41282/",
   },
-  {
-    id: 5,
-    name: "Kumar Priyanshu",
-    designation: "Web Developer",
-    image: "/profile/priyanshu.webp",
-    linkedIn: "https://www.linkedin.com/in/kpriyanshu2003/",
-  },
+
 ];
